@@ -68,6 +68,81 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-圆角阴影多背景图片引入渐变" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/29/圆角阴影多背景图片引入渐变/" class="article-date">
+  <time datetime="2016-06-29T09:00:29.000Z" itemprop="datePublished">2016-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/29/圆角阴影多背景图片引入渐变/">圆角阴影多背景图片引入渐变</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、圆角（border-radius）"><a href="#一、圆角（border-radius）" class="headerlink" title="一、圆角（border-radius）"></a>一、圆角（border-radius）</h2><h2 id="二、阴影-box-shadow-text-shadow"><a href="#二、阴影-box-shadow-text-shadow" class="headerlink" title="二、阴影(box-shadow text-shadow)"></a>二、阴影(box-shadow text-shadow)</h2><h2 id="三、多背景图片设置"><a href="#三、多背景图片设置" class="headerlink" title="三、多背景图片设置"></a>三、多背景图片设置</h2><h2 id="四、渐变-linear-gradient"><a href="#四、渐变-linear-gradient" class="headerlink" title="四、渐变(linear-gradient)"></a>四、渐变(linear-gradient)</h2><hr>
+<hr>
+<h2 id="一、圆角-border-radius"><a href="#一、圆角-border-radius" class="headerlink" title="一、圆角(border-radius)"></a>一、圆角(border-radius)</h2><h4 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h4><p><img src="../images/圆角.png" alt="圆角"></p>
+<p><img src="../images/圆角2.png" alt="圆角"></p>
+<p><img src="../images/圆角1.png" alt="圆角"></p>
+<hr>
+<h2 id="二、阴影-box-shadow-text-shadow-1"><a href="#二、阴影-box-shadow-text-shadow-1" class="headerlink" title="二、阴影(box-shadow text-shadow)"></a>二、阴影(box-shadow text-shadow)</h2><h3 id="格式：box-shadow-3px-3px-4px-blue"><a href="#格式：box-shadow-3px-3px-4px-blue" class="headerlink" title="格式：box-shadow:3px 3px 4px blue;"></a>格式：box-shadow:3px 3px 4px blue;</h3><p>###（opacity:0.5透明度）</p>
+<ul>
+<li>box-shadow: x轴偏移量  y轴偏移量  模糊度  边框颜色 inset(不设置为外阴影，设置inset后为内阴影)；</li>
+<li>第一个参数 x-offset 偏移</li>
+<li>第二个参数 y-offset偏移</li>
+<li>第三个参数 模糊度</li>
+<li>第四个参数 颜色</li>
+<li>第五个参数 内阴影<h4 id="1-背景阴影-box-shadow"><a href="#1-背景阴影-box-shadow" class="headerlink" title="1.背景阴影(box-shadow)"></a>1.背景阴影(box-shadow)</h4></li>
+<li>box-shadow: x轴偏移量  y轴偏移量  模糊度  边框颜色 inset(不设置为外阴影，设置inset后为内阴影)；</li>
+<li>box-shadow:3px 3px 10px blue;</li>
+</ul>
+<p><img src="../images/背景阴影.png" alt="背景阴影"></p>
+<p><img src="../images/背景阴影1.png" alt="背景阴影"></p>
+<h4 id="2-文字阴影-text-shadow"><a href="#2-文字阴影-text-shadow" class="headerlink" title="2.文字阴影(text-shadow)"></a>2.文字阴影(text-shadow)</h4><ul>
+<li>text-shadow:x轴偏移量 y轴偏移量 模糊度 边框颜色；</li>
+<li>text-shadow:-2px -2px 10px yellow;</li>
+</ul>
+<p><img src="../images/text-shadow.png" alt="text-shadow"></p>
+<p><img src="../images/text-shadow1.png" alt="text-shadow"></p>
+<hr>
+<h2 id="三、多背景图片设置-1"><a href="#三、多背景图片设置-1" class="headerlink" title="三、多背景图片设置"></a>三、多背景图片设置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1.引入2个背景图片</span><br><span class="line">bakcground-image:(&quot;../images/pikaqiu.png&quot;),url(&quot;../images/tan.png&quot;);</span><br><span class="line">2.设置背景图片显示效果</span><br><span class="line">background-repeat:no-repeat,no-repeat;</span><br><span class="line">3.设置背景图片位置</span><br><span class="line">background-position:图片一位置（top）,图片二的位置（center）；</span><br><span class="line">4.设置背景图片大小</span><br><span class="line">background-size:100px,100px;</span><br><span class="line">5.背景图片background-size:cover contain;</span><br><span class="line">背景图片冲满整个容器（会损坏图片）</span><br><span class="line">background-size:cover;</span><br><span class="line">背景图片碰到容器结束放大（不会损坏图片）</span><br><span class="line">background-size:contain;</span><br><span class="line">6. background-origin应用</span><br><span class="line">默认值:background-origin:content-box;</span><br><span class="line">正常：backgound-origin:padding-box;</span><br><span class="line">背景图片进入边框：background-origin:border-box;</span><br><span class="line">7.background-cilp应用</span><br><span class="line">裁剪功能配合padding使用</span><br><span class="line">background-cilp:content-box;</span><br><span class="line">padding-left:100px;背景图片会少左边一部分内容</span><br></pre></td></tr></table></figure>
+<h2 id="四、渐变（linear-gradient）"><a href="#四、渐变（linear-gradient）" class="headerlink" title="四、渐变（linear-gradient）"></a>四、渐变（linear-gradient）</h2><h4 id="1-线性渐变：background-image-liner-gradient-to-left-yellow-green-黄色渐变绿色-也可以to-left改成：0deb或90deb"><a href="#1-线性渐变：background-image-liner-gradient-to-left-yellow-green-黄色渐变绿色-也可以to-left改成：0deb或90deb" class="headerlink" title="1.线性渐变：background-image:liner-gradient(to left,yellow green);(黄色渐变绿色)也可以to left改成：0deb或90deb"></a>1.线性渐变：background-image:liner-gradient(to left,yellow green);(黄色渐变绿色)也可以to left改成：0deb或90deb</h4><ul>
+<li>配合background-size:30px使用</li>
+</ul>
+<hr>
+<h4 id="也可双渐变使用"><a href="#也可双渐变使用" class="headerlink" title="也可双渐变使用"></a>也可双渐变使用</h4><p><img src="../images/linear-gradient.png" alt="linear-gradient"></p>
+<p><img src="../images/linear-gradient1.png" alt="linear-gradient"></p>
+<hr>
+<h4 id="2-径向渐变"><a href="#2-径向渐变" class="headerlink" title="2.径向渐变"></a>2.径向渐变</h4><p><img src="../images/radial-gradient.png" alt="radial-gradient"></p>
+<p><img src="../images/radial-gradient1.png" alt="radial-gradient"></p>
+<hr>
+<h4 id="3-重复性渐变"><a href="#3-重复性渐变" class="headerlink" title="3.重复性渐变"></a>3.重复性渐变</h4><p><img src="../images/repeating-radial-gradient.png" alt="repeating-radial-gradient"></p>
+<p><img src="../images/repeating-radial-gradient1.png" alt="repeating-radial-gradient"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/29/圆角阴影多背景图片引入渐变/" data-id="ciq0nvhp30005hgo587a9u8s7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-选择器伪元素与css3盒模型" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/28/选择器伪元素与css3盒模型/" class="article-date">
@@ -168,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="ciq067vdy0006f8o5smp78lxi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="ciq0nvhpb0008hgo5i25hw2yl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -372,7 +447,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="ciq067vdq0003f8o547j3631q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="ciq0nvhow0002hgo5q59z2a9r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -419,7 +494,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="ciq067ve40008f8o5kptw2e1x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="ciq0nvhpe0009hgo5qhm6vxz2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -467,7 +542,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="ciq067vdn0002f8o5wrccu5o8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="ciq0nvhp00003hgo5ok6hq6s3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -543,7 +618,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="ciq067ve20007f8o5u3rc8uyn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="ciq0nvhp90007hgo5sdbjndiz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -634,7 +709,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="ciq067vdt0004f8o57sqylc8c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="ciq0nvhp20004hgo52dwlaxuo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -671,7 +746,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="ciq067vdw0005f8o5hmgmpie1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="ciq0nvhp60006hgo54epe1bnh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -709,7 +784,7 @@
 <h2 id="连接图片"><a href="#连接图片" class="headerlink" title="连接图片"></a>连接图片</h2><p><a href="https://www.baidu.com/img/bd_logo1.png" target="_blank" rel="external">百度</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="https://www.baidu.com/img/bd_logo1.png" alt="baidu"></p>
 <h4 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h4><hr>
-<p>Peng <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#55;&#x36;&#x34;&#x31;&#48;&#x30;&#x31;&#x37;&#x32;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#55;&#x36;&#x34;&#x31;&#48;&#x30;&#x31;&#x37;&#x32;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>Peng <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#55;&#x36;&#x34;&#x31;&#48;&#48;&#x31;&#x37;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#55;&#x36;&#x34;&#x31;&#48;&#48;&#x31;&#x37;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <hr>
 <h4 id="点了有惊喜"><a href="#点了有惊喜" class="headerlink" title="点了有惊喜"></a>点了有惊喜</h4><hr>
 <p><a href="https://www.baidu.com/s?wd=%E6%88%91%E5%A5%BD%E5%B8%85&amp;rsv_spt=1&amp;rsv_iqid=0x8054484f0003d612&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;rqlang=&amp;tn=baiduhome_pg&amp;rsv_enter=0" target="_blank" rel="external">惊喜</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我好帅</span><br></pre></td></tr></table></figure></p>
@@ -725,7 +800,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="ciq067vdk0001f8o5xaem2v9m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="ciq0nvhon0000hgo5jjs7u7g4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -770,7 +845,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciq067vdf0000f8o5o8xt6tge" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciq0nvhos0001hgo5i1ntc9e6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -810,6 +885,10 @@
       <ul>
         
           <li>
+            <a href="/2016/06/29/圆角阴影多背景图片引入渐变/">圆角阴影多背景图片引入渐变</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/28/选择器伪元素与css3盒模型/">选择器伪元素与css3盒模型</a>
           </li>
         
@@ -823,10 +902,6 @@
         
           <li>
             <a href="/2016/06/24/meta二维码/">meta二维码</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/23/样式css3/">样式css3</a>
           </li>
         
       </ul>
