@@ -68,6 +68,183 @@
       <div class="outer">
         <section id="main">
   
+    <article id="过渡-2d变形3d变形动画" class="article article-type-过渡" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/30/2d变形3d变形动画/" class="article-date">
+  <time datetime="2016-06-30T10:48:16.000Z" itemprop="datePublished">2016-06-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/30/2d变形3d变形动画/">过渡2d变形3d变形动画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="transition-transform-animation"><a href="#transition-transform-animation" class="headerlink" title="transition transform animation"></a>transition transform animation</h1><h2 id="一、transition过渡"><a href="#一、transition过渡" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><h2 id="二、transform-2d变形"><a href="#二、transform-2d变形" class="headerlink" title="二、transform 2d变形"></a>二、transform 2d变形</h2><h2 id="三、transform-3d变形"><a href="#三、transform-3d变形" class="headerlink" title="三、transform 3d变形"></a>三、transform 3d变形</h2><h2 id="四、animation-动画效果"><a href="#四、animation-动画效果" class="headerlink" title="四、animation 动画效果"></a>四、animation 动画效果</h2><hr>
+<hr>
+<h2 id="一、transition过渡-1"><a href="#一、transition过渡-1" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><ul>
+<li>transition-propety:;执行过渡变换的属性（:all||width||height||right||left）</li>
+<li>transition-duration:;过渡变换延续的时间</li>
+<li>transition-timing-function:;过度变换的速率(快慢效果)效果方式(ease ease-in ease-out ease-in-out linear)</li>
+<li>transition-delay:;变换延迟时间 (transition-delay:2s;)</li>
+<li>transition:all 2s;（是简单书写方法）</li>
+</ul>
+<p><img src="../images/transition.png" alt="transition"></p>
+<hr>
+<hr>
+<h2 id="二、transform-2d变形（要配合transform-all-2s-）"><a href="#二、transform-2d变形（要配合transform-all-2s-）" class="headerlink" title="二、transform 2d变形（要配合transform:all 2s;）"></a>二、transform 2d变形（要配合transform:all 2s;）</h2><h4 id="1-transform-rotate-45deg-旋转rotate-deg"><a href="#1-transform-rotate-45deg-旋转rotate-deg" class="headerlink" title="1.transform:rotate(45deg);旋转rotate(deg)"></a>1.transform:rotate(45deg);旋转rotate(deg)</h4><ul>
+<li>通过指定的角度参数对本元素进行2d旋转transform:rotate(2d旋转)</li>
+<li>deg-可为负数</li>
+</ul>
+<p><img src="../images/rotate.png" alt="rotate"></p>
+<hr>
+<h4 id="2-transform-translate（100px）；移动translate-px"><a href="#2-transform-translate（100px）；移动translate-px" class="headerlink" title="2.transform:translate（100px）；移动translate(px)"></a>2.transform:translate（100px）；移动translate(px)</h4><ul>
+<li>transform:translate(x,y)水平方向和垂直方向同时移动</li>
+<li>transform:translateX(x)仅水平方向移动</li>
+<li>transform:translateY(y)仅垂直方向移动</li>
+<li>可以为负数 px</li>
+</ul>
+<p><img src="../images/translate.png" alt="translate"></p>
+<hr>
+<h4 id="3-transform-scale-2-缩放scale-2"><a href="#3-transform-scale-2-缩放scale-2" class="headerlink" title="3.transform:scale(2);缩放scale(2)"></a>3.transform:scale(2);缩放scale(2)</h4><ul>
+<li>transform:scale(x,y)使元素水平方向和垂直方向同时缩放</li>
+<li>transform:scaleX(x)元素仅水平方向缩放</li>
+<li>transform:scaleY(y)元素仅垂直方向缩放</li>
+<li>整数 小数 负数</li>
+</ul>
+<p><img src="../images/scale.png" alt="scale"></p>
+<hr>
+<h4 id="4-transform-skew-45deg-扭曲skew-deg"><a href="#4-transform-skew-45deg-扭曲skew-deg" class="headerlink" title="4.transform:skew(45deg);扭曲skew(deg)"></a>4.transform:skew(45deg);扭曲skew(deg)</h4><ul>
+<li>transform:skew(x,y)使元素在水平和垂直方向同时扭曲变形</li>
+<li>transform:skewX(x)仅使元素在水平方向扭曲变形</li>
+<li>transform:skewY(y)仅使元素在垂直方向扭曲变形</li>
+<li>角度deg</li>
+</ul>
+<p><img src="../images/skew.png" alt="skew"></p>
+<hr>
+<h4 id="5-transform-origin-0-0-；单位可百分比，可整数"><a href="#5-transform-origin-0-0-；单位可百分比，可整数" class="headerlink" title="5.transform-origin(0 0)；单位可百分比，可整数"></a>5.transform-origin(0 0)；单位可百分比，可整数</h4><ul>
+<li>元素的基点位置</li>
+<li>认基点就是元素中心位置</li>
+<li>transform-origin（x,y）；</li>
+<li>其中x和y的值可以是百分比，em,px,方向</li>
+</ul>
+<hr>
+<ul>
+<li>正方形中单为中心旋转：</li>
+<li>transform-origin:50% 50%;transform:rotate(0deg);正方形中心</li>
+<li>transform-origin:0 0;transform:rotate(0deg)；正方形左上角</li>
+<li>transform-origin:100% 0;transform:rotate(0deg);正方形右上角</li>
+<li>transform-origin:0 100%;transform:rotate(0deg);正方形左下角</li>
+<li>transform-origin:100% 100%;transfor:rotate(0deg);正方形右下角</li>
+</ul>
+<hr>
+<hr>
+<h2 id="三、transform-3d变形（要配合transform-all-2s-）"><a href="#三、transform-3d变形（要配合transform-all-2s-）" class="headerlink" title="三、transform 3d变形（要配合transform:all 2s;）"></a>三、transform 3d变形（要配合transform:all 2s;）</h2><ul>
+<li>要想做出3d效果首先要在子级外境建立2层父级</li>
+<li>1.第一层父级中要写上：perspective:1000px;相当于离物体的距离</li>
+<li>2.第二层父级中要写上：transform-style:preserve-3d;嵌套元素如果在3d窨中呈现</li>
+</ul>
+<hr>
+<h4 id="1-transform-rotate-beg-旋转"><a href="#1-transform-rotate-beg-旋转" class="headerlink" title="1.transform:rotate(beg)旋转"></a>1.transform:rotate(beg)旋转</h4><ul>
+<li>transform:rotateX(beg);元素围绕其x轴以给定的度数进行旋转</li>
+<li>transform:rotateY(beg);元素围绕其y轴以给定的度数进行旋转</li>
+<li>transform:rotateZ(beg);元素围绕其z轴以给定的度数进行旋转</li>
+</ul>
+<hr>
+<h4 id="2-perspective-1000px-观看者"><a href="#2-perspective-1000px-观看者" class="headerlink" title="2.perspective:1000px;(观看者)"></a>2.perspective:1000px;(观看者)</h4><ul>
+<li>perspective:视距，视角 设置查看者的位置</li>
+<li>两种书写方式</li>
+<li>当作观看者：多个变形元素的父节点</li>
+<li>变形元素自身</li>
+<li>perspective视角</li>
+<li>ex:perspective:600px;</li>
+<li>ex:transform:perspective(600px)rotateY(45deg);</li>
+<li>perspective-origin:视角中心</li>
+<li>perspective-origin:x y;</li>
+<li>px百分比</li>
+</ul>
+<hr>
+<h4 id="3-transform-style-嵌套元素如何在3d空间中呈现-舞台"><a href="#3-transform-style-嵌套元素如何在3d空间中呈现-舞台" class="headerlink" title="3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)"></a>3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)</h4><ul>
+<li>1.transform-style:flat;(默认值无效果，默认为2d效果)</li>
+<li>2.transform-style:preserve-3d；(3d效果建立)</li>
+<li>3.transform-style:preserve-3d;设置完成后所有元素在3d中呈现，不可以使用overflow:hidden;不可以使用浮动</li>
+</ul>
+<hr>
+<h4 id="perspective和transform-style区别"><a href="#perspective和transform-style区别" class="headerlink" title="perspective和transform-style区别"></a>perspective和transform-style区别</h4><ul>
+<li>perspective:1000px；是一个查看的距离（可看成观看者）第一层父级</li>
+<li>transform-style:preserve-3d;可看成一个3d舞台 第二层父级</li>
+</ul>
+<hr>
+<h4 id="4-translateZ-（3d-z轴移动）"><a href="#4-translateZ-（3d-z轴移动）" class="headerlink" title="4.translateZ （3d z轴移动）"></a>4.translateZ （3d z轴移动）</h4><p><img src="../images/translatez.png" alt="translatez"></p>
+<hr>
+<h4 id="5-backface-visibility-元素旋转北面是否可见"><a href="#5-backface-visibility-元素旋转北面是否可见" class="headerlink" title="5.backface-visibility(元素旋转北面是否可见)"></a>5.backface-visibility(元素旋转北面是否可见)</h4><ul>
+<li>backface-visibility:hidden;(默认值，用户无法查看到背面信息)</li>
+<li>backface-visibility:visible;（设置后用户可以查看到背面信息）</li>
+</ul>
+<hr>
+<hr>
+<h4 id="6-正方体"><a href="#6-正方体" class="headerlink" title="6.正方体"></a>6.正方体</h4><p><img src="../images/正方体.png" alt="正方形"></p>
+<p><img src="../images/正方形1.png" alt="正方形"></p>
+<p><img src="../images/正方形2.png" alt="正方形"></p>
+<p><img src="../images/正方体3.png" alt="正方形"></p>
+<hr>
+<hr>
+<h2 id="四、animation-动画"><a href="#四、animation-动画" class="headerlink" title="四、animation 动画"></a>四、animation 动画</h2><h4 id="1-animation格式：animation-peng-5s-infinite-linear-1s"><a href="#1-animation格式：animation-peng-5s-infinite-linear-1s" class="headerlink" title="1.animation格式：animation:peng 5s infinite linear 1s;"></a>1.animation格式：animation:peng 5s infinite linear 1s;</h4><ul>
+<li>用户名 几秒完成 播放次数 播放方式 多少秒开始</li>
+<li>animation-name:动画属性名</li>
+<li>@keyframes 动画属性名</li>
+<li>form to</li>
+<li>百分比</li>
+</ul>
+<p><img src="../images/animation.png" alt="动画"></p>
+<p><img src="../images/百分比.png" alt="动画百分比"></p>
+<hr>
+<h4 id="2-animation-duration：10s-动画持续时间"><a href="#2-animation-duration：10s-动画持续时间" class="headerlink" title="2.animation-duration：10s;动画持续时间"></a>2.animation-duration：10s;动画持续时间</h4><hr>
+<h4 id="3-animation-timing-funcition；动画效果"><a href="#3-animation-timing-funcition；动画效果" class="headerlink" title="3.animation-timing-funcition；动画效果"></a>3.animation-timing-funcition；动画效果</h4><ul>
+<li>ease linear ease-in ease-out ease-in-out cubic-bezier</li>
+</ul>
+<hr>
+<h4 id="4-animation-iteration-count-infinite（无限播放）"><a href="#4-animation-iteration-count-infinite（无限播放）" class="headerlink" title="4.animation-iteration-count:infinite（无限播放）"></a>4.animation-iteration-count:infinite（无限播放）</h4><ul>
+<li>指定元素播放动画的循环次数</li>
+<li>animation-iteration-count:infinite;无限播放</li>
+<li>animation-iteration-count:10;播放10次</li>
+</ul>
+<hr>
+<h4 id="5-animation-delay：2s；-指定元素动画开始时间"><a href="#5-animation-delay：2s；-指定元素动画开始时间" class="headerlink" title="5.animation-delay：2s；(指定元素动画开始时间)"></a>5.animation-delay：2s；(指定元素动画开始时间)</h4><ul>
+<li>指定元素动画的开始时间</li>
+<li>单位s秒</li>
+</ul>
+<hr>
+<h4 id="6-anmation-direction-normal-动画播放方向"><a href="#6-anmation-direction-normal-动画播放方向" class="headerlink" title="6.anmation-direction:normal;(动画播放方向)"></a>6.anmation-direction:normal;(动画播放方向)</h4><ul>
+<li>指定元素动画播放的方向</li>
+<li>anmation-direction:normal;默认值,动画的每次循环都是向前播放</li>
+<li>anmation-direction:alternate;来回执行</li>
+</ul>
+<hr>
+<h4 id="7-animation-fill-mode-forwards-（执行完成不反回）"><a href="#7-animation-fill-mode-forwards-（执行完成不反回）" class="headerlink" title="7.animation-fill-mode:forwards;（执行完成不反回）"></a>7.animation-fill-mode:forwards;（执行完成不反回）</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/30/2d变形3d变形动画/" data-id="ciq26u59s00000oo5pp0ovv46" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-圆角阴影多背景图片引入渐变" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/29/圆角阴影多背景图片引入渐变/" class="article-date">
@@ -133,7 +310,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/29/圆角阴影多背景图片引入渐变/" data-id="ciq0nvhp30005hgo587a9u8s7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/29/圆角阴影多背景图片引入渐变/" data-id="ciq26u5a400030oo59nd7hvc4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -243,7 +420,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="ciq0nvhpb0008hgo5i25hw2yl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="ciq26u5ai00080oo5vyq9znhd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -447,7 +624,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="ciq0nvhow0002hgo5q59z2a9r" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="ciq26u5a800040oo559p41rez" class="article-share-link">Share</a>
       
       
     </footer>
@@ -494,7 +671,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="ciq0nvhpe0009hgo5qhm6vxz2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="ciq26u5an000a0oo5ww5j3fzk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -542,7 +719,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="ciq0nvhp00003hgo5ok6hq6s3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="ciq26u5ae00060oo517sqcuuo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -618,7 +795,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="ciq0nvhp90007hgo5sdbjndiz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="ciq26u5ah00070oo53jo1yzhi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -709,7 +886,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="ciq0nvhp20004hgo52dwlaxuo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="ciq26u5ab00050oo528fdwrhg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -746,7 +923,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="ciq0nvhp60006hgo54epe1bnh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="ciq26u5al00090oo53g8cju29" class="article-share-link">Share</a>
       
       
     </footer>
@@ -784,7 +961,7 @@
 <h2 id="连接图片"><a href="#连接图片" class="headerlink" title="连接图片"></a>连接图片</h2><p><a href="https://www.baidu.com/img/bd_logo1.png" target="_blank" rel="external">百度</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="https://www.baidu.com/img/bd_logo1.png" alt="baidu"></p>
 <h4 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h4><hr>
-<p>Peng <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#55;&#x36;&#x34;&#x31;&#48;&#48;&#x31;&#x37;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#55;&#x36;&#x34;&#x31;&#48;&#48;&#x31;&#x37;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>Peng <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x37;&#54;&#x34;&#x31;&#48;&#x30;&#x31;&#55;&#50;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#x37;&#54;&#x34;&#x31;&#48;&#x30;&#x31;&#55;&#50;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a></p>
 <hr>
 <h4 id="点了有惊喜"><a href="#点了有惊喜" class="headerlink" title="点了有惊喜"></a>点了有惊喜</h4><hr>
 <p><a href="https://www.baidu.com/s?wd=%E6%88%91%E5%A5%BD%E5%B8%85&amp;rsv_spt=1&amp;rsv_iqid=0x8054484f0003d612&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;rqlang=&amp;tn=baiduhome_pg&amp;rsv_enter=0" target="_blank" rel="external">惊喜</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我好帅</span><br></pre></td></tr></table></figure></p>
@@ -800,52 +977,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="ciq0nvhon0000hgo5jjs7u7g4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/22/hello-world/" class="article-date">
-  <time datetime="2016-06-22T02:59:02.000Z" itemprop="datePublished">2016-06-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="ciq0nvhos0001hgo5i1ntc9e6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="ciq26u5a100020oo54lzpb1t4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -856,6 +988,10 @@
 
   
 
+
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -885,6 +1021,10 @@
       <ul>
         
           <li>
+            <a href="/2016/06/30/2d变形3d变形动画/">过渡2d变形3d变形动画</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/29/圆角阴影多背景图片引入渐变/">圆角阴影多背景图片引入渐变</a>
           </li>
         
@@ -898,10 +1038,6 @@
         
           <li>
             <a href="/2016/06/25/郁闷的一天a标签问题/">郁闷的一天a标签问题</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/24/meta二维码/">meta二维码</a>
           </li>
         
       </ul>

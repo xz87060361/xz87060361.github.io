@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>过渡2d变形3d变形动画 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="transition transform animation一、transition过渡二、transform 2d变形三、transform 3d变形四、animation 动画效果
+
+一、transition过渡
+transition-propety:;执行过渡变换的属性（:all||width||height||right||left）
+transition-duration:;过渡变换延续">
+<meta property="og:type" content="article">
+<meta property="og:title" content="过渡2d变形3d变形动画">
+<meta property="og:url" content="http://yoursite.com/2016/06/30/2d变形3d变形动画/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="transition transform animation一、transition过渡二、transform 2d变形三、transform 3d变形四、animation 动画效果
+
+一、transition过渡
+transition-propety:;执行过渡变换的属性（:all||width||height||right||left）
+transition-duration:;过渡变换延续">
+<meta property="og:image" content="http://yoursite.com/../images/transition.png">
+<meta property="og:image" content="http://yoursite.com/../images/rotate.png">
+<meta property="og:image" content="http://yoursite.com/../images/translate.png">
+<meta property="og:image" content="http://yoursite.com/../images/scale.png">
+<meta property="og:image" content="http://yoursite.com/../images/skew.png">
+<meta property="og:image" content="http://yoursite.com/../images/translatez.png">
+<meta property="og:image" content="http://yoursite.com/../images/正方体.png">
+<meta property="og:image" content="http://yoursite.com/../images/正方形1.png">
+<meta property="og:image" content="http://yoursite.com/../images/正方形2.png">
+<meta property="og:image" content="http://yoursite.com/../images/正方体3.png">
+<meta property="og:image" content="http://yoursite.com/../images/animation.png">
+<meta property="og:image" content="http://yoursite.com/../images/百分比.png">
+<meta property="og:updated_time" content="2016-06-30T13:25:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="过渡2d变形3d变形动画">
+<meta name="twitter:description" content="transition transform animation一、transition过渡二、transform 2d变形三、transform 3d变形四、animation 动画效果
+
+一、transition过渡
+transition-propety:;执行过渡变换的属性（:all||width||height||right||left）
+transition-duration:;过渡变换延续">
+<meta name="twitter:image" content="http://yoursite.com/../images/transition.png">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="过渡-2d变形3d变形动画" class="article article-type-过渡" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/30/2d变形3d变形动画/" class="article-date">
+  <time datetime="2016-06-30T10:48:16.000Z" itemprop="datePublished">2016-06-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      过渡2d变形3d变形动画
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="transition-transform-animation"><a href="#transition-transform-animation" class="headerlink" title="transition transform animation"></a>transition transform animation</h1><h2 id="一、transition过渡"><a href="#一、transition过渡" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><h2 id="二、transform-2d变形"><a href="#二、transform-2d变形" class="headerlink" title="二、transform 2d变形"></a>二、transform 2d变形</h2><h2 id="三、transform-3d变形"><a href="#三、transform-3d变形" class="headerlink" title="三、transform 3d变形"></a>三、transform 3d变形</h2><h2 id="四、animation-动画效果"><a href="#四、animation-动画效果" class="headerlink" title="四、animation 动画效果"></a>四、animation 动画效果</h2><hr>
+<hr>
+<h2 id="一、transition过渡-1"><a href="#一、transition过渡-1" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><ul>
+<li>transition-propety:;执行过渡变换的属性（:all||width||height||right||left）</li>
+<li>transition-duration:;过渡变换延续的时间</li>
+<li>transition-timing-function:;过度变换的速率(快慢效果)效果方式(ease ease-in ease-out ease-in-out linear)</li>
+<li>transition-delay:;变换延迟时间 (transition-delay:2s;)</li>
+<li>transition:all 2s;（是简单书写方法）</li>
+</ul>
+<p><img src="../images/transition.png" alt="transition"></p>
+<hr>
+<hr>
+<h2 id="二、transform-2d变形（要配合transform-all-2s-）"><a href="#二、transform-2d变形（要配合transform-all-2s-）" class="headerlink" title="二、transform 2d变形（要配合transform:all 2s;）"></a>二、transform 2d变形（要配合transform:all 2s;）</h2><h4 id="1-transform-rotate-45deg-旋转rotate-deg"><a href="#1-transform-rotate-45deg-旋转rotate-deg" class="headerlink" title="1.transform:rotate(45deg);旋转rotate(deg)"></a>1.transform:rotate(45deg);旋转rotate(deg)</h4><ul>
+<li>通过指定的角度参数对本元素进行2d旋转transform:rotate(2d旋转)</li>
+<li>deg-可为负数</li>
+</ul>
+<p><img src="../images/rotate.png" alt="rotate"></p>
+<hr>
+<h4 id="2-transform-translate（100px）；移动translate-px"><a href="#2-transform-translate（100px）；移动translate-px" class="headerlink" title="2.transform:translate（100px）；移动translate(px)"></a>2.transform:translate（100px）；移动translate(px)</h4><ul>
+<li>transform:translate(x,y)水平方向和垂直方向同时移动</li>
+<li>transform:translateX(x)仅水平方向移动</li>
+<li>transform:translateY(y)仅垂直方向移动</li>
+<li>可以为负数 px</li>
+</ul>
+<p><img src="../images/translate.png" alt="translate"></p>
+<hr>
+<h4 id="3-transform-scale-2-缩放scale-2"><a href="#3-transform-scale-2-缩放scale-2" class="headerlink" title="3.transform:scale(2);缩放scale(2)"></a>3.transform:scale(2);缩放scale(2)</h4><ul>
+<li>transform:scale(x,y)使元素水平方向和垂直方向同时缩放</li>
+<li>transform:scaleX(x)元素仅水平方向缩放</li>
+<li>transform:scaleY(y)元素仅垂直方向缩放</li>
+<li>整数 小数 负数</li>
+</ul>
+<p><img src="../images/scale.png" alt="scale"></p>
+<hr>
+<h4 id="4-transform-skew-45deg-扭曲skew-deg"><a href="#4-transform-skew-45deg-扭曲skew-deg" class="headerlink" title="4.transform:skew(45deg);扭曲skew(deg)"></a>4.transform:skew(45deg);扭曲skew(deg)</h4><ul>
+<li>transform:skew(x,y)使元素在水平和垂直方向同时扭曲变形</li>
+<li>transform:skewX(x)仅使元素在水平方向扭曲变形</li>
+<li>transform:skewY(y)仅使元素在垂直方向扭曲变形</li>
+<li>角度deg</li>
+</ul>
+<p><img src="../images/skew.png" alt="skew"></p>
+<hr>
+<h4 id="5-transform-origin-0-0-；单位可百分比，可整数"><a href="#5-transform-origin-0-0-；单位可百分比，可整数" class="headerlink" title="5.transform-origin(0 0)；单位可百分比，可整数"></a>5.transform-origin(0 0)；单位可百分比，可整数</h4><ul>
+<li>元素的基点位置</li>
+<li>认基点就是元素中心位置</li>
+<li>transform-origin（x,y）；</li>
+<li>其中x和y的值可以是百分比，em,px,方向</li>
+</ul>
+<hr>
+<ul>
+<li>正方形中单为中心旋转：</li>
+<li>transform-origin:50% 50%;transform:rotate(0deg);正方形中心</li>
+<li>transform-origin:0 0;transform:rotate(0deg)；正方形左上角</li>
+<li>transform-origin:100% 0;transform:rotate(0deg);正方形右上角</li>
+<li>transform-origin:0 100%;transform:rotate(0deg);正方形左下角</li>
+<li>transform-origin:100% 100%;transfor:rotate(0deg);正方形右下角</li>
+</ul>
+<hr>
+<hr>
+<h2 id="三、transform-3d变形（要配合transform-all-2s-）"><a href="#三、transform-3d变形（要配合transform-all-2s-）" class="headerlink" title="三、transform 3d变形（要配合transform:all 2s;）"></a>三、transform 3d变形（要配合transform:all 2s;）</h2><ul>
+<li>要想做出3d效果首先要在子级外境建立2层父级</li>
+<li>1.第一层父级中要写上：perspective:1000px;相当于离物体的距离</li>
+<li>2.第二层父级中要写上：transform-style:preserve-3d;嵌套元素如果在3d窨中呈现</li>
+</ul>
+<hr>
+<h4 id="1-transform-rotate-beg-旋转"><a href="#1-transform-rotate-beg-旋转" class="headerlink" title="1.transform:rotate(beg)旋转"></a>1.transform:rotate(beg)旋转</h4><ul>
+<li>transform:rotateX(beg);元素围绕其x轴以给定的度数进行旋转</li>
+<li>transform:rotateY(beg);元素围绕其y轴以给定的度数进行旋转</li>
+<li>transform:rotateZ(beg);元素围绕其z轴以给定的度数进行旋转</li>
+</ul>
+<hr>
+<h4 id="2-perspective-1000px-观看者"><a href="#2-perspective-1000px-观看者" class="headerlink" title="2.perspective:1000px;(观看者)"></a>2.perspective:1000px;(观看者)</h4><ul>
+<li>perspective:视距，视角 设置查看者的位置</li>
+<li>两种书写方式</li>
+<li>当作观看者：多个变形元素的父节点</li>
+<li>变形元素自身</li>
+<li>perspective视角</li>
+<li>ex:perspective:600px;</li>
+<li>ex:transform:perspective(600px)rotateY(45deg);</li>
+<li>perspective-origin:视角中心</li>
+<li>perspective-origin:x y;</li>
+<li>px百分比</li>
+</ul>
+<hr>
+<h4 id="3-transform-style-嵌套元素如何在3d空间中呈现-舞台"><a href="#3-transform-style-嵌套元素如何在3d空间中呈现-舞台" class="headerlink" title="3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)"></a>3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)</h4><ul>
+<li>1.transform-style:flat;(默认值无效果，默认为2d效果)</li>
+<li>2.transform-style:preserve-3d；(3d效果建立)</li>
+<li>3.transform-style:preserve-3d;设置完成后所有元素在3d中呈现，不可以使用overflow:hidden;不可以使用浮动</li>
+</ul>
+<hr>
+<h4 id="perspective和transform-style区别"><a href="#perspective和transform-style区别" class="headerlink" title="perspective和transform-style区别"></a>perspective和transform-style区别</h4><ul>
+<li>perspective:1000px；是一个查看的距离（可看成观看者）第一层父级</li>
+<li>transform-style:preserve-3d;可看成一个3d舞台 第二层父级</li>
+</ul>
+<hr>
+<h4 id="4-translateZ-（3d-z轴移动）"><a href="#4-translateZ-（3d-z轴移动）" class="headerlink" title="4.translateZ （3d z轴移动）"></a>4.translateZ （3d z轴移动）</h4><p><img src="../images/translatez.png" alt="translatez"></p>
+<hr>
+<h4 id="5-backface-visibility-元素旋转北面是否可见"><a href="#5-backface-visibility-元素旋转北面是否可见" class="headerlink" title="5.backface-visibility(元素旋转北面是否可见)"></a>5.backface-visibility(元素旋转北面是否可见)</h4><ul>
+<li>backface-visibility:hidden;(默认值，用户无法查看到背面信息)</li>
+<li>backface-visibility:visible;（设置后用户可以查看到背面信息）</li>
+</ul>
+<hr>
+<hr>
+<h4 id="6-正方体"><a href="#6-正方体" class="headerlink" title="6.正方体"></a>6.正方体</h4><p><img src="../images/正方体.png" alt="正方形"></p>
+<p><img src="../images/正方形1.png" alt="正方形"></p>
+<p><img src="../images/正方形2.png" alt="正方形"></p>
+<p><img src="../images/正方体3.png" alt="正方形"></p>
+<hr>
+<hr>
+<h2 id="四、animation-动画"><a href="#四、animation-动画" class="headerlink" title="四、animation 动画"></a>四、animation 动画</h2><h4 id="1-animation格式：animation-peng-5s-infinite-linear-1s"><a href="#1-animation格式：animation-peng-5s-infinite-linear-1s" class="headerlink" title="1.animation格式：animation:peng 5s infinite linear 1s;"></a>1.animation格式：animation:peng 5s infinite linear 1s;</h4><ul>
+<li>用户名 几秒完成 播放次数 播放方式 多少秒开始</li>
+<li>animation-name:动画属性名</li>
+<li>@keyframes 动画属性名</li>
+<li>form to</li>
+<li>百分比</li>
+</ul>
+<p><img src="../images/animation.png" alt="动画"></p>
+<p><img src="../images/百分比.png" alt="动画百分比"></p>
+<hr>
+<h4 id="2-animation-duration：10s-动画持续时间"><a href="#2-animation-duration：10s-动画持续时间" class="headerlink" title="2.animation-duration：10s;动画持续时间"></a>2.animation-duration：10s;动画持续时间</h4><hr>
+<h4 id="3-animation-timing-funcition；动画效果"><a href="#3-animation-timing-funcition；动画效果" class="headerlink" title="3.animation-timing-funcition；动画效果"></a>3.animation-timing-funcition；动画效果</h4><ul>
+<li>ease linear ease-in ease-out ease-in-out cubic-bezier</li>
+</ul>
+<hr>
+<h4 id="4-animation-iteration-count-infinite（无限播放）"><a href="#4-animation-iteration-count-infinite（无限播放）" class="headerlink" title="4.animation-iteration-count:infinite（无限播放）"></a>4.animation-iteration-count:infinite（无限播放）</h4><ul>
+<li>指定元素播放动画的循环次数</li>
+<li>animation-iteration-count:infinite;无限播放</li>
+<li>animation-iteration-count:10;播放10次</li>
+</ul>
+<hr>
+<h4 id="5-animation-delay：2s；-指定元素动画开始时间"><a href="#5-animation-delay：2s；-指定元素动画开始时间" class="headerlink" title="5.animation-delay：2s；(指定元素动画开始时间)"></a>5.animation-delay：2s；(指定元素动画开始时间)</h4><ul>
+<li>指定元素动画的开始时间</li>
+<li>单位s秒</li>
+</ul>
+<hr>
+<h4 id="6-anmation-direction-normal-动画播放方向"><a href="#6-anmation-direction-normal-动画播放方向" class="headerlink" title="6.anmation-direction:normal;(动画播放方向)"></a>6.anmation-direction:normal;(动画播放方向)</h4><ul>
+<li>指定元素动画播放的方向</li>
+<li>anmation-direction:normal;默认值,动画的每次循环都是向前播放</li>
+<li>anmation-direction:alternate;来回执行</li>
+</ul>
+<hr>
+<h4 id="7-animation-fill-mode-forwards-（执行完成不反回）"><a href="#7-animation-fill-mode-forwards-（执行完成不反回）" class="headerlink" title="7.animation-fill-mode:forwards;（执行完成不反回）"></a>7.animation-fill-mode:forwards;（执行完成不反回）</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/30/2d变形3d变形动画/" data-id="ciq26u59s00000oo5pp0ovv46" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/29/圆角阴影多背景图片引入渐变/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">圆角阴影多背景图片引入渐变</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/30/2d变形3d变形动画/">过渡2d变形3d变形动画</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/29/圆角阴影多背景图片引入渐变/">圆角阴影多背景图片引入渐变</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/28/选择器伪元素与css3盒模型/">选择器伪元素与css3盒模型</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/27/html5语义话标签/">html5语义化标签</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/25/郁闷的一天a标签问题/">郁闷的一天a标签问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
