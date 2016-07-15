@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数组和字符串的应用 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、数组二、数组的改变方式三、二维数组四、String五、字符串方法
+一、数组1234567891011121314151617181920212223242526272829&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;数组&amp;lt;/titl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组和字符串的应用">
+<meta property="og:url" content="http://yoursite.com/2016/07/15/数组和字符串的应用/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="一、数组二、数组的改变方式三、二维数组四、String五、字符串方法
+一、数组1234567891011121314151617181920212223242526272829&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;数组&amp;lt;/titl">
+<meta property="og:updated_time" content="2016-07-15T05:57:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数组和字符串的应用">
+<meta name="twitter:description" content="一、数组二、数组的改变方式三、二维数组四、String五、字符串方法
+一、数组1234567891011121314151617181920212223242526272829&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;数组&amp;lt;/titl">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-数组和字符串的应用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/15/数组和字符串的应用/" class="article-date">
+  <time datetime="2016-07-15T03:39:47.000Z" itemprop="datePublished">2016-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数组和字符串的应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、数组"><a href="#一、数组" class="headerlink" title="一、数组"></a>一、数组</h2><h2 id="二、数组的改变方式"><a href="#二、数组的改变方式" class="headerlink" title="二、数组的改变方式"></a>二、数组的改变方式</h2><h2 id="三、二维数组"><a href="#三、二维数组" class="headerlink" title="三、二维数组"></a>三、二维数组</h2><h2 id="四、String"><a href="#四、String" class="headerlink" title="四、String"></a>四、String</h2><h2 id="五、字符串方法"><a href="#五、字符串方法" class="headerlink" title="五、字符串方法"></a>五、字符串方法</h2><hr>
+<h2 id="一、数组-1"><a href="#一、数组-1" class="headerlink" title="一、数组"></a>一、数组</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;数组&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		//定义娄组写法一  数值数组</span><br><span class="line">		var arr=new Array(1,2,3,4,5);</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//数组的获取，是通过下标进行获取</span><br><span class="line">		console.log(arr[0]);</span><br><span class="line">		console.log(arr[arr.length-1])</span><br><span class="line">		arr[5]=6;</span><br><span class="line"></span><br><span class="line">		//定义数组写法二</span><br><span class="line">		var arr2=[&apos;$&apos;,2,3,4,5];</span><br><span class="line">		console.log(arr2);</span><br><span class="line">		//字符串数组</span><br><span class="line">		var arr3=[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;];</span><br><span class="line">		console.log(arr3);</span><br><span class="line">		//布尔类型数组</span><br><span class="line">		var arr4=[true,false];</span><br><span class="line">		console.log(arr4);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二、数组的改变方式-1"><a href="#二、数组的改变方式-1" class="headerlink" title="二、数组的改变方式"></a>二、数组的改变方式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;数组的改变方式&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var arr=[1,2,3,4,5];</span><br><span class="line">		//向数组末尾添加一个元素  返回长度</span><br><span class="line">	</span><br><span class="line">		console.log(arr.push(5));</span><br><span class="line">		console.log(arr);</span><br><span class="line"></span><br><span class="line">		//向数组前部增加一个元素 返回长度</span><br><span class="line">		console.log(arr.unshift(0));</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//删除末尾元素 返回被删除的元素 </span><br><span class="line">		arr.pop();</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//删除第一个元素  返回删除的元素 </span><br><span class="line">		arr.shift();</span><br><span class="line">		console.log(arr);</span><br><span class="line">		</span><br><span class="line">		//arr.splice(起始位置,替换或删除个数，替换或添加的个数)</span><br><span class="line">		//增加</span><br><span class="line">		arr.splice(2,0,&quot;a&quot;,&quot;b&quot;);</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//删除</span><br><span class="line">		arr.splice(2,4);</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//替换</span><br><span class="line">		arr.splice(0,2,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;);</span><br><span class="line">		console.log(arr);</span><br><span class="line">		//数组拼合</span><br><span class="line">		var arr1=[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;];</span><br><span class="line">		var arr2=[4,5,6]</span><br><span class="line">		console.log(arr.concat(arr1,arr2));</span><br><span class="line">		//方法可以使用括号中的参数作为数组中的元素分隔符，并把数组拼接在一起</span><br><span class="line">		var str=arr.join(&quot;*&quot;);</span><br><span class="line">		console.log(str);</span><br><span class="line">		//排序 这是一个坑是ASCII码排序</span><br><span class="line">		var ar=[5,2,3,1,8];</span><br><span class="line">		console.log(ar.sort());</span><br><span class="line">		//下面这个是个坑</span><br><span class="line">		var ar1=[1,43,121,52,36];</span><br><span class="line">		console.log(ar1.sort());</span><br><span class="line">		//从小到大排序</span><br><span class="line">		console.log(ar1.sort(function(a,b)&#123;</span><br><span class="line">			return a-b;</span><br><span class="line">		&#125;));</span><br><span class="line">		//从大到小排序</span><br><span class="line">				console.log(ar1.sort(function(a,b)&#123;</span><br><span class="line">			return b-a;</span><br><span class="line">		&#125;));</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="三、二维数组-1"><a href="#三、二维数组-1" class="headerlink" title="三、二维数组"></a>三、二维数组</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;二维数组&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var arr=[[1,2,3],[4,5,6],[6,7,8]];</span><br><span class="line">		//格式 arr[i][j];</span><br><span class="line">		var a=arr[1][1];</span><br><span class="line">		console.log(a);</span><br><span class="line">		console.log(arr);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="四、String-1"><a href="#四、String-1" class="headerlink" title="四、String"></a>四、String</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;String&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var num=8;</span><br><span class="line">//		num=null;</span><br><span class="line">//		console.log(typeof String(num));</span><br><span class="line">		//区别是toString无法转null和undefined</span><br><span class="line">		console.log(num.toString());</span><br><span class="line">		</span><br><span class="line">		//声名创创字符串1</span><br><span class="line">		var str=new String(&quot;hello world&quot;);//空格也算字符</span><br><span class="line">		console.log(str);</span><br><span class="line">		console.log(str[0]);</span><br><span class="line">		//声名创创字符串2</span><br><span class="line">		var str1=&quot;hello world&quot;;</span><br><span class="line">		console.log(str1[0]);</span><br><span class="line">		console.log(str1);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="五、字符串方法-1"><a href="#五、字符串方法-1" class="headerlink" title="五、字符串方法"></a>五、字符串方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;字符串方法&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var str=&quot;hello world&quot;;</span><br><span class="line">		var a=str.charAt(1);//大于字符串长度获取不到</span><br><span class="line">		console.log(a);</span><br><span class="line">		</span><br><span class="line">		//查找某个元素位置 当找到第一个的时候不会去找第二个位置</span><br><span class="line">		var b=str.search(&quot;l&quot;);</span><br><span class="line">		console.log(b);</span><br><span class="line">		//截取字符串，substring(开始，结束)</span><br><span class="line">		var c=str.substring(3,7);</span><br><span class="line">		console.log(c);</span><br><span class="line">		console.log(str);//截取不影响原本数据</span><br><span class="line">		//截取区别可以从后面负数显示</span><br><span class="line">//		var d=str.slice(-5,-2);</span><br><span class="line">//		console.log(d);</span><br><span class="line">//		console.log(str);</span><br><span class="line">//		var e=str.slice(3,-5);</span><br><span class="line">//		console.log(e);</span><br><span class="line">//		console.log(str);</span><br><span class="line">		//从3开始取7个值</span><br><span class="line">		var f=str.substr(3,7);</span><br><span class="line">		console.log(f);</span><br><span class="line">		console.log(str);</span><br><span class="line">		//找到相同进行替换</span><br><span class="line">		var tihuan=str.replace(&quot;l&quot;,&quot;*&quot;);</span><br><span class="line">		console.log(tihuan);</span><br><span class="line">		console.log(str);</span><br><span class="line">		//分隔成字符串数组</span><br><span class="line">		var h=str.split(&quot; &quot;);</span><br><span class="line">		console.log(h);</span><br><span class="line">		//字符串拼接</span><br><span class="line">		var i=str.concat(&quot;1233&quot;,&quot;love&quot;);</span><br><span class="line">		console.log(i);</span><br><span class="line">		//查找字符串位置，只显示第一个</span><br><span class="line">		var j=str.indexOf(&quot;l&quot;);</span><br><span class="line">		console.log(j);</span><br><span class="line">		console.log(str);</span><br><span class="line">		//找出字符串最后一个位置</span><br><span class="line">		var k=str.lastIndexOf(&quot;l&quot;);</span><br><span class="line">		console.log(k);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/15/数组和字符串的应用/" data-id="ciqn7e7ps0007nqdj2ro2nfl8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/13/js及动画网址/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js及动画网址</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/15/数组和字符串的应用/">数组和字符串的应用</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/13/js及动画网址/">js及动画网址</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/05/less入门/">less入门</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/05/栅栏布局与弹性部局/">栅栏布局与弹性部局</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/30/2d变形3d变形动画/">过渡2d变形3d变形动画</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
