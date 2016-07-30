@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>获取未知元素宽高clientscrolloffset | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、获取未知元素宽高二、client（可视width height）三、scroll (鼠标滚动条top left)四、offset (元素到文档最上面的距离（body）top left)
+
+一、获取未知元素宽高12345678910111213141516var wrapw,wraph,innerw,innerh,innerl,innert;if(wrap.currentStyle)&amp;#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="获取未知元素宽高clientscrolloffset">
+<meta property="og:url" content="http://yoursite.com/2016/07/30/scroll/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="一、获取未知元素宽高二、client（可视width height）三、scroll (鼠标滚动条top left)四、offset (元素到文档最上面的距离（body）top left)
+
+一、获取未知元素宽高12345678910111213141516var wrapw,wraph,innerw,innerh,innerl,innert;if(wrap.currentStyle)&amp;#123;">
+<meta property="og:updated_time" content="2016-07-30T03:07:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="获取未知元素宽高clientscrolloffset">
+<meta name="twitter:description" content="一、获取未知元素宽高二、client（可视width height）三、scroll (鼠标滚动条top left)四、offset (元素到文档最上面的距离（body）top left)
+
+一、获取未知元素宽高12345678910111213141516var wrapw,wraph,innerw,innerh,innerl,innert;if(wrap.currentStyle)&amp;#123;">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="client-scroll" class="article article-type-client" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/30/scroll/" class="article-date">
+  <time datetime="2016-07-30T02:59:49.000Z" itemprop="datePublished">2016-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      获取未知元素宽高clientscrolloffset
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、获取未知元素宽高"><a href="#一、获取未知元素宽高" class="headerlink" title="一、获取未知元素宽高"></a>一、获取未知元素宽高</h2><h2 id="二、client（可视width-height）"><a href="#二、client（可视width-height）" class="headerlink" title="二、client（可视width height）"></a>二、client（可视width height）</h2><h2 id="三、scroll-鼠标滚动条top-left"><a href="#三、scroll-鼠标滚动条top-left" class="headerlink" title="三、scroll (鼠标滚动条top left)"></a>三、scroll (鼠标滚动条top left)</h2><h2 id="四、offset-元素到文档最上面的距离（body）top-left"><a href="#四、offset-元素到文档最上面的距离（body）top-left" class="headerlink" title="四、offset (元素到文档最上面的距离（body）top left)"></a>四、offset (元素到文档最上面的距离（body）top left)</h2><hr>
+<hr>
+<h2 id="一、获取未知元素宽高-1"><a href="#一、获取未知元素宽高-1" class="headerlink" title="一、获取未知元素宽高"></a>一、获取未知元素宽高</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var wrapw,wraph,innerw,innerh,innerl,innert;</span><br><span class="line">if(wrap.currentStyle)&#123;</span><br><span class="line">	wrapw = parseInt(wrap.currentStyle.width);</span><br><span class="line">	wraph = parseInt(wrap.currentStyle.height);</span><br><span class="line">	innerw = parseInt(inner.currentStyle.width);</span><br><span class="line">	innerh = parseInt(inner.currentStyle.height);</span><br><span class="line">	innerl = parseInt(inner.currentStyle.left);</span><br><span class="line">	innert = parseInt(inner.currentStyle.top);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">	wrapw = parseInt(getComputedStyle(wrap,[]).width);</span><br><span class="line">	wraph = parseInt(getComputedStyle(wrap,[]).height);</span><br><span class="line">	innerw = parseInt(getComputedStyle(inner,[]).width);</span><br><span class="line">	innerh = parseInt(getComputedStyle(inner,[]).height);</span><br><span class="line">	innerl = parseInt(getComputedStyle(inner,[]).left);</span><br><span class="line">	innert = parseInt(getComputedStyle(inner,[]).top);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二、client（可视width-height）-1"><a href="#二、client（可视width-height）-1" class="headerlink" title="二、client（可视width height）"></a>二、client（可视width height）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var clientHeight = document.documentElement.clientHeight;</span><br><span class="line">var clientWidth = document.documentElement.clientWidth;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="三、scroll-鼠标滚动条top-left-1"><a href="#三、scroll-鼠标滚动条top-left-1" class="headerlink" title="三、scroll (鼠标滚动条top left)"></a>三、scroll (鼠标滚动条top left)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var scrollTop=document.body.scrollTop?document.body.scrollTop:document.documentElement.scrollTop;</span><br><span class="line">var scrollLeft=document.body.scrollLeft?document.body.scrollLeft:document.documentElement.scrollLeft;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="四、offset-元素到文档最上面的距离（body）top-left-1"><a href="#四、offset-元素到文档最上面的距离（body）top-left-1" class="headerlink" title="四、offset (元素到文档最上面的距离（body）top left)"></a>四、offset (元素到文档最上面的距离（body）top left)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var offsetTop = offset(imgs[i]).top;</span><br><span class="line">var offsetLeft = offset(imgs[i]).left;</span><br><span class="line"></span><br><span class="line">//求到body的位置top left</span><br><span class="line">function offset(obj)&#123;</span><br><span class="line">			var offset = &#123;&#125;;</span><br><span class="line">			offset.left = obj.offsetLeft;</span><br><span class="line">			offset.top = obj.offsetTop;</span><br><span class="line">			while(obj.offsetParent)&#123;</span><br><span class="line">				obj = obj.offsetParent;</span><br><span class="line">				offset.left+=(obj.offsetLeft+obj.clientLeft);</span><br><span class="line">				offset.top+=(obj.offsetTop+obj.clientTop);</span><br><span class="line">			&#125;</span><br><span class="line">			return offset;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/30/scroll/" data-id="cir8lqzwp0009jydjk9pkigh7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/30/鼠标，键盘事件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          鼠标，键盘事件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/28/锅打灰太狼/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">锅打灰太狼</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/30/鼠标，键盘事件/">鼠标，键盘事件</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/30/scroll/">获取未知元素宽高clientscrolloffset</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/28/锅打灰太狼/">锅打灰太狼</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/26/瀑布流图片/">预加载与瀑布流</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/25/测试页面宽高/">测试页面宽高</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
