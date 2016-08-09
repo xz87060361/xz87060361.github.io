@@ -68,116 +68,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-选择器伪元素与css3盒模型" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/28/选择器伪元素与css3盒模型/" class="article-date">
-  <time datetime="2016-06-28T07:50:56.000Z" itemprop="datePublished">2016-06-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/28/选择器伪元素与css3盒模型/">选择器伪元素与css3盒模型</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="title-选择器伪元素与css3盒模型"><a href="#title-选择器伪元素与css3盒模型" class="headerlink" title="title: 选择器伪元素与css3盒模型"></a>title: 选择器伪元素与css3盒模型</h1><h2 id="一、选择器"><a href="#一、选择器" class="headerlink" title="一、选择器"></a>一、选择器</h2><h2 id="二、伪标签设置属性"><a href="#二、伪标签设置属性" class="headerlink" title="二、伪标签设置属性"></a>二、伪标签设置属性</h2><h2 id="三、伪元素"><a href="#三、伪元素" class="headerlink" title="三、伪元素"></a>三、伪元素</h2><h2 id="四、css3盒模型"><a href="#四、css3盒模型" class="headerlink" title="四、css3盒模型"></a>四、css3盒模型</h2><hr>
-<hr>
-<h2 id="一、选择器-1"><a href="#一、选择器-1" class="headerlink" title="一、选择器"></a>一、选择器</h2><h4 id="1-1-子元素选择器"><a href="#1-1-子元素选择器" class="headerlink" title="1.1 子元素选择器"></a>1.1 子元素选择器</h4><p><img src="../images/子元素.png" alt="子元素"></p>
-<hr>
-<h4 id="1-2-兄弟选择器"><a href="#1-2-兄弟选择器" class="headerlink" title="1.2 兄弟选择器"></a>1.2 兄弟选择器</h4><ul>
-<li>e+f相邻兄弟选择器</li>
-<li>必须是同级别的</li>
-<li>必须是相邻的</li>
-<li>必需是在下方</li>
-<li>有且只有一个符合</li>
-</ul>
-<p><img src="../images/兄弟选择器+.png" alt="兄弟选择器+"></p>
-<p><img src="../images/兄弟选择器+1.png" alt="兄弟选择器+"></p>
-<hr>
-<h4 id="1-2-通用兄弟选择器"><a href="#1-2-通用兄弟选择器" class="headerlink" title="1.2 通用兄弟选择器"></a>1.2 通用兄弟选择器</h4><ul>
-<li>e~f通用兄弟选择器</li>
-<li>1.必须是同级别的 </li>
-<li>2.必需是在下方 </li>
-<li>3.可以有多个符合</li>
-</ul>
-<p><img src="../images/通用兄弟选择器~.png" alt="通用兄弟选择器~"></p>
-<p><img src="../images/通用兄弟选择器2.png" alt="通用兄弟选择器~"></p>
-<hr>
-<h4 id="1-3-属性选择器"><a href="#1-3-属性选择器" class="headerlink" title="1.3 属性选择器"></a>1.3 属性选择器</h4><ul>
-<li>基本选择器[class=”haha”]</li>
-<li>〜 代表空格的意思[class~=”div1”]</li>
-<li>代表只要有就符合要求[class*=”div”］</li>
-</ul>
-<p><img src="../images/属性选择器.png" alt="属性选择器"></p>
-<hr>
-<h4 id="1-4-否定选择器"><a href="#1-4-否定选择器" class="headerlink" title="1.4 否定选择器"></a>1.4 否定选择器</h4><p><img src="../images/否定选择器.png" alt="否定选择器"></p>
-<p><img src="../images/否定选择器1.png" alt="否定选择器"></p>
-<hr>
-<h4 id="1-5-nth选择器（ps-用于在ul的li中）"><a href="#1-5-nth选择器（ps-用于在ul的li中）" class="headerlink" title="1.5 nth选择器（ps:用于在ul的li中）"></a>1.5 nth选择器（ps:用于在ul的li中）</h4><ul>
-<li>1.li最前最后设置</li>
-</ul>
-<p><img src="../images/nth.png" alt="nth"><br><img src="../images/nth1.png" alt="nth"></p>
-<ul>
-<li>2.多种方式设置</li>
-</ul>
-<p><img src="../images/nth选择器.png" alt="nth选择器"><br><img src="../images/nth选择器1.png" alt="nth选择器"></p>
-<hr>
-<h2 id="二、伪标签"><a href="#二、伪标签" class="headerlink" title="二、伪标签"></a>二、伪标签</h2><p><img src="../images/input伪标签.png" alt="input伪标签"></p>
-<p><img src="../images/input伪标签1.png" alt="input伪标签"></p>
-<hr>
-<h2 id="三、伪元素-1"><a href="#三、伪元素-1" class="headerlink" title="三、伪元素"></a>三、伪元素</h2><h4 id="1-before-after伪元素"><a href="#1-before-after伪元素" class="headerlink" title="1.before after伪元素"></a>1.before after伪元素</h4><ul>
-<li>before设置完成会在子元素前排显示</li>
-<li>after设置完成会在子元素后排显示</li>
-</ul>
-<p><img src="../images/beforeafter.png" alt="before"></p>
-<p><img src="../images/伪元素.png" alt="伪元素"></p>
-<h4 id="给全部设置box-sizing-border-box"><a href="#给全部设置box-sizing-border-box" class="headerlink" title="给全部设置box-sizing:border-box"></a>给全部设置box-sizing:border-box</h4><p><img src="../images/伪元素1.png" alt="伪元素"></p>
-<hr>
-<h4 id="2-after伪元素清除浮动方法"><a href="#2-after伪元素清除浮动方法" class="headerlink" title="2.after伪元素清除浮动方法"></a>2.after伪元素清除浮动方法</h4><p><img src="../images/afteri清除浮动.png" alt="afteri清除浮动"></p>
-<hr>
-<h4 id="3-first-letter（可设置一行字的第一个字体和背景）"><a href="#3-first-letter（可设置一行字的第一个字体和背景）" class="headerlink" title="3.first-letter（可设置一行字的第一个字体和背景）"></a>3.first-letter（可设置一行字的第一个字体和背景）</h4><p><img src="../images/first-letter.png" alt="first-letter"></p>
-<p><img src="../images/first-letter1.png" alt="first-letter"></p>
-<hr>
-<h4 id="4-first-line（可设置一行字体和背景）"><a href="#4-first-line（可设置一行字体和背景）" class="headerlink" title="4.first-line（可设置一行字体和背景）"></a>4.first-line（可设置一行字体和背景）</h4><p><img src="../images/first-line.png" alt="first-line"></p>
-<p><img src="../images/first-line1.png" alt="first-line"></p>
-<hr>
-<h4 id="5-：：selection（selection选中后的字体颜色和背景颜色）"><a href="#5-：：selection（selection选中后的字体颜色和背景颜色）" class="headerlink" title="5.：：selection（selection选中后的字体颜色和背景颜色）"></a>5.：：selection（selection选中后的字体颜色和背景颜色）</h4><p><img src="../images/selection.png" alt="::selection"></p>
-<p><img src="../images/selection1.png" alt="::selection"></p>
-<hr>
-<hr>
-<h2 id="四、css3盒模型-1"><a href="#四、css3盒模型-1" class="headerlink" title="四、css3盒模型"></a>四、css3盒模型</h2><ul>
-<li>格式：box-sizing:</li>
-<li>box-sizing:border-box;(加边框时，包含在盒子大小中)</li>
-<li>box-sizing:padding-box(加边框时，不包含盒子大小中，大多数浏览器不支持)</li>
-<li>box-sizing:content-box(默认值)</li>
-<li>outline:10px green solid;外轮阔，增加盒子外框大小</li>
-</ul>
-<p><img src="../images/css3盒模型.png" alt="css3盒模型"></p>
-<p><img src="../images/css3盒模型1.png" alt="css3盒模型"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="cirmz5ryq000pmsdjxiosi0rx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-html5语义话标签" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/27/html5语义话标签/" class="article-date">
@@ -200,24 +90,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="html5语义化标签"><a href="#html5语义化标签" class="headerlink" title="html5语义化标签"></a>html5语义化标签</h1><h2 id="一、新增标签"><a href="#一、新增标签" class="headerlink" title="一、新增标签"></a>一、新增标签</h2><h2 id="二、音视频"><a href="#二、音视频" class="headerlink" title="二、音视频"></a>二、音视频</h2><h2 id="三、短语句"><a href="#三、短语句" class="headerlink" title="三、短语句"></a>三、短语句</h2><h2 id="四、表单元素"><a href="#四、表单元素" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h2 id="五、表单属性"><a href="#五、表单属性" class="headerlink" title="五、表单属性"></a>五、表单属性</h2><h4 id="手机端支持命令ps"><a href="#手机端支持命令ps" class="headerlink" title="手机端支持命令ps:"></a>手机端支持命令ps:</h4><p><img src="../images/手机端支持.png" alt="手机端支持"></p>
+        <h1 id="html5语义化标签"><a href="#html5语义化标签" class="headerlink" title="html5语义化标签"></a>html5语义化标签</h1><h2 id="一、新增标签"><a href="#一、新增标签" class="headerlink" title="一、新增标签"></a>一、新增标签</h2><h2 id="二、音视频"><a href="#二、音视频" class="headerlink" title="二、音视频"></a>二、音视频</h2><h2 id="三、短语句"><a href="#三、短语句" class="headerlink" title="三、短语句"></a>三、短语句</h2><h2 id="四、表单元素"><a href="#四、表单元素" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h2 id="五、表单属性"><a href="#五、表单属性" class="headerlink" title="五、表单属性"></a>五、表单属性</h2><h4 id="手机端支持命令ps"><a href="#手机端支持命令ps" class="headerlink" title="手机端支持命令ps:"></a>手机端支持命令ps:</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%94%AF%E6%8C%81.png?raw=true" alt="手机端支持"></p>
 <hr>
 <hr>
 <h2 id="一、新增标签-1"><a href="#一、新增标签-1" class="headerlink" title="一、新增标签"></a>一、新增标签</h2><h4 id="1-结构标签"><a href="#1-结构标签" class="headerlink" title="1.结构标签"></a>1.结构标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.div 无语义标签 作为盒子（单独一个东西）</span><br><span class="line">2.section 有语义标签（相关联的东西放一起用）（一块）</span><br><span class="line">3.article 有语义标签（将一系列相关内容放一起）（多块）</span><br><span class="line">4.aside 侧边栏</span><br></pre></td></tr></table></figure>
 <h4 id="2-框架标签"><a href="#2-框架标签" class="headerlink" title="2.框架标签"></a>2.框架标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.header （框架头部）</span><br><span class="line">2.hgroup （标题组2个以上的时候使用）(h1,h2)</span><br><span class="line">3.nav （导航部分使用）</span><br><span class="line">4.article (更有语义的div 作用于相关联多个内容  大框架)</span><br><span class="line">5.section （有语义的div  作用于相关联一个内容  小框架）</span><br><span class="line">6.aside 侧边栏</span><br><span class="line">7.footer 尾部</span><br></pre></td></tr></table></figure>
-<p><img src="../images/新增标签.png" alt="新增标签"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE.png?raw=true" alt="新增标签"></p>
 <hr>
 <h4 id="3-目录格式等标签"><a href="#3-目录格式等标签" class="headerlink" title="3.目录格式等标签"></a>3.目录格式等标签</h4><p>1.details 目录 中用summary open属性打开</p>
-<h4 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h4><p><img src="../images/目录标签a.png" alt="目录标签"></p>
-<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><p><img src="../images/目录标签b.png" alt="目录标签"></p>
+<h4 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E7%9B%AE%E5%BD%95%E6%A0%87%E7%AD%BEa.png?raw=true" alt="目录标签"></p>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E7%9B%AE%E5%BD%95%E6%A0%87%E7%AD%BEb.png?raw=true" alt="目录标签"></p>
 <hr>
 <p>2.dialog 定义对话框 open属性打开(不用open无法正常显示，用了左右居中)</p>
-<p><img src="../images/dialog.png" alt="dialog"></p>
-<p><img src="../images/dialoga.png" alt="dialog"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/dialog.png?raw=true" alt="dialog"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/dialoga.png?raw=true" alt="dialog"></p>
 <hr>
 <p>3.figure 图表使用 figcaption 定义图表标题</p>
-<p><img src="../images/figure.png" alt="figure"></p>
-<p><img src="../images/figure1.png" alt="figure"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/figure.png?raw=true" alt="figure"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/figure1.png?raw=true" alt="figure"></p>
 <hr>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">4.menu（菜单）main(主体)</span><br><span class="line">5.map 用于客户端图像映射，图像映射指带有可点击区域的一幅图像＊＊</span><br><span class="line">6.address 定义文档作者/所有者的联系信息</span><br><span class="line">＊如果在body中出现表示文档作者</span><br><span class="line">＊如果在article中表示该文章的作者</span><br><span class="line">＊address 元素通常被包含在footer（尾部）元素的其它信息中</span><br><span class="line">ps：不应该使用address 标签来描述邮政地址，除非这些信息是联系信息元素的组成部分</span><br></pre></td></tr></table></figure>
 <hr>
@@ -230,8 +120,8 @@
 <li>src     （引入文件路径）</li>
 <li>可同source title共用兼容使用</li>
 </ul>
-<p><img src="../images/audio.png" alt="audio"></p>
-<p><img src="../images/audio1.png" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/audio.png?raw=true" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/audio1.png?raw=true" alt="audio"></p>
 <hr>
 <h4 id="2-video-视频-（属性）"><a href="#2-video-视频-（属性）" class="headerlink" title="2.video(视频)（属性）"></a>2.video(视频)（属性）</h4><ul>
 <li>controls (音频控制面板显示)</li>
@@ -242,18 +132,18 @@
 <li>width   （可设置宽度）</li>
 <li>可同source title共用兼容使用</li>
 </ul>
-<p><img src="../images/video.png" alt="audio"></p>
-<p><img src="../images/video1.png" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/video.png?raw=true" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/video1.png?raw=true" alt="audio"></p>
 <hr>
 <h4 id="3-source-兼容语句"><a href="#3-source-兼容语句" class="headerlink" title="3.source 兼容语句"></a>3.source 兼容语句</h4><ul>
 <li>title 属性</li>
 <li>单标签</li>
 </ul>
-<p><img src="../images/source.png" alt="source"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/source.png?raw=true" alt="source"></p>
 <hr>
 <h4 id="4-track"><a href="#4-track" class="headerlink" title="4.track"></a>4.track</h4><ul>
 <li>歌词文件</li>
-<li>字幕文件<br><img src="../images/track.png" alt="track"></li>
+<li>字幕文件<br>![<a href="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/track.png?raw=true" target="_blank" rel="external">https://github.com/xz87060361/xz87060361.github.io/blob/master/images/track.png?raw=true</a>)</li>
 </ul>
 <hr>
 <h4 id="5-embed"><a href="#5-embed" class="headerlink" title="5.embed"></a>5.embed</h4><ul>
@@ -265,8 +155,8 @@
 <li>高亮文件</li>
 <li>常作用于搜索高亮</li>
 </ul>
-<p><img src="../images/mark.png" alt="mark"></p>
-<p><img src="../images/mark1.png" alt="mark"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/mark.png?raw=true" alt="mark"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/mark1.png?raw=true" alt="mark"></p>
 <hr>
 <h4 id="2-meter"><a href="#2-meter" class="headerlink" title="2.meter"></a>2.meter</h4><ul>
 <li>定义度量衡 （表示在一定范围内的值，如投票占比、使用量等）</li>
@@ -277,8 +167,8 @@
 <li>min  （最小值，默认值是0）</li>
 <li>optimum(最值的值，必须在min属性值与max属性值之间)</li>
 </ul>
-<p><img src="../images/meter.png" alt="meter"></p>
-<p><img src="../images/meter1.png" alt="meter"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/meter.png?raw=true" alt="meter"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/meter1.png?raw=true" alt="meter"></p>
 <hr>
 <h4 id="3-progress"><a href="#3-progress" class="headerlink" title="3.progress"></a>3.progress</h4><ul>
 <li>定义进度</li>
@@ -293,20 +183,20 @@
 <li>定义时间和日期</li>
 <li>标签作用</li>
 </ul>
-<p><img src="../images/time.png" alt="time"></p>
-<p><img src="../images/time1.png" alt="time"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/progress.png?raw=true" alt="time"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/progress1.png?raw=true" alt="time"></p>
 <hr>
 <h4 id="5-wbr"><a href="#5-wbr" class="headerlink" title="5.wbr"></a>5.wbr</h4><ul>
 <li>定义换行</li>
 </ul>
-<p><img src="../images/wbr.png" alt="wbr"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/wbr.png?raw=true" alt="wbr"></p>
 <hr>
 <h4 id="6-引入短语句"><a href="#6-引入短语句" class="headerlink" title="6.引入短语句"></a>6.引入短语句</h4><ul>
 <li>cite 引入斜体不换行</li>
 <li>q    带引号不换行</li>
 <li>blockquote 换行并有缩进效果</li>
 </ul>
-<p><img src="../images/引入.png" alt="引入"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%BC%95%E5%85%A5.png?raw=true" alt="引入"></p>
 <hr>
 <h4 id="7-code-格式化代码-pre"><a href="#7-code-格式化代码-pre" class="headerlink" title="7.code(格式化代码) pre"></a>7.code(格式化代码) pre</h4><ul>
 <li>code只可写一行代码不换行</li>
@@ -318,44 +208,44 @@
 <li>param配合object使用定义名字</li>
 </ul>
 <hr>
-<h4 id="9-abbr-缩写使用的标签"><a href="#9-abbr-缩写使用的标签" class="headerlink" title="9.abbr(缩写使用的标签)"></a>9.abbr(缩写使用的标签)</h4><p><img src="../images/abbr.png" alt="abbr"></p>
-<p><img src="../images/abbr1.png" alt="abbr"></p>
+<h4 id="9-abbr-缩写使用的标签"><a href="#9-abbr-缩写使用的标签" class="headerlink" title="9.abbr(缩写使用的标签)"></a>9.abbr(缩写使用的标签)</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/abbr.png?raw=true" alt="abbr"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/abbr1.png?raw=true" alt="abbr"></p>
 <hr>
-<h4 id="10-bdi-定义隔离"><a href="#10-bdi-定义隔离" class="headerlink" title="10.bdi 定义隔离"></a>10.bdi 定义隔离</h4><p><img src="../images/bdi.png" alt="bdi"></p>
-<p><img src="../images/bdi1.png" alt="bdi"></p>
+<h4 id="10-bdi-定义隔离"><a href="#10-bdi-定义隔离" class="headerlink" title="10.bdi 定义隔离"></a>10.bdi 定义隔离</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/bdi.png?raw=true" alt="bdi"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/bdi1.png?raw=true" alt="bdi"></p>
 <hr>
 <hr>
-<h2 id="四、表单元素-1"><a href="#四、表单元素-1" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h3 id="a-input元素"><a href="#a-input元素" class="headerlink" title="a.input元素"></a>a.input元素</h3><p><img src="../images/input元素.png" alt="input"></p>
+<h2 id="四、表单元素-1"><a href="#四、表单元素-1" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h3 id="a-input元素"><a href="#a-input元素" class="headerlink" title="a.input元素"></a>a.input元素</h3><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E5%85%83%E7%B4%A0.png?raw=true" alt="input"></p>
 <hr>
-<p><img src="../images/input元素1.png" alt="input"></p>
-<p><img src="../images/input2.png" alt="input"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E5%85%83%E7%B4%A01.png?raw=true" alt="input"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input2.png?raw=true" alt="input"></p>
 <hr>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1.tel        用于输入电话号码）</span><br><span class="line">2.search     用于输入用户输入要搜索的文字</span><br><span class="line">3.url        用于输入单个网址</span><br><span class="line">4.email      用于输入单个电子邮件地址，如果指定multiple属性，就可以输入多个最子邮件地址，以逗号分隔</span><br><span class="line">5.datetime   用于输入时区设置为utc的日期和时间</span><br><span class="line">6.date       用于输入不含时区的日期</span><br><span class="line">7.moth       用于输入含年份和月份介不含时区的日期</span><br><span class="line">8.week       用于输入含年份和周数但含时区的日期</span><br><span class="line">9.time       用于输入含小时、分钟、秒和秒的小数部分但不包含时区的时间值</span><br><span class="line">10.datetime-local 用于输入不含时区的日期和时间</span><br><span class="line">11.number    用户输入数字</span><br><span class="line">12.range     用于输入数字，但与number的区别在于无需输入具体数字，在大部分支持类型的浏览器中，范围控件的实施形为滑块</span><br><span class="line">13.color     用于通过颜色池控件选择颜色</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="b-表单"><a href="#b-表单" class="headerlink" title="b.表单"></a>b.表单</h3><h4 id="1-label-for"><a href="#1-label-for" class="headerlink" title="1.label for"></a>1.label for</h4><ul>
 <li>label点击之后自动选择文本框</li>
 </ul>
-<p><img src="../images/label.png" alt="label"></p>
-<p><img src="../images/label1.png" alt="label"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/label.png?raw=true" alt="label"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/label1.png?raw=true" alt="label"></p>
 <hr>
 <h4 id="2-datalist"><a href="#2-datalist" class="headerlink" title="2.datalist"></a>2.datalist</h4><ul>
 <li>配合input使用</li>
 <li>list 属性配合id名</li>
 </ul>
-<p><img src="../images/datalist.png" alt="datalist"></p>
-<p><img src="../images/datalist1.png" alt="datalist"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/datalist.png?raw=true" alt="datalist"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/datalist1.png?raw=true" alt="datalist"></p>
 <hr>
 <h4 id="3-ins-del"><a href="#3-ins-del" class="headerlink" title="3.ins del"></a>3.ins del</h4><ul>
 <li>ins 定义已经被插入文档中的文本：可以理解为下划线</li>
 <li>del 定义删除：可以做用于商品打折</li>
 </ul>
-<p><img src="../images/insdel.png" alt="insdel"></p>
-<p><img src="../images/insdel1.png" alt="insdel"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/insdel.png?raw=true" alt="insdel"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/insdel1.png?raw=true" alt="insdel"></p>
 <hr>
-<h4 id="4-samp-转换-定义计算机程序的样本文本"><a href="#4-samp-转换-定义计算机程序的样本文本" class="headerlink" title="4.samp 转换(定义计算机程序的样本文本)"></a>4.samp 转换(定义计算机程序的样本文本)</h4><p><img src="../images/samp.png" alt="samp"></p>
+<h4 id="4-samp-转换-定义计算机程序的样本文本"><a href="#4-samp-转换-定义计算机程序的样本文本" class="headerlink" title="4.samp 转换(定义计算机程序的样本文本)"></a>4.samp 转换(定义计算机程序的样本文本)</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/samp.png?raw=true" alt="samp"></p>
 <hr>
-<h4 id="5-fieldset-legend-可做标题"><a href="#5-fieldset-legend-可做标题" class="headerlink" title="5.fieldset legend 可做标题"></a>5.fieldset legend 可做标题</h4><p><img src="../images/fieldset.png" alt="fieldset"></p>
-<p><img src="../images/fieldset1.png" alt="fieldset"></p>
+<h4 id="5-fieldset-legend-可做标题"><a href="#5-fieldset-legend-可做标题" class="headerlink" title="5.fieldset legend 可做标题"></a>5.fieldset legend 可做标题</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/fieldset.png?raw=true" alt="fieldset"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/fieldset1.png?raw=true" alt="fieldset"></p>
 <hr>
 <hr>
 <h2 id="五、表单属性-1"><a href="#五、表单属性-1" class="headerlink" title="五、表单属性"></a>五、表单属性</h2><ul>
@@ -366,13 +256,13 @@
 <li>5.autocomplete 提交时提示填写完整内容</li>
 <li>6.from 用于表单框结构</li>
 </ul>
-<p><img src="../images/表单属性.png" alt="表单属性"></p>
-<p><img src="../images/表单属性1.png" alt="表单属性"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7.png?raw=true" alt="表单属性"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A71.png?raw=true" alt="表单属性"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="cirmz5rxd0005msdjhzusvubl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="cirmzg3yh0005nldj1cm2gcu0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -419,7 +309,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="cirmz5ryn000omsdjzl67q3ga" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="cirmzg3zz000pnldjlwjvhwkf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -462,12 +352,12 @@
 <h2 id="二-meta标签"><a href="#二-meta标签" class="headerlink" title="二.meta标签"></a>二.meta标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">* &lt;meta charset=&quot;utf-8&quot;/&gt; 申明编码</span><br><span class="line">* &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content-&quot;IE=edge,chrome=1&quot;/&gt;兼容网站</span><br><span class="line">* &lt;meta name=&quot;render&quot; content=&quot;webkit|ie-comp|ie-stand&quot;(浏览器内核控制，重要)</span><br><span class="line">* &lt;meta name=&quot;keyword&quot; content=&quot;袜子，电脑，电子产品&quot;/&gt; 页面关键字</span><br><span class="line">* &lt;meta name=&quot;description&quot; content=&quot;120 words&quot;/&gt; 面页描述</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;搜索引擎索引方式</span><br><span class="line">* all：文件将被检索且页面上的链接可以被查询</span><br><span class="line">* none:文件将不被检索，且页面上的链接不可以被查询</span><br><span class="line">* index:文件将被检索</span><br><span class="line">* follow:页面上的链接可以被查询</span><br><span class="line">* noindex:文件将不被检索</span><br><span class="line">* nofollow:页面上的链接不可以被查询</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=&quot;/&gt; content内的数字代表多少秒后刷新，加上url表示多少秒后跳转到某个网站或者其它</span><br><span class="line">* &lt;meta name=&quot;author&quot; content=&quot;autor name&quot;/&gt; 网作者信息</span><br><span class="line">* &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;/&gt;</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;/&gt; WebApp全屏模式：伪装app,离线应用。</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot;content=&quot;black-translucent&quot;/&gt;隐藏状态栏/设置状态栏颜色：只有在开启WebApp全屏模式时生效</span><br><span class="line">* content的值为default|black|black-translucent</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-title&quot;content=&quot;标题&quot;/&gt;添加到主屏后的标题</span><br><span class="line">* content 的值为default|black|black-translucent</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta content=&quot;telephone=no&quot;name=&quot;format-detection&quot;/&gt;忽略数字自动识别为电话号码</span><br><span class="line">* &lt;meta content=&quot;email=no&quot;name=&quot;format-detection&quot;/&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="三-外网访问（二维码）"><a href="#三-外网访问（二维码）" class="headerlink" title="三.外网访问（二维码）"></a>三.外网访问（二维码）</h2><p><a href="http://www.uuujsq1.com" target="_blank" rel="external">外网vpn</a></p>
-<h4 id="网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星"><a href="#网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星" class="headerlink" title="网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星"></a>网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星</h4><p><a href="../images/外网二维码流程.docx">外网访问流程截图</a></p>
+<h4 id="网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星"><a href="#网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星" class="headerlink" title="网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星"></a>网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星</h4><p><a href="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%A4%96%E7%BD%91%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%B5%81%E7%A8%8B.docx" target="_blank" rel="external">外网访问流程截图</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="cirmz5rxm0009msdjiezce40h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="cirmzg3yt0009nldj9ctmw6mk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -543,7 +433,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="cirmz5ry6000jmsdj5bs88xhl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="cirmzg3zd000jnldjvy5hyo9i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -634,7 +524,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="cirmz5rxu000dmsdjx4yik3oc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="cirmzg3z5000fnldjosw00hpo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -671,7 +561,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="cirmz5rxx000fmsdj3qhlu9tx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="cirmzg3z3000enldjecdtx265" class="article-share-link">Share</a>
       
       
     </footer>
@@ -709,7 +599,7 @@
 <h2 id="连接图片"><a href="#连接图片" class="headerlink" title="连接图片"></a>连接图片</h2><p><a href="https://www.baidu.com/img/bd_logo1.png" target="_blank" rel="external">百度</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="https://www.baidu.com/img/bd_logo1.png" alt="baidu"></p>
 <h4 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h4><hr>
-<p>Peng <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x37;&#54;&#x34;&#x31;&#48;&#48;&#49;&#x37;&#x32;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;">&#x37;&#54;&#x34;&#x31;&#48;&#48;&#49;&#x37;&#x32;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#109;</a></p>
+<p>Peng <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#55;&#x36;&#x34;&#x31;&#x30;&#48;&#x31;&#55;&#50;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#55;&#x36;&#x34;&#x31;&#x30;&#48;&#x31;&#55;&#50;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
 <hr>
 <h4 id="点了有惊喜"><a href="#点了有惊喜" class="headerlink" title="点了有惊喜"></a>点了有惊喜</h4><hr>
 <p><a href="https://www.baidu.com/s?wd=%E6%88%91%E5%A5%BD%E5%B8%85&amp;rsv_spt=1&amp;rsv_iqid=0x8054484f0003d612&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;rqlang=&amp;tn=baiduhome_pg&amp;rsv_enter=0" target="_blank" rel="external">惊喜</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我好帅</span><br></pre></td></tr></table></figure></p>
@@ -725,7 +615,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="cirmz5rxb0004msdj8gdlb6i6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="cirmzg3yf0004nldjxb0asp27" class="article-share-link">Share</a>
       
       
     </footer>
@@ -770,7 +660,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cirmz5rx90003msdjov4303dw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cirmzg3yd0003nldjpg6mviyz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -801,7 +691,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
     </div>
   </div>
 
@@ -812,10 +702,6 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2016/08/06/a/">a</a>
-          </li>
         
           <li>
             <a href="/2016/07/30/摘ui类型鼠标事件/">摘ui类型鼠标事件</a>
@@ -831,6 +717,10 @@
         
           <li>
             <a href="/2016/07/30/事件例子/">事件例子</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/30/鼠标，键盘事件/">鼠标，键盘事件</a>
           </li>
         
       </ul>
