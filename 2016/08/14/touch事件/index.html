@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>touch事件 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="touch基础1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;		&amp;lt;style&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="touch事件">
+<meta property="og:url" content="http://yoursite.com/2016/08/14/touch事件/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="touch基础1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;		&amp;lt;style&amp;gt;">
+<meta property="og:updated_time" content="2016-08-14T14:41:51.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="touch事件">
+<meta name="twitter:description" content="touch基础1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;		&amp;lt;style&amp;gt;">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-touch事件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/14/touch事件/" class="article-date">
+  <time datetime="2016-08-14T14:26:15.000Z" itemprop="datePublished">2016-08-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      touch事件
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="touch基础"><a href="#touch基础" class="headerlink" title="touch基础"></a>touch基础</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		p&#123;</span><br><span class="line">			font-size: 200px;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		touch事件</span><br><span class="line">		&lt;!--多点触控--&gt;</span><br><span class="line">		touchstart   mousedown</span><br><span class="line">		touchmove    mousemove</span><br><span class="line">		touchend     mouseup</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var ps = document.querySelectorAll(&apos;p&apos;);</span><br><span class="line">		document.addEventListener(&quot;touchstart&quot;,function(e)&#123;</span><br><span class="line">			//e.touches  手指对象</span><br><span class="line">			//e.touches.length表明是由几根手指触发的事件</span><br><span class="line">			console.log(e);</span><br><span class="line">			</span><br><span class="line">			ps[0].innerHTML = e.touches.length;</span><br><span class="line">			ps[1].innerHTML = e.touches[0].clientX;</span><br><span class="line">			ps[2].innerHTML = e.touches[0].clientY;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="touch一个手指头例子（夹角不超过15度）"><a href="#touch一个手指头例子（夹角不超过15度）" class="headerlink" title="touch一个手指头例子（夹角不超过15度）"></a>touch一个手指头例子（夹角不超过15度）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		p&#123;font-size: 100px;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var para = document.querySelector(&quot;p&quot;);</span><br><span class="line">		var s = &#123;</span><br><span class="line">			sx:0,</span><br><span class="line">			sy:0,</span><br><span class="line">			ex:0,</span><br><span class="line">			ey:0,</span><br><span class="line">			disx:0,</span><br><span class="line">			disy:0</span><br><span class="line">		&#125;</span><br><span class="line">		document.addEventListener(&quot;touchstart&quot;,function(e)&#123;</span><br><span class="line">			var e=e||window.event;</span><br><span class="line">			if(e.touches.length==1)&#123;</span><br><span class="line">				s.sx = e.touches[0].clientX;</span><br><span class="line">				s.sy = e.touches[0].clientY;</span><br><span class="line">			&#125;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">		document.addEventListener(&quot;touchmove&quot;,function(e)&#123;</span><br><span class="line">			var e=e||window.event;</span><br><span class="line">			if(e.touches.length==1)&#123;</span><br><span class="line">				s.ex = e.touches[0].clientX;</span><br><span class="line">				s.ey = e.touches[0].clientY;</span><br><span class="line">			&#125;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">		document.addEventListener(&quot;touchend&quot;,function(e)&#123;</span><br><span class="line">			s.disx = s.ex-s.sx;</span><br><span class="line">			s.disy = s.ey-s.sy;</span><br><span class="line">			</span><br><span class="line">			if(Math.abs(s.disx)&gt;Math.abs(s.disy))&#123;//判断左右还是上下</span><br><span class="line">				//判断夹角不超过15度</span><br><span class="line">				if(Math.abs(s.disy/s.disx)&lt;Math.tan(15/180*Math.PI))&#123;</span><br><span class="line">					if(s.disx&lt;0)&#123;</span><br><span class="line">						para.innerHTML = &quot;左&quot;;</span><br><span class="line">					&#125;else if(s.disx&gt;0)&#123;</span><br><span class="line">						para.innerHTML = &quot;右&quot;;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;else&#123;//上下</span><br><span class="line">				if(Math.abs(s.disx/s.disy)&lt;Math.tan(15/180*Math.PI))&#123;</span><br><span class="line">					if(s.disy&lt;0)&#123;</span><br><span class="line">						para.innerHTML = &quot;上&quot;;</span><br><span class="line">					&#125;else if(s.disy&gt;0)&#123;</span><br><span class="line">						para.innerHTML = &quot;下&quot;;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="touch-一个手指头触屏轮波"><a href="#touch-一个手指头触屏轮波" class="headerlink" title="touch 一个手指头触屏轮波"></a>touch 一个手指头触屏轮波</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		html,body&#123;height: 100%;&#125;</span><br><span class="line">		.container&#123;height: 100%;position: relative;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap&#123;</span><br><span class="line">			height: 500%;position: absolute;</span><br><span class="line">			width: 100%;</span><br><span class="line">			transition-duration: 1s;</span><br><span class="line">			top: 0;</span><br><span class="line">		&#125;</span><br><span class="line">		.list&#123;</span><br><span class="line">			height: 20%;</span><br><span class="line">		&#125;</span><br><span class="line">		.red&#123;background: red;&#125;</span><br><span class="line">		.green&#123;background: green;&#125;</span><br><span class="line">		.blue&#123;background: blue;&#125;</span><br><span class="line">		.yellow&#123;background: yellow;&#125;</span><br><span class="line">		.black&#123;background: black;&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">			&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">				&lt;div class=&quot;list red&quot;&gt;&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;list blue&quot;&gt;&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;list green&quot;&gt;&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;list yellow&quot;&gt;&lt;/div&gt;</span><br><span class="line">				&lt;div class=&quot;list black&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var container = document.querySelector(&quot;.container&quot;);</span><br><span class="line">		var wrap = document.querySelector(&quot;.wrap&quot;);</span><br><span class="line">		var list = document.querySelectorAll(&quot;.list&quot;);</span><br><span class="line">		var s = &#123;</span><br><span class="line">			sy:0,</span><br><span class="line">			ey:0,</span><br><span class="line">			disy:0,</span><br><span class="line">			gap:200,</span><br><span class="line">			index:0</span><br><span class="line">		&#125;</span><br><span class="line">		container.addEventListener(&quot;touchstart&quot;,function(e)&#123;</span><br><span class="line">			var e =e||window.event;</span><br><span class="line">			if(e.touches.length==1)&#123;</span><br><span class="line">				s.sy = e.touches[0].clientY;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,false)</span><br><span class="line">		container.addEventListener(&quot;touchmove&quot;,function(e)&#123;</span><br><span class="line">			var e =e||window.event;</span><br><span class="line">			if(e.touches.length==1)&#123;</span><br><span class="line">				s.ey = e.touches[0].clientY;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,false)</span><br><span class="line">		container.addEventListener(&quot;touchend&quot;,function(e)&#123;</span><br><span class="line">			console.log(s)</span><br><span class="line">			s.disy = s.ey-s.sy;</span><br><span class="line">			if(Math.abs(s.disy)&gt;s.gap)&#123;</span><br><span class="line">				if(s.disy&lt;0)&#123;</span><br><span class="line">					s.index++;</span><br><span class="line">					s.index = s.index&gt;list.length-1?list.length-1:s.index;</span><br><span class="line">				&#125;else&#123;</span><br><span class="line">					s.index--;</span><br><span class="line">					s.index = s.index&lt;0?0:s.index;</span><br><span class="line">				&#125;</span><br><span class="line">				wrap.style.top = -s.index*100+&quot;%&quot;;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,false)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">	</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="touch-一只手指头拖动事件"><a href="#touch-一只手指头拖动事件" class="headerlink" title="touch 一只手指头拖动事件"></a>touch 一只手指头拖动事件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		.wrap&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			width: 100px;height: 100px;</span><br><span class="line">			background: red;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var wrap = document.querySelector(&quot;.wrap&quot;);</span><br><span class="line">		var s = &#123;</span><br><span class="line">			startx : 0,</span><br><span class="line">			starty : 0,</span><br><span class="line">			movex : 0,</span><br><span class="line">			movey : 0,</span><br><span class="line">			endx : 0,</span><br><span class="line">			endy : 0,</span><br><span class="line">			ofl : 0,</span><br><span class="line">			oft : 0</span><br><span class="line">		&#125;</span><br><span class="line">		wrap.addEventListener(&quot;touchstart&quot;,function(e)&#123;</span><br><span class="line">			var e = e||window.event;</span><br><span class="line">			s.ofl = wrap.offsetLeft;</span><br><span class="line">			s.oft = wrap.offsetTop;</span><br><span class="line">			s.startx = e.touches[0].clientX;</span><br><span class="line">			s.starty = e.touches[0].clientY;</span><br><span class="line">			</span><br><span class="line">		&#125;,false)</span><br><span class="line">		document.addEventListener(&quot;touchmove&quot;,function(e)&#123;</span><br><span class="line">			var e = e||window.event;</span><br><span class="line">			if(e.touches.length!=1)&#123;</span><br><span class="line">				return;</span><br><span class="line">			&#125;</span><br><span class="line">			s.movex = e.touches[0].clientX;</span><br><span class="line">			s.movey = e.touches[0].clientY;</span><br><span class="line">			</span><br><span class="line">			s.endx = s.ofl+s.movex-s.startx;</span><br><span class="line">			s.endy = s.oft+s.movey-s.starty;</span><br><span class="line">			</span><br><span class="line">			wrap.style.left = s.endx+&quot;px&quot;;</span><br><span class="line">			wrap.style.top = s.endy+&quot;px&quot;;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="touch-两个手指头放大图片"><a href="#touch-两个手指头放大图片" class="headerlink" title="touch 两个手指头放大图片"></a>touch 两个手指头放大图片</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no&quot; /&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		.box&#123;</span><br><span class="line">			width: 100px;height: 100px;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">			position: absolute;</span><br><span class="line">			left: 50%;top: 50%;</span><br><span class="line">			margin-left: -50px;margin-top: -50px;</span><br><span class="line">		&#125;</span><br><span class="line">		.box img&#123;</span><br><span class="line">			float: left;width: 100%;height: 100%;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;p&gt;&lt;/p&gt;</span><br><span class="line">		&lt;div class=&quot;box&quot;&gt;</span><br><span class="line">			&lt;img src=&quot;../buke/img/10.jpg&quot;/&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var box = document.querySelector(&quot;.box&quot;);</span><br><span class="line">		var pa = document.querySelector(&quot;p&quot;);</span><br><span class="line">		var s = &#123;</span><br><span class="line">			tsa : 0,</span><br><span class="line">			tsb : 0,</span><br><span class="line">			scale : 1,//记录start时的倍数</span><br><span class="line">			moscale:1//move的时候实时的倍数</span><br><span class="line">		&#125;</span><br><span class="line">		document.addEventListener(&quot;touchstart&quot;,function(e)&#123;</span><br><span class="line">			//start时，把实时的倍数记录一下</span><br><span class="line">			s.scale = s.moscale;</span><br><span class="line">			var e =e||window.event;</span><br><span class="line">			if(e.touches.length==2)&#123;</span><br><span class="line">				var stax = e.touches[0].clientX;</span><br><span class="line">				var stay = e.touches[0].clientY;</span><br><span class="line">				var stbx = e.touches[1].clientX;</span><br><span class="line">				var stby = e.touches[1].clientY;</span><br><span class="line">				s.tsa = Math.sqrt((stax-stbx)*(stax-stbx)+(stay-stby)*(stay-stby));</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,false)</span><br><span class="line">		document.addEventListener(&quot;touchmove&quot;,function(e)&#123;</span><br><span class="line">			var e = e||window.event;</span><br><span class="line">			if(e.touches.length==2)&#123;</span><br><span class="line">				var endax = e.touches[0].clientX;</span><br><span class="line">				var enday = e.touches[0].clientY;</span><br><span class="line">				var endbx = e.touches[1].clientX;</span><br><span class="line">				var endby = e.touches[1].clientY;</span><br><span class="line">				s.tsb = Math.sqrt((endax-endbx)*(endax-endbx)+(enday-endby)*(enday-endby));</span><br><span class="line">				//实时的倍数就等于我的变化比例乘以start时记录的倍数</span><br><span class="line">				s.moscale = s.tsb/s.tsa*s.scale;</span><br><span class="line">				box.style.transform = &quot;scale(&quot;+s.moscale+&quot;)&quot;;</span><br><span class="line">				pa.innerHTML = s.moscale;</span><br><span class="line">			&#125;</span><br><span class="line">			e.preventDefault();</span><br><span class="line">		&#125;,false)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/14/touch事件/" data-id="cirvb57o30008d0dj24bxoe82" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/14/陀螺例子（立方体）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">陀螺例子（立方体）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/14/touch事件/">touch事件</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/14/陀螺例子（立方体）/">陀螺例子（立方体）</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/14/陀螺/">陀螺</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/14/小鸟游戏/">小鸟游戏</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/14/鼠标滚动题目例子/">鼠标滚动题目例子</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
