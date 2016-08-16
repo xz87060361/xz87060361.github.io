@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>jq循环 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;	&amp;lt;/head&amp;gt;	&amp;lt;bod">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jq循环">
+<meta property="og:url" content="http://yoursite.com/2016/08/16/jq循环/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;	&amp;lt;/head&amp;gt;	&amp;lt;bod">
+<meta property="og:updated_time" content="2016-08-16T13:03:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jq循环">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;		&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;	&amp;lt;/head&amp;gt;	&amp;lt;bod">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-jq循环" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/16/jq循环/" class="article-date">
+  <time datetime="2016-08-16T12:51:13.000Z" itemprop="datePublished">2016-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jq循环
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ul&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script src=&quot;http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var arr = [7,4,1,9,5];</span><br><span class="line">		$.each(arr,function(inx,con)&#123;</span><br><span class="line">			console.log(inx+&quot;,&quot;+con)</span><br><span class="line">		&#125;)</span><br><span class="line">		var obj = &#123;</span><br><span class="line">			name : &quot;xu&quot;,</span><br><span class="line">			age : &quot;24&quot;</span><br><span class="line">		&#125;</span><br><span class="line">		$.each(obj,function(key,value)&#123;</span><br><span class="line">			console.log(key+&quot;,&quot;+value);</span><br><span class="line">		&#125;)</span><br><span class="line">		//有不同的操作，而且这个不同和下标有关系</span><br><span class="line">		$(&quot;ul li&quot;).each(function(i)&#123;</span><br><span class="line">			$(this).html(&quot;我是第&quot;+(i+1)+&quot;个li&quot;)</span><br><span class="line">		&#125;)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="each-和-extend-求数组最大最小值封装"><a href="#each-和-extend-求数组最大最小值封装" class="headerlink" title="$.each 和 $.extend 求数组最大最小值封装"></a>$.each 和 $.extend 求数组最大最小值封装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ul&gt;</span><br><span class="line">			&lt;!--&lt;li&gt;我是数组的第几位值是多少&lt;/li&gt;--&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script src=&quot;http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var arr = [9,1,7,2,5,3,2,4,2,6,8];</span><br><span class="line">		//如果对象是数组，那么第一个参数是下标，</span><br><span class="line">		//第二个参数是内容</span><br><span class="line">		$.each(arr,function(index,con)&#123;</span><br><span class="line">			//console.log(index+&quot;,&quot;+con);</span><br><span class="line">			$(&apos;ul&apos;).append(&apos;&lt;li&gt;我是数组的第&apos;+(index+1)+&apos;位值是&apos;+con+&apos;&lt;/li&gt;&apos;);</span><br><span class="line">		&#125;)</span><br><span class="line">//		for(var i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">//			$(&apos;ul&apos;).append(&apos;&lt;li&gt;我是数组的第&apos;+(i+1)+&apos;位值是&apos;+arr[i]+&apos;&lt;/li&gt;&apos;);</span><br><span class="line">//		&#125;</span><br><span class="line">		</span><br><span class="line">		var s = &#123;</span><br><span class="line">			name : &quot;xuchengdong&quot;,</span><br><span class="line">			height : 179,</span><br><span class="line">			age : 18</span><br><span class="line">		&#125;</span><br><span class="line">		//json  数据格式</span><br><span class="line">		var jsonData = &#123;</span><br><span class="line">				error_code: 0,</span><br><span class="line">				error_desc: &quot;&quot;,</span><br><span class="line">				error_specific: &quot;&quot;,</span><br><span class="line">				data: &#123;</span><br><span class="line">					type: [</span><br><span class="line">						&#123;</span><br><span class="line">							id: &quot;1&quot;,</span><br><span class="line">							type: &quot;鱼虾贝类&quot;</span><br><span class="line">						&#125;,</span><br><span class="line">						&#123;</span><br><span class="line">							id: &quot;2&quot;,</span><br><span class="line">							type: &quot;孕产妇补充剂&quot;</span><br><span class="line">						&#125;</span><br><span class="line">					]</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		//对json数据进行循环，第一个参数是key</span><br><span class="line">		//第二个参数是value</span><br><span class="line">		$.each(jsonData.data.type,function(key,value)&#123;</span><br><span class="line">			console.log(key);</span><br><span class="line">			console.log(value)</span><br><span class="line">			$.each(value,function(key1,value1)&#123;</span><br><span class="line">				console.log(key1+&quot;,&quot;+value1);</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)</span><br><span class="line">		</span><br><span class="line">		$.extend(&#123;</span><br><span class="line">			min:function(a,b)&#123;</span><br><span class="line">				return a&gt;b?b:a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)</span><br><span class="line">		</span><br><span class="line">		$min = $.min(3,5);</span><br><span class="line">		console.log($min)</span><br><span class="line">		</span><br><span class="line">		$.extend(&#123;</span><br><span class="line">			arrMin : function(arr)&#123;</span><br><span class="line">				$min = arr[0];</span><br><span class="line">				$index = 0;</span><br><span class="line">				$arr = [];</span><br><span class="line">				$.each(arr,function(index,con)&#123;</span><br><span class="line">					if($min&gt;con)&#123;</span><br><span class="line">						$min = con;</span><br><span class="line">						$index = index;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">				$.each(arr,function(index,con)&#123;</span><br><span class="line">					if($min==con)&#123;</span><br><span class="line">						$arr.push(index);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">				return &#123;</span><br><span class="line">					min : $min,</span><br><span class="line">					index : $arr</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;,</span><br><span class="line">			arrMax:function()&#123;</span><br><span class="line">				$max = arr[0];</span><br><span class="line">				$index = 0;</span><br><span class="line">				$arr = [];</span><br><span class="line">				$.each(arr,function(index,con)&#123;</span><br><span class="line">					if($max&lt;con)&#123;</span><br><span class="line">						$max = con;</span><br><span class="line">						$index = index;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">				$.each(arr,function(index,con)&#123;</span><br><span class="line">					if($max==con)&#123;</span><br><span class="line">						$arr.push(index);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;)</span><br><span class="line">				return &#123;</span><br><span class="line">					max : $max,</span><br><span class="line">					index : $arr</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;)</span><br><span class="line">		//$.arrMin(arr)  接收一个数组，返回最小值和对应的下标</span><br><span class="line">		console.log($.arrMax(arr));</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/16/jq循环/" data-id="cirxku7g90005g7djtj3nsd18" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/08/16/复习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          复习
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/16/jquery轮波/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">jquery轮波</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/16/复习/">复习</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/16/jq循环/">jq循环</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/16/jquery轮波/">jquery轮波</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/16/文字限制/">文字限制</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/16/input图片引入（file）/">input图片引入（file）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
