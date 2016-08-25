@@ -68,6 +68,743 @@
       <div class="outer">
         <section id="main">
   
+    <article id="过渡-2d变形3d变形动画" class="article article-type-过渡" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/30/2d变形3d变形动画/" class="article-date">
+  <time datetime="2016-06-30T10:48:16.000Z" itemprop="datePublished">2016-06-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/30/2d变形3d变形动画/">过渡2d变形3d变形动画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="transition-transform-animation"><a href="#transition-transform-animation" class="headerlink" title="transition transform animation"></a>transition transform animation</h1><h2 id="一、transition过渡"><a href="#一、transition过渡" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><h2 id="二、transform-2d变形"><a href="#二、transform-2d变形" class="headerlink" title="二、transform 2d变形"></a>二、transform 2d变形</h2><h2 id="三、transform-3d变形"><a href="#三、transform-3d变形" class="headerlink" title="三、transform 3d变形"></a>三、transform 3d变形</h2><h2 id="四、animation-动画效果"><a href="#四、animation-动画效果" class="headerlink" title="四、animation 动画效果"></a>四、animation 动画效果</h2><hr>
+<hr>
+<h2 id="一、transition过渡-1"><a href="#一、transition过渡-1" class="headerlink" title="一、transition过渡"></a>一、transition过渡</h2><ul>
+<li>transition-propety:;执行过渡变换的属性（:all||width||height||right||left）</li>
+<li>transition-duration:;过渡变换延续的时间</li>
+<li>transition-timing-function:;过度变换的速率(快慢效果)效果方式(ease ease-in ease-out ease-in-out linear)</li>
+<li>transition-delay:;变换延迟时间 (transition-delay:2s;)</li>
+<li>transition:all 2s;（是简单书写方法）</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/transition.png?raw=true" alt="transition"></p>
+<hr>
+<hr>
+<h2 id="二、transform-2d变形（简写transform-all-2s-）"><a href="#二、transform-2d变形（简写transform-all-2s-）" class="headerlink" title="二、transform 2d变形（简写transform:all 2s;）"></a>二、transform 2d变形（简写transform:all 2s;）</h2><h4 id="1-transform-rotate-45deg-旋转rotate-deg"><a href="#1-transform-rotate-45deg-旋转rotate-deg" class="headerlink" title="1.transform:rotate(45deg);旋转rotate(deg)"></a>1.transform:rotate(45deg);旋转rotate(deg)</h4><ul>
+<li>通过指定的角度参数对本元素进行2d旋转transform:rotate(2d旋转)</li>
+<li>deg-可为负数</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/rotate.png?raw=true" alt="rotate"></p>
+<hr>
+<h4 id="2-transform-translate（100px）；移动translate-px"><a href="#2-transform-translate（100px）；移动translate-px" class="headerlink" title="2.transform:translate（100px）；移动translate(px)"></a>2.transform:translate（100px）；移动translate(px)</h4><ul>
+<li>transform:translate(x,y)水平方向和垂直方向同时移动</li>
+<li>transform:translateX(x)仅水平方向移动</li>
+<li>transform:translateY(y)仅垂直方向移动</li>
+<li>可以为负数 px</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/translate.png?raw=true" alt="translate"></p>
+<hr>
+<h4 id="3-transform-scale-2-缩放scale-2"><a href="#3-transform-scale-2-缩放scale-2" class="headerlink" title="3.transform:scale(2);缩放scale(2)"></a>3.transform:scale(2);缩放scale(2)</h4><ul>
+<li>transform:scale(x,y)使元素水平方向和垂直方向同时缩放</li>
+<li>transform:scaleX(x)元素仅水平方向缩放</li>
+<li>transform:scaleY(y)元素仅垂直方向缩放</li>
+<li>整数 小数 负数</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/scale.png?raw=true" alt="scale"></p>
+<hr>
+<h4 id="4-transform-skew-45deg-扭曲skew-deg"><a href="#4-transform-skew-45deg-扭曲skew-deg" class="headerlink" title="4.transform:skew(45deg);扭曲skew(deg)"></a>4.transform:skew(45deg);扭曲skew(deg)</h4><ul>
+<li>transform:skew(x,y)使元素在水平和垂直方向同时扭曲变形</li>
+<li>transform:skewX(x)仅使元素在水平方向扭曲变形</li>
+<li>transform:skewY(y)仅使元素在垂直方向扭曲变形</li>
+<li>角度deg</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/skew.png?raw=true" alt="skew"></p>
+<hr>
+<h4 id="5-transform-origin-0-0-；单位可百分比，可整数"><a href="#5-transform-origin-0-0-；单位可百分比，可整数" class="headerlink" title="5.transform-origin(0 0)；单位可百分比，可整数"></a>5.transform-origin(0 0)；单位可百分比，可整数</h4><ul>
+<li>元素的基点位置</li>
+<li>认基点就是元素中心位置</li>
+<li>transform-origin（x,y）；</li>
+<li>其中x和y的值可以是百分比，em,px,方向</li>
+</ul>
+<hr>
+<ul>
+<li>在正方形中心旋转：</li>
+<li>transform-origin:50% 50%;transform:rotate(0deg);正方形中心</li>
+<li>transform-origin:0 0;transform:rotate(0deg)；正方形左上角</li>
+<li>transform-origin:100% 0;transform:rotate(0deg);正方形右上角</li>
+<li>transform-origin:0 100%;transform:rotate(0deg);正方形左下角</li>
+<li>transform-origin:100% 100%;transfor:rotate(0deg);正方形右下角</li>
+</ul>
+<hr>
+<hr>
+<h2 id="三、transform-3d变形（要配合transform-all-2s-）"><a href="#三、transform-3d变形（要配合transform-all-2s-）" class="headerlink" title="三、transform 3d变形（要配合transform:all 2s;）"></a>三、transform 3d变形（要配合transform:all 2s;）</h2><ul>
+<li>要想做出3d效果首先要在子级外境建立2层父级</li>
+<li>1.第一层父级中要写上：perspective:1000px;相当于离物体的距离</li>
+<li>2.第二层父级中要写上：transform-style:preserve-3d;嵌套元素如果在3d空间中呈现</li>
+</ul>
+<hr>
+<h4 id="1-transform-rotate-beg-旋转"><a href="#1-transform-rotate-beg-旋转" class="headerlink" title="1.transform:rotate(beg)旋转"></a>1.transform:rotate(beg)旋转</h4><ul>
+<li>transform:rotateX(beg);元素围绕其x轴以给定的度数进行旋转</li>
+<li>transform:rotateY(beg);元素围绕其y轴以给定的度数进行旋转</li>
+<li>transform:rotateZ(beg);元素围绕其z轴以给定的度数进行旋转</li>
+</ul>
+<hr>
+<h4 id="2-perspective-1000px-观看者"><a href="#2-perspective-1000px-观看者" class="headerlink" title="2.perspective:1000px;(观看者)"></a>2.perspective:1000px;(观看者)</h4><ul>
+<li>perspective:视距，视角 设置查看者的位置</li>
+<li>两种书写方式</li>
+<li>当作观看者：多个变形元素的父节点</li>
+<li>变形元素自身</li>
+<li>perspective视角</li>
+<li>ex:perspective:600px;</li>
+<li>ex:transform:perspective(600px)rotateY(45deg);</li>
+<li>perspective-origin:视角中心</li>
+<li>perspective-origin:x y;</li>
+<li>px百分比</li>
+</ul>
+<hr>
+<h4 id="3-transform-style-嵌套元素如何在3d空间中呈现-舞台"><a href="#3-transform-style-嵌套元素如何在3d空间中呈现-舞台" class="headerlink" title="3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)"></a>3.transform-style:;嵌套元素如何在3d空间中呈现(舞台)</h4><ul>
+<li>1.transform-style:flat;(默认值无效果，默认为2d效果)</li>
+<li>2.transform-style:preserve-3d；(3d效果建立)</li>
+<li>3.transform-style:preserve-3d;设置完成后所有元素在3d中呈现，不可以使用overflow:hidden;不可以使用浮动</li>
+</ul>
+<hr>
+<h4 id="perspective和transform-style区别"><a href="#perspective和transform-style区别" class="headerlink" title="perspective和transform-style区别"></a>perspective和transform-style区别</h4><ul>
+<li>perspective:1000px；是一个查看的距离（可看成观看者）第一层父级</li>
+<li>transform-style:preserve-3d;可看成一个3d舞台 第二层父级</li>
+</ul>
+<hr>
+<h4 id="4-translateZ-（3d-z轴移动）"><a href="#4-translateZ-（3d-z轴移动）" class="headerlink" title="4.translateZ （3d z轴移动）"></a>4.translateZ （3d z轴移动）</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/translatez.png?raw=true" alt="translatez"></p>
+<hr>
+<h4 id="5-backface-visibility-元素旋转北面是否可见"><a href="#5-backface-visibility-元素旋转北面是否可见" class="headerlink" title="5.backface-visibility(元素旋转北面是否可见)"></a>5.backface-visibility(元素旋转北面是否可见)</h4><ul>
+<li>backface-visibility:hidden;(设置后用户无法查看到背面信息)</li>
+<li>backface-visibility:visible;（默认值，用户可以查看到背面信息）</li>
+</ul>
+<hr>
+<hr>
+<h4 id="6-正方体"><a href="#6-正方体" class="headerlink" title="6.正方体"></a>6.正方体</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%AD%A3%E6%96%B9%E4%BD%93.png?raw=true" alt="正方形"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%AD%A3%E6%96%B9%E5%BD%A21.png?raw=true" alt="正方形"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%AD%A3%E6%96%B9%E5%BD%A22.png?raw=true" alt="正方形"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%AD%A3%E6%96%B9%E4%BD%933.png?raw=true" alt="正方形"></p>
+<hr>
+<hr>
+<h2 id="四、animation-动画"><a href="#四、animation-动画" class="headerlink" title="四、animation 动画"></a>四、animation 动画</h2><h4 id="1-animation格式：animation-peng-5s-infinite-linear-1s"><a href="#1-animation格式：animation-peng-5s-infinite-linear-1s" class="headerlink" title="1.animation格式：animation:peng 5s infinite linear 1s;"></a>1.animation格式：animation:peng 5s infinite linear 1s;</h4><ul>
+<li>用户名 几秒完成 播放次数 播放方式 多少秒开始</li>
+<li>animation-name:动画属性名</li>
+<li>@keyframes 动画属性名</li>
+<li>form to</li>
+<li>百分比</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/animation.png?raw=true" alt="动画"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E7%99%BE%E5%88%86%E6%AF%94.png?raw=true" alt="动画百分比"></p>
+<hr>
+<h4 id="2-animation-duration：10s-动画持续时间"><a href="#2-animation-duration：10s-动画持续时间" class="headerlink" title="2.animation-duration：10s;动画持续时间"></a>2.animation-duration：10s;动画持续时间</h4><hr>
+<h4 id="3-animation-timing-funcition；动画效果"><a href="#3-animation-timing-funcition；动画效果" class="headerlink" title="3.animation-timing-funcition；动画效果"></a>3.animation-timing-funcition；动画效果</h4><ul>
+<li>ease linear ease-in ease-out ease-in-out cubic-bezier</li>
+</ul>
+<hr>
+<h4 id="4-animation-iteration-count-infinite（无限播放）"><a href="#4-animation-iteration-count-infinite（无限播放）" class="headerlink" title="4.animation-iteration-count:infinite（无限播放）"></a>4.animation-iteration-count:infinite（无限播放）</h4><ul>
+<li>指定元素播放动画的循环次数</li>
+<li>animation-iteration-count:infinite;无限播放</li>
+<li>animation-iteration-count:10;播放10次</li>
+</ul>
+<hr>
+<h4 id="5-animation-delay：2s；-指定元素动画开始时间"><a href="#5-animation-delay：2s；-指定元素动画开始时间" class="headerlink" title="5.animation-delay：2s；(指定元素动画开始时间)"></a>5.animation-delay：2s；(指定元素动画开始时间)</h4><ul>
+<li>指定元素动画的开始时间</li>
+<li>单位s秒</li>
+</ul>
+<hr>
+<h4 id="6-animation-direction-normal-动画播放方向"><a href="#6-animation-direction-normal-动画播放方向" class="headerlink" title="6.animation-direction:normal;(动画播放方向)"></a>6.animation-direction:normal;(动画播放方向)</h4><ul>
+<li>指定元素动画播放的方向</li>
+<li>anmiation-direction:normal;默认值,动画的每次循环都是向前播放</li>
+<li>anmiation-direction:alternate;来回执行</li>
+</ul>
+<hr>
+<h4 id="7-animation-fill-mode-forwards-（执行完成不反回）"><a href="#7-animation-fill-mode-forwards-（执行完成不反回）" class="headerlink" title="7.animation-fill-mode:forwards;（执行完成不反回）"></a>7.animation-fill-mode:forwards;（执行完成不反回）</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/30/2d变形3d变形动画/" data-id="cis9krel50003bzdj07fnatbc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-圆角阴影多背景图片引入渐变" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/29/圆角阴影多背景图片引入渐变/" class="article-date">
+  <time datetime="2016-06-29T09:00:29.000Z" itemprop="datePublished">2016-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/29/圆角阴影多背景图片引入渐变/">圆角阴影多背景图片引入渐变</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、圆角（border-radius）"><a href="#一、圆角（border-radius）" class="headerlink" title="一、圆角（border-radius）"></a>一、圆角（border-radius）</h2><h2 id="二、阴影-box-shadow-text-shadow"><a href="#二、阴影-box-shadow-text-shadow" class="headerlink" title="二、阴影(box-shadow text-shadow)"></a>二、阴影(box-shadow text-shadow)</h2><h2 id="三、多背景图片设置"><a href="#三、多背景图片设置" class="headerlink" title="三、多背景图片设置"></a>三、多背景图片设置</h2><h2 id="四、渐变-linear-gradient"><a href="#四、渐变-linear-gradient" class="headerlink" title="四、渐变(linear-gradient)"></a>四、渐变(linear-gradient)</h2><hr>
+<hr>
+<h2 id="一、圆角-border-radius"><a href="#一、圆角-border-radius" class="headerlink" title="一、圆角(border-radius)"></a>一、圆角(border-radius)</h2><h4 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%9C%86%E8%A7%92.png?raw=true" alt="圆角"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%9C%86%E8%A7%922.png?raw=true" alt="圆角"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%9C%86%E8%A7%921.png?raw=true" alt="圆角"></p>
+<hr>
+<h2 id="二、阴影-box-shadow-text-shadow-1"><a href="#二、阴影-box-shadow-text-shadow-1" class="headerlink" title="二、阴影(box-shadow text-shadow)"></a>二、阴影(box-shadow text-shadow)</h2><h3 id="格式：box-shadow-3px-3px-4px-blue"><a href="#格式：box-shadow-3px-3px-4px-blue" class="headerlink" title="格式：box-shadow:3px 3px 4px blue;"></a>格式：box-shadow:3px 3px 4px blue;</h3><p>###（opacity:0.5透明度）</p>
+<ul>
+<li>box-shadow: x轴偏移量  y轴偏移量  模糊度  边框颜色 inset(不设置为外阴影，设置inset后为内阴影)；</li>
+<li>第一个参数 x-offset 偏移</li>
+<li>第二个参数 y-offset偏移</li>
+<li>第三个参数 模糊度</li>
+<li>第四个参数 颜色</li>
+<li>第五个参数 内阴影<h4 id="1-背景阴影-box-shadow"><a href="#1-背景阴影-box-shadow" class="headerlink" title="1.背景阴影(box-shadow)"></a>1.背景阴影(box-shadow)</h4></li>
+<li>box-shadow: x轴偏移量  y轴偏移量  模糊度  边框颜色 inset(不设置为外阴影，设置inset后为内阴影)；</li>
+<li>box-shadow:3px 3px 10px blue;</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%83%8C%E6%99%AF%E9%98%B4%E5%BD%B1.png?raw=true" alt="背景阴影"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%83%8C%E6%99%AF%E9%98%B4%E5%BD%B11.png?raw=true" alt="背景阴影"></p>
+<h4 id="2-文字阴影-text-shadow"><a href="#2-文字阴影-text-shadow" class="headerlink" title="2.文字阴影(text-shadow)"></a>2.文字阴影(text-shadow)</h4><ul>
+<li>text-shadow:x轴偏移量 y轴偏移量 模糊度 边框颜色；</li>
+<li>text-shadow:-2px -2px 10px yellow;</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/text-shadow.png?raw=true" alt="text-shadow"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/text-shadow1.png?raw=true" alt="text-shadow"></p>
+<hr>
+<h2 id="三、多背景图片设置-1"><a href="#三、多背景图片设置-1" class="headerlink" title="三、多背景图片设置"></a>三、多背景图片设置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1.引入2个背景图片</span><br><span class="line">bakcground-image:url(&quot;../images/pikaqiu.png&quot;),url(&quot;../images/tan.png&quot;);</span><br><span class="line">2.设置背景图片显示效果</span><br><span class="line">background-repeat:no-repeat,no-repeat;</span><br><span class="line">3.设置背景图片位置</span><br><span class="line">background-position:图片一位置（top）,图片二的位置（center）；</span><br><span class="line">4.设置背景图片大小</span><br><span class="line">background-size:100px,100px;</span><br><span class="line">5.背景图片background-size:cover contain;</span><br><span class="line">背景图片冲满整个容器（会损坏图片）</span><br><span class="line">background-size:cover;</span><br><span class="line">背景图片碰到容器结束放大（不会损坏图片）</span><br><span class="line">background-size:contain;</span><br><span class="line">6. background-origin应用</span><br><span class="line">默认值:background-origin:content-box;</span><br><span class="line">正常：backgound-origin:padding-box;</span><br><span class="line">背景图片进入边框：background-origin:border-box;</span><br><span class="line">7.background-cilp应用</span><br><span class="line">裁剪功能配合padding使用</span><br><span class="line">background-cilp:content-box;</span><br><span class="line">padding-left:100px;背景图片会少左边一部分内容</span><br></pre></td></tr></table></figure>
+<h2 id="四、渐变（linear-gradient）"><a href="#四、渐变（linear-gradient）" class="headerlink" title="四、渐变（linear-gradient）"></a>四、渐变（linear-gradient）</h2><h4 id="1-线性渐变：background-image-linear-gradient-to-left-yellow-green-黄色渐变绿色-也可以to-left改成：90deg"><a href="#1-线性渐变：background-image-linear-gradient-to-left-yellow-green-黄色渐变绿色-也可以to-left改成：90deg" class="headerlink" title="1.线性渐变：background-image:linear-gradient(to left,yellow,green);(黄色渐变绿色)也可以to left改成：90deg"></a>1.线性渐变：background-image:linear-gradient(to left,yellow,green);(黄色渐变绿色)也可以to left改成：90deg</h4><ul>
+<li>配合background-size:30px使用</li>
+</ul>
+<hr>
+<h4 id="也可双渐变使用"><a href="#也可双渐变使用" class="headerlink" title="也可双渐变使用"></a>也可双渐变使用</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/linear-gradient.png?raw=true" alt="linear-gradient"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/linear-gradient1.png?raw=true" alt="linear-gradient"></p>
+<hr>
+<h4 id="2-径向渐变"><a href="#2-径向渐变" class="headerlink" title="2.径向渐变"></a>2.径向渐变</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%98.png?raw=true" alt="radial-gradient"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%981.png?raw=true" alt="radial-gradient"></p>
+<hr>
+<h4 id="3-重复性渐变"><a href="#3-重复性渐变" class="headerlink" title="3.重复性渐变"></a>3.重复性渐变</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/repeating-radial-gradient.png?raw=true" alt="repeating-radial-gradient"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/repeating-radial-gradient1.png?raw=true" alt="repeating-radial-gradient"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/29/圆角阴影多背景图片引入渐变/" data-id="cis9kremb000obzdjm9afhfnj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-选择器伪元素与css3盒模型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/28/选择器伪元素与css3盒模型/" class="article-date">
+  <time datetime="2016-06-28T07:50:56.000Z" itemprop="datePublished">2016-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/选择器伪元素与css3盒模型/">选择器伪元素与css3盒模型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="title-选择器伪元素与css3盒模型"><a href="#title-选择器伪元素与css3盒模型" class="headerlink" title="title: 选择器伪元素与css3盒模型"></a>title: 选择器伪元素与css3盒模型</h1><h2 id="一、选择器"><a href="#一、选择器" class="headerlink" title="一、选择器"></a>一、选择器</h2><h2 id="二、伪标签设置属性"><a href="#二、伪标签设置属性" class="headerlink" title="二、伪标签设置属性"></a>二、伪标签设置属性</h2><h2 id="三、伪元素"><a href="#三、伪元素" class="headerlink" title="三、伪元素"></a>三、伪元素</h2><h2 id="四、css3盒模型"><a href="#四、css3盒模型" class="headerlink" title="四、css3盒模型"></a>四、css3盒模型</h2><hr>
+<hr>
+<h2 id="一、选择器-1"><a href="#一、选择器-1" class="headerlink" title="一、选择器"></a>一、选择器</h2><h4 id="1-1-子元素选择器"><a href="#1-1-子元素选择器" class="headerlink" title="1.1 子元素选择器"></a>1.1 子元素选择器</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%AD%90%E5%85%83%E7%B4%A0.png?raw=true" alt="子元素"></p>
+<hr>
+<h4 id="1-2-兄弟选择器"><a href="#1-2-兄弟选择器" class="headerlink" title="1.2 兄弟选择器"></a>1.2 兄弟选择器</h4><ul>
+<li>e+f相邻兄弟选择器</li>
+<li>必须是同级别的</li>
+<li>必须是相邻的</li>
+<li>必需是在下方</li>
+<li>有且只有一个符合</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8+.png?raw=true" alt="兄弟选择器+"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8+1.png?raw=true" alt="兄弟选择器+"></p>
+<hr>
+<h4 id="1-2-通用兄弟选择器"><a href="#1-2-通用兄弟选择器" class="headerlink" title="1.2 通用兄弟选择器"></a>1.2 通用兄弟选择器</h4><ul>
+<li>e~f通用兄弟选择器</li>
+<li>1.必须是同级别的 </li>
+<li>2.必需是在下方 </li>
+<li>3.可以有多个符合</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8~.png?raw=true" alt="通用兄弟选择器~"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A82.png?raw=true" alt="通用兄弟选择器~"></p>
+<hr>
+<h4 id="1-3-属性选择器"><a href="#1-3-属性选择器" class="headerlink" title="1.3 属性选择器"></a>1.3 属性选择器</h4><ul>
+<li>基本选择器[class=”haha”]</li>
+<li>〜 代表空格的意思[class~=”div1”]</li>
+<li>代表只要有就符合要求[class*=”div”］</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8.png?raw=true" alt="属性选择器"></p>
+<hr>
+<h4 id="1-4-否定选择器"><a href="#1-4-否定选择器" class="headerlink" title="1.4 否定选择器"></a>1.4 否定选择器</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%90%A6%E5%AE%9A%E9%80%89%E6%8B%A9%E5%99%A8.png?raw=true" alt="否定选择器"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%90%A6%E5%AE%9A%E9%80%89%E6%8B%A9%E5%99%A81.png?raw=true" alt="否定选择器"></p>
+<hr>
+<h4 id="1-5-nth选择器（ps-用于在ul的li中）"><a href="#1-5-nth选择器（ps-用于在ul的li中）" class="headerlink" title="1.5 nth选择器（ps:用于在ul的li中）"></a>1.5 nth选择器（ps:用于在ul的li中）</h4><ul>
+<li>1.li最前最后设置</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/nth.png?raw=true" alt="nth"><br><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/nth1.png?raw=true" alt="nth"></p>
+<ul>
+<li>2.多种方式设置</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/nth%E9%80%89%E6%8B%A9%E5%99%A8.png?raw=true" alt="nth选择器"><br><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/nth%E9%80%89%E6%8B%A9%E5%99%A81.png?raw=true" alt="nth选择器"></p>
+<hr>
+<h2 id="二、伪标签"><a href="#二、伪标签" class="headerlink" title="二、伪标签"></a>二、伪标签</h2><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E4%BC%AA%E6%A0%87%E7%AD%BE.png?raw=true" alt="input伪标签"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E4%BC%AA%E6%A0%87%E7%AD%BE1.png?raw=true" alt="input伪标签"></p>
+<hr>
+<h2 id="三、伪元素-1"><a href="#三、伪元素-1" class="headerlink" title="三、伪元素"></a>三、伪元素</h2><h4 id="1-before-after伪元素"><a href="#1-before-after伪元素" class="headerlink" title="1.before after伪元素"></a>1.before after伪元素</h4><ul>
+<li>before设置完成会在子元素前排显示</li>
+<li>after设置完成会在子元素后排显示</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/beforeafter.png?raw=true" alt="before"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E4%BC%AA%E5%85%83%E7%B4%A0.png?raw=true" alt="伪元素"></p>
+<h4 id="给全部设置box-sizing-border-box"><a href="#给全部设置box-sizing-border-box" class="headerlink" title="给全部设置box-sizing:border-box"></a>给全部设置box-sizing:border-box</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E4%BC%AA%E5%85%83%E7%B4%A01.png?raw=true" alt="伪元素"></p>
+<hr>
+<h4 id="2-after伪元素清除浮动方法"><a href="#2-after伪元素清除浮动方法" class="headerlink" title="2.after伪元素清除浮动方法"></a>2.after伪元素清除浮动方法</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/afteri%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.png?raw=true" alt="afteri清除浮动"></p>
+<hr>
+<h4 id="3-first-letter（可设置一行字的第一个字体和背景）"><a href="#3-first-letter（可设置一行字的第一个字体和背景）" class="headerlink" title="3.first-letter（可设置一行字的第一个字体和背景）"></a>3.first-letter（可设置一行字的第一个字体和背景）</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/first-letter.png?raw=true" alt="first-letter"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/first-letter1.png?raw=true" alt="first-letter"></p>
+<hr>
+<h4 id="4-first-line（可设置一行字体和背景）"><a href="#4-first-line（可设置一行字体和背景）" class="headerlink" title="4.first-line（可设置一行字体和背景）"></a>4.first-line（可设置一行字体和背景）</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/first-line.png?raw=true" alt="first-line"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/first-line1.png?raw=true" alt="first-line"></p>
+<hr>
+<h4 id="5-：：selection（selection选中后的字体颜色和背景颜色）"><a href="#5-：：selection（selection选中后的字体颜色和背景颜色）" class="headerlink" title="5.：：selection（selection选中后的字体颜色和背景颜色）"></a>5.：：selection（selection选中后的字体颜色和背景颜色）</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/selection.png?raw=true" alt="::selection"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/selection1.png?raw=true" alt="::selection"></p>
+<hr>
+<hr>
+<h2 id="四、css3盒模型-1"><a href="#四、css3盒模型-1" class="headerlink" title="四、css3盒模型"></a>四、css3盒模型</h2><ul>
+<li>格式：box-sizing:</li>
+<li>box-sizing:border-box;(加边框时，包含在盒子大小中)</li>
+<li>box-sizing:padding-box(加边框时，不包含盒子大小中，大多数浏览器不支持)</li>
+<li>box-sizing:content-box(默认值)</li>
+<li>outline:10px green solid;外轮阔，增加盒子外框大小</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/css3%E7%9B%92%E6%A8%A1%E5%9E%8B.png?raw=true" alt="css3盒模型"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/css3%E7%9B%92%E6%A8%A1%E5%9E%8B1.png?raw=true" alt="css3盒模型"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/28/选择器伪元素与css3盒模型/" data-id="cis9krems0011bzdj1amsrq9q" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-html5语义话标签" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/27/html5语义话标签/" class="article-date">
+  <time datetime="2016-06-27T08:49:35.000Z" itemprop="datePublished">2016-06-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/27/html5语义话标签/">html5语义化标签</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="html5语义化标签"><a href="#html5语义化标签" class="headerlink" title="html5语义化标签"></a>html5语义化标签</h1><h2 id="一、新增标签"><a href="#一、新增标签" class="headerlink" title="一、新增标签"></a>一、新增标签</h2><h2 id="二、音视频"><a href="#二、音视频" class="headerlink" title="二、音视频"></a>二、音视频</h2><h2 id="三、短语句"><a href="#三、短语句" class="headerlink" title="三、短语句"></a>三、短语句</h2><h2 id="四、表单元素"><a href="#四、表单元素" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h2 id="五、表单属性"><a href="#五、表单属性" class="headerlink" title="五、表单属性"></a>五、表单属性</h2><h4 id="手机端支持命令ps"><a href="#手机端支持命令ps" class="headerlink" title="手机端支持命令ps:"></a>手机端支持命令ps:</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%94%AF%E6%8C%81.png?raw=true" alt="手机端支持"></p>
+<hr>
+<hr>
+<h2 id="一、新增标签-1"><a href="#一、新增标签-1" class="headerlink" title="一、新增标签"></a>一、新增标签</h2><h4 id="1-结构标签"><a href="#1-结构标签" class="headerlink" title="1.结构标签"></a>1.结构标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.div 无语义标签 作为盒子（单独一个东西）</span><br><span class="line">2.section 有语义标签（相关联的东西放一起用）（一块）</span><br><span class="line">3.article 有语义标签（将一系列相关内容放一起）（多块）</span><br><span class="line">4.aside 侧边栏</span><br></pre></td></tr></table></figure>
+<h4 id="2-框架标签"><a href="#2-框架标签" class="headerlink" title="2.框架标签"></a>2.框架标签</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.header （框架头部）</span><br><span class="line">2.hgroup （标题组2个以上的时候使用）(h1,h2)</span><br><span class="line">3.nav （导航部分使用）</span><br><span class="line">4.article (更有语义的div 作用于相关联多个内容  大框架)</span><br><span class="line">5.section （有语义的div  作用于相关联一个内容  小框架）</span><br><span class="line">6.aside 侧边栏</span><br><span class="line">7.footer 尾部</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE.png?raw=true" alt="新增标签"></p>
+<hr>
+<h4 id="3-目录格式等标签"><a href="#3-目录格式等标签" class="headerlink" title="3.目录格式等标签"></a>3.目录格式等标签</h4><p>1.details 目录 中用summary open属性打开</p>
+<h4 id="格式："><a href="#格式：" class="headerlink" title="格式："></a>格式：</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E7%9B%AE%E5%BD%95%E6%A0%87%E7%AD%BEa.png?raw=true" alt="目录标签"></p>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E7%9B%AE%E5%BD%95%E6%A0%87%E7%AD%BEb.png?raw=true" alt="目录标签"></p>
+<hr>
+<p>2.dialog 定义对话框 open属性打开(不用open无法正常显示，用了左右居中)</p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/dialog.png?raw=true" alt="dialog"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/dialoga.png?raw=true" alt="dialog"></p>
+<hr>
+<p>3.figure 图表使用 figcaption 定义图表标题</p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/figure.png?raw=true" alt="figure"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/figure1.png?raw=true" alt="figure"></p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">4.menu（菜单）main(主体)</span><br><span class="line">5.map 用于客户端图像映射，图像映射指带有可点击区域的一幅图像＊＊</span><br><span class="line">6.address 定义文档作者/所有者的联系信息</span><br><span class="line">＊如果在body中出现表示文档作者</span><br><span class="line">＊如果在article中表示该文章的作者</span><br><span class="line">＊address 元素通常被包含在footer（尾部）元素的其它信息中</span><br><span class="line">ps：不应该使用address 标签来描述邮政地址，除非这些信息是联系信息元素的组成部分</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<h2 id="二、音视频-1"><a href="#二、音视频-1" class="headerlink" title="二、音视频"></a>二、音视频</h2><h4 id="1-audio-音频-（属性）"><a href="#1-audio-音频-（属性）" class="headerlink" title="1.audio(音频)（属性）"></a>1.audio(音频)（属性）</h4><ul>
+<li>controls (音频控制面板显示)</li>
+<li>autoplay (自动播放)</li>
+<li>loop    （单曲循环）</li>
+<li>preload  (自动下载但不播放＊＊＊＊＊)</li>
+<li>src     （引入文件路径）</li>
+<li>可同source title共用兼容使用</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/audio.png?raw=true" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/audio1.png?raw=true" alt="audio"></p>
+<hr>
+<h4 id="2-video-视频-（属性）"><a href="#2-video-视频-（属性）" class="headerlink" title="2.video(视频)（属性）"></a>2.video(视频)（属性）</h4><ul>
+<li>controls (音频控制面板显示)</li>
+<li>autoplay (自动播放)</li>
+<li>loop    （单曲循环）</li>
+<li>preload  (自动下载但不播放＊＊＊＊＊)</li>
+<li>src     （引入文件路径）</li>
+<li>width   （可设置宽度）</li>
+<li>可同source title共用兼容使用</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/video.png?raw=true" alt="audio"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/video1.png?raw=true" alt="audio"></p>
+<hr>
+<h4 id="3-source-兼容语句"><a href="#3-source-兼容语句" class="headerlink" title="3.source 兼容语句"></a>3.source 兼容语句</h4><ul>
+<li>title 属性</li>
+<li>单标签</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/source.png?raw=true" alt="source"></p>
+<hr>
+<h4 id="4-track"><a href="#4-track" class="headerlink" title="4.track"></a>4.track</h4><ul>
+<li>歌词文件</li>
+<li>字幕文件<br>![<a href="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/track.png?raw=true" target="_blank" rel="external">https://github.com/xz87060361/xz87060361.github.io/blob/master/images/track.png?raw=true</a>)</li>
+</ul>
+<hr>
+<h4 id="5-embed"><a href="#5-embed" class="headerlink" title="5.embed"></a>5.embed</h4><ul>
+<li>引入flash</li>
+<li>src 引入路径</li>
+</ul>
+<hr>
+<h2 id="三、短语句-1"><a href="#三、短语句-1" class="headerlink" title="三、短语句"></a>三、短语句</h2><h4 id="1-mark-标记"><a href="#1-mark-标记" class="headerlink" title="1.mark 标记"></a>1.mark 标记</h4><ul>
+<li>高亮文件</li>
+<li>常作用于搜索高亮</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/mark.png?raw=true" alt="mark"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/mark1.png?raw=true" alt="mark"></p>
+<hr>
+<h4 id="2-meter"><a href="#2-meter" class="headerlink" title="2.meter"></a>2.meter</h4><ul>
+<li>定义度量衡 （表示在一定范围内的值，如投票占比、使用量等）</li>
+<li>value (实际度量的值，默认为0,可以为整数或者浮点数)</li>
+<li>high （范围的上限值）</li>
+<li>low  （范围的下限值）</li>
+<li>max  （最大值，默认值是1）</li>
+<li>min  （最小值，默认值是0）</li>
+<li>optimum(最值的值，必须在min属性值与max属性值之间)</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/meter.png?raw=true" alt="meter"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/meter1.png?raw=true" alt="meter"></p>
+<hr>
+<h4 id="3-progress"><a href="#3-progress" class="headerlink" title="3.progress"></a>3.progress</h4><ul>
+<li>定义进度</li>
+<li>value</li>
+<li>max</li>
+<li>min</li>
+</ul>
+<p><img src="../images/progress.png" alt="progress"></p>
+<p><img src="../images/progress1.png" alt="progress"></p>
+<hr>
+<h4 id="4-time"><a href="#4-time" class="headerlink" title="4.time"></a>4.time</h4><ul>
+<li>定义时间和日期</li>
+<li>标签作用</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/progress.png?raw=true" alt="time"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/progress1.png?raw=true" alt="time"></p>
+<hr>
+<h4 id="5-wbr"><a href="#5-wbr" class="headerlink" title="5.wbr"></a>5.wbr</h4><ul>
+<li>定义换行</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/wbr.png?raw=true" alt="wbr"></p>
+<hr>
+<h4 id="6-引入短语句"><a href="#6-引入短语句" class="headerlink" title="6.引入短语句"></a>6.引入短语句</h4><ul>
+<li>cite 引入斜体不换行</li>
+<li>q    带引号不换行</li>
+<li>blockquote 换行并有缩进效果</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%BC%95%E5%85%A5.png?raw=true" alt="引入"></p>
+<hr>
+<h4 id="7-code-格式化代码-pre"><a href="#7-code-格式化代码-pre" class="headerlink" title="7.code(格式化代码) pre"></a>7.code(格式化代码) pre</h4><ul>
+<li>code只可写一行代码不换行</li>
+<li>pre 可写多行代码，可换行</li>
+</ul>
+<hr>
+<h4 id="8-object-param"><a href="#8-object-param" class="headerlink" title="8.object param"></a>8.object param</h4><ul>
+<li>object包含图像，音频，视频，falash使用</li>
+<li>param配合object使用定义名字</li>
+</ul>
+<hr>
+<h4 id="9-abbr-缩写使用的标签"><a href="#9-abbr-缩写使用的标签" class="headerlink" title="9.abbr(缩写使用的标签)"></a>9.abbr(缩写使用的标签)</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/abbr.png?raw=true" alt="abbr"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/abbr1.png?raw=true" alt="abbr"></p>
+<hr>
+<h4 id="10-bdi-定义隔离"><a href="#10-bdi-定义隔离" class="headerlink" title="10.bdi 定义隔离"></a>10.bdi 定义隔离</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/bdi.png?raw=true" alt="bdi"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/bdi1.png?raw=true" alt="bdi"></p>
+<hr>
+<hr>
+<h2 id="四、表单元素-1"><a href="#四、表单元素-1" class="headerlink" title="四、表单元素"></a>四、表单元素</h2><h3 id="a-input元素"><a href="#a-input元素" class="headerlink" title="a.input元素"></a>a.input元素</h3><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E5%85%83%E7%B4%A0.png?raw=true" alt="input"></p>
+<hr>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input%E5%85%83%E7%B4%A01.png?raw=true" alt="input"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/input2.png?raw=true" alt="input"></p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1.tel        用于输入电话号码）</span><br><span class="line">2.search     用于输入用户输入要搜索的文字</span><br><span class="line">3.url        用于输入单个网址</span><br><span class="line">4.email      用于输入单个电子邮件地址，如果指定multiple属性，就可以输入多个最子邮件地址，以逗号分隔</span><br><span class="line">5.datetime   用于输入时区设置为utc的日期和时间</span><br><span class="line">6.date       用于输入不含时区的日期</span><br><span class="line">7.moth       用于输入含年份和月份介不含时区的日期</span><br><span class="line">8.week       用于输入含年份和周数但含时区的日期</span><br><span class="line">9.time       用于输入含小时、分钟、秒和秒的小数部分但不包含时区的时间值</span><br><span class="line">10.datetime-local 用于输入不含时区的日期和时间</span><br><span class="line">11.number    用户输入数字</span><br><span class="line">12.range     用于输入数字，但与number的区别在于无需输入具体数字，在大部分支持类型的浏览器中，范围控件的实施形为滑块</span><br><span class="line">13.color     用于通过颜色池控件选择颜色</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="b-表单"><a href="#b-表单" class="headerlink" title="b.表单"></a>b.表单</h3><h4 id="1-label-for"><a href="#1-label-for" class="headerlink" title="1.label for"></a>1.label for</h4><ul>
+<li>label点击之后自动选择文本框</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/label.png?raw=true" alt="label"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/label1.png?raw=true" alt="label"></p>
+<hr>
+<h4 id="2-datalist"><a href="#2-datalist" class="headerlink" title="2.datalist"></a>2.datalist</h4><ul>
+<li>配合input使用</li>
+<li>list 属性配合id名</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/datalist.png?raw=true" alt="datalist"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/datalist1.png?raw=true" alt="datalist"></p>
+<hr>
+<h4 id="3-ins-del"><a href="#3-ins-del" class="headerlink" title="3.ins del"></a>3.ins del</h4><ul>
+<li>ins 定义已经被插入文档中的文本：可以理解为下划线</li>
+<li>del 定义删除：可以做用于商品打折</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/insdel.png?raw=true" alt="insdel"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/insdel1.png?raw=true" alt="insdel"></p>
+<hr>
+<h4 id="4-samp-转换-定义计算机程序的样本文本"><a href="#4-samp-转换-定义计算机程序的样本文本" class="headerlink" title="4.samp 转换(定义计算机程序的样本文本)"></a>4.samp 转换(定义计算机程序的样本文本)</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/samp.png?raw=true" alt="samp"></p>
+<hr>
+<h4 id="5-fieldset-legend-可做标题"><a href="#5-fieldset-legend-可做标题" class="headerlink" title="5.fieldset legend 可做标题"></a>5.fieldset legend 可做标题</h4><p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/fieldset.png?raw=true" alt="fieldset"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/fieldset1.png?raw=true" alt="fieldset"></p>
+<hr>
+<hr>
+<h2 id="五、表单属性-1"><a href="#五、表单属性-1" class="headerlink" title="五、表单属性"></a>五、表单属性</h2><ul>
+<li>1.autofocus 自动默认在一个文本框内，autofocus 属性规定当页面加载时按钮应当自动地获得焦点</li>
+<li>2.placeholder 提示框中输入浅色信息</li>
+<li>3.required 强行规定输入@格式用于email</li>
+<li>4.pattern 填写正确格式内容</li>
+<li>5.autocomplete 提交时提示填写完整内容</li>
+<li>6.from 用于表单框结构</li>
+</ul>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A7.png?raw=true" alt="表单属性"></p>
+<p><img src="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E8%A1%A8%E5%8D%95%E5%B1%9E%E6%80%A71.png?raw=true" alt="表单属性"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/27/html5语义话标签/" data-id="cis9krel70005bzdjltxlxps6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-郁闷的一天a标签问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/25/郁闷的一天a标签问题/" class="article-date">
+  <time datetime="2016-06-25T08:05:16.000Z" itemprop="datePublished">2016-06-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/25/郁闷的一天a标签问题/">郁闷的一天a标签问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="郁闷的a标签和图片引入"><a href="#郁闷的a标签和图片引入" class="headerlink" title="郁闷的a标签和图片引入"></a>郁闷的a标签和图片引入</h1><hr>
+<hr>
+<h2 id="a标签不可以包块级样式（ps-div-h1）"><a href="#a标签不可以包块级样式（ps-div-h1）" class="headerlink" title="a标签不可以包块级样式（ps:div h1）"></a>a标签不可以包块级样式（ps:div h1）</h2><ul>
+<li>以前做的时候全是a标签包div 然后div里面插入background:url();</li>
+<li>a标签包h1 。。</li>
+</ul>
+<hr>
+<h2 id="图片引入正确使用方法最好用img"><a href="#图片引入正确使用方法最好用img" class="headerlink" title="图片引入正确使用方法最好用img"></a>图片引入正确使用方法最好用img</h2><ul>
+<li>不要用a标签然后套 div 然后background:url();不规范</li>
+<li>雪碧图技术可以用a标签引入 然后用background:url();引入做背景；</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/25/郁闷的一天a标签问题/" data-id="cis9kremv0013bzdj40hb1nq6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-meta二维码" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/24/meta二维码/" class="article-date">
+  <time datetime="2016-06-24T10:47:41.000Z" itemprop="datePublished">2016-06-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/24/meta二维码/">meta二维码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="浏览器、meta标签、外网访问（二维码）"><a href="#浏览器、meta标签、外网访问（二维码）" class="headerlink" title="浏览器、meta标签、外网访问（二维码）"></a>浏览器、meta标签、外网访问（二维码）</h1><hr>
+<hr>
+<h2 id="一-浏览器"><a href="#一-浏览器" class="headerlink" title="一.浏览器"></a>一.浏览器</h2><ul>
+<li>火狐，谷歌，苹果，opera ie 9.10.11 标准浏览器</li>
+<li>ios 平台 android平台</li>
+<li>safari chrome 移动端 charome</li>
+</ul>
+<hr>
+<h2 id="二-meta标签"><a href="#二-meta标签" class="headerlink" title="二.meta标签"></a>二.meta标签</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">* &lt;meta charset=&quot;utf-8&quot;/&gt; 申明编码</span><br><span class="line">* &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content-&quot;IE=edge,chrome=1&quot;/&gt;兼容网站</span><br><span class="line">* &lt;meta name=&quot;render&quot; content=&quot;webkit|ie-comp|ie-stand&quot;(浏览器内核控制，重要)</span><br><span class="line">* &lt;meta name=&quot;keyword&quot; content=&quot;袜子，电脑，电子产品&quot;/&gt; 页面关键字</span><br><span class="line">* &lt;meta name=&quot;description&quot; content=&quot;120 words&quot;/&gt; 面页描述</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;搜索引擎索引方式</span><br><span class="line">* all：文件将被检索且页面上的链接可以被查询</span><br><span class="line">* none:文件将不被检索，且页面上的链接不可以被查询</span><br><span class="line">* index:文件将被检索</span><br><span class="line">* follow:页面上的链接可以被查询</span><br><span class="line">* noindex:文件将不被检索</span><br><span class="line">* nofollow:页面上的链接不可以被查询</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=&quot;/&gt; content内的数字代表多少秒后刷新，加上url表示多少秒后跳转到某个网站或者其它</span><br><span class="line">* &lt;meta name=&quot;author&quot; content=&quot;autor name&quot;/&gt; 网作者信息</span><br><span class="line">* &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;/&gt;</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;/&gt; WebApp全屏模式：伪装app,离线应用。</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot;content=&quot;black-translucent&quot;/&gt;隐藏状态栏/设置状态栏颜色：只有在开启WebApp全屏模式时生效</span><br><span class="line">* content的值为default|black|black-translucent</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta name=&quot;apple-mobile-web-app-title&quot;content=&quot;标题&quot;/&gt;添加到主屏后的标题</span><br><span class="line">* content 的值为default|black|black-translucent</span><br><span class="line">—————————————————————————————————————————————————————————————————————————————————————————————</span><br><span class="line">* &lt;meta content=&quot;telephone=no&quot;name=&quot;format-detection&quot;/&gt;忽略数字自动识别为电话号码</span><br><span class="line">* &lt;meta content=&quot;email=no&quot;name=&quot;format-detection&quot;/&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="三-外网访问（二维码）"><a href="#三-外网访问（二维码）" class="headerlink" title="三.外网访问（二维码）"></a>三.外网访问（二维码）</h2><p><a href="http://www.uuujsq1.com" target="_blank" rel="external">外网vpn</a></p>
+<h4 id="网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星"><a href="#网站二维码插件名：二维码-QR码-生成器-QR-Code-Generator-5星" class="headerlink" title="网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星"></a>网站二维码插件名：二维码(QR码)生成器(QR Code Generator)5星</h4><p><a href="https://github.com/xz87060361/xz87060361.github.io/blob/master/images/%E5%A4%96%E7%BD%91%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%B5%81%E7%A8%8B.docx" target="_blank" rel="external">外网访问流程截图</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/24/meta二维码/" data-id="cis9krely000fbzdjy91y3jwt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-样式css3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/23/样式css3/" class="article-date">
+  <time datetime="2016-06-23T11:51:42.000Z" itemprop="datePublished">2016-06-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/23/样式css3/">样式css3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="样式css3分类"><a href="#样式css3分类" class="headerlink" title="样式css3分类"></a>样式css3分类</h1><h2 id="一-em相对单位"><a href="#一-em相对单位" class="headerlink" title="一.em相对单位"></a>一.em相对单位</h2><h2 id="二-rem相对根的样式如（html）"><a href="#二-rem相对根的样式如（html）" class="headerlink" title="二.rem相对根的样式如（html）"></a>二.rem相对根的样式如（html）</h2><h2 id="三-max-width-标签最大宽度"><a href="#三-max-width-标签最大宽度" class="headerlink" title="三.max-width(标签最大宽度)"></a>三.max-width(标签最大宽度)</h2><h2 id="四-max-height-标签最大高度"><a href="#四-max-height-标签最大高度" class="headerlink" title="四.max-height(标签最大高度)"></a>四.max-height(标签最大高度)</h2><h2 id="五-min-width-标签最小宽度"><a href="#五-min-width-标签最小宽度" class="headerlink" title="五.min-width(标签最小宽度)"></a>五.min-width(标签最小宽度)</h2><h2 id="六-min-width-标签最小高度"><a href="#六-min-width-标签最小高度" class="headerlink" title="六.min-width(标签最小高度)"></a>六.min-width(标签最小高度)</h2><h2 id="七-vw-相对页面宽度单位-vh-相对页面高度单位"><a href="#七-vw-相对页面宽度单位-vh-相对页面高度单位" class="headerlink" title="七.vw(相对页面宽度单位).vh(相对页面高度单位)"></a>七.vw(相对页面宽度单位).vh(相对页面高度单位)</h2><hr>
+<hr>
+<h2 id="一-em相对单位-1"><a href="#一-em相对单位-1" class="headerlink" title="一.em相对单位"></a>一.em相对单位</h2><h4 id="相对单位，是对父级的字体字号设置的例如："><a href="#相对单位，是对父级的字体字号设置的例如：" class="headerlink" title="相对单位，是对父级的字体字号设置的例如："></a>相对单位，是对父级的字体字号设置的例如：</h4><ul>
+<li>font-size:2em; 为对他的父级的字体字号增加2倍（父级为12px font-size:2em;就为24px）</li>
+</ul>
+<hr>
+<h2 id="二-rem相对根的样式如（html）-1"><a href="#二-rem相对根的样式如（html）-1" class="headerlink" title="二.rem相对根的样式如（html）"></a>二.rem相对根的样式如（html）</h2><ul>
+<li>font-size:2rem; 为对他的根html的字体字号增加2倍（根默认字号16px font-size:2em;就为32px）</li>
+</ul>
+<hr>
+<h2 id="三-max-width-最大宽度"><a href="#三-max-width-最大宽度" class="headerlink" title="三.max-width(最大宽度)"></a>三.max-width(最大宽度)</h2><ul>
+<li>max-width:400px 为最大宽度为400像素</li>
+<li>max-width:80%;  为最大父级宽度的80％</li>
+<li>max-width:80vw; 为最大页面宽度的80％</li>
+</ul>
+<hr>
+<h2 id="四-max-height-最大高度"><a href="#四-max-height-最大高度" class="headerlink" title="四.max-height(最大高度)"></a>四.max-height(最大高度)</h2><ul>
+<li>max-height:400px 为最大高度为400像素</li>
+<li>max-height:80%;  为最大父级高度的80％</li>
+<li>max-height:80vw; 为最大页面高度的80％</li>
+</ul>
+<hr>
+<h2 id="五-min-width-最小宽度"><a href="#五-min-width-最小宽度" class="headerlink" title="五.min-width(最小宽度)"></a>五.min-width(最小宽度)</h2><ul>
+<li>max-width:400px 为最小宽度为400像素</li>
+<li>max-width:80%;  为最小父级宽度的80％</li>
+<li>max-width:80vw; 为最小页面宽度的80％</li>
+</ul>
+<hr>
+<h2 id="六-min-height-最小高度"><a href="#六-min-height-最小高度" class="headerlink" title="六.min-height(最小高度)"></a>六.min-height(最小高度)</h2><ul>
+<li>max-height:400px 为最小宽度高400像素</li>
+<li>max-height:80%;  为最小父级高度的80％</li>
+<li>max-height:80vw; 为最小页面高度的80％</li>
+</ul>
+<hr>
+<h2 id="七-vw（相对页面的宽度）-vh（相对页面的高度）"><a href="#七-vw（相对页面的宽度）-vh（相对页面的高度）" class="headerlink" title="七.vw（相对页面的宽度） vh（相对页面的高度）"></a>七.vw（相对页面的宽度） vh（相对页面的高度）</h2><ul>
+<li>width:10vw;相对页面宽度的10%</li>
+<li>height:20vh;相对页面高度的20%</li>
+<li>font-size:10vw;字体相对页面宽度的10%</li>
+<li>font-size:10vh;字体相对页面高度的10%</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/23/样式css3/" data-id="cis9kremp000xbzdjtrm3ac5k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-创建博客流程" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/22/创建博客流程/" class="article-date">
@@ -149,7 +886,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="cirxku7h0000fg7dje5n44rnl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/创建博客流程/" data-id="cis9krem9000mbzdj6meyw9kv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,7 +923,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="cirxku7hm000lg7djegb2e3s8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/我的第一个博客/" data-id="cis9kremd000pbzdj2q6s30w8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +961,7 @@
 <h2 id="连接图片"><a href="#连接图片" class="headerlink" title="连接图片"></a>连接图片</h2><p><a href="https://www.baidu.com/img/bd_logo1.png" target="_blank" rel="external">百度</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="https://www.baidu.com/img/bd_logo1.png" alt="baidu"></p>
 <h4 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h4><hr>
-<p>Peng <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#55;&#x36;&#x34;&#x31;&#48;&#x30;&#49;&#x37;&#50;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#55;&#x36;&#x34;&#x31;&#48;&#x30;&#49;&#x37;&#50;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>Peng <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#55;&#54;&#x34;&#49;&#48;&#48;&#49;&#55;&#x32;&#64;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#55;&#54;&#x34;&#49;&#48;&#48;&#49;&#55;&#x32;&#64;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <hr>
 <h4 id="点了有惊喜"><a href="#点了有惊喜" class="headerlink" title="点了有惊喜"></a>点了有惊喜</h4><hr>
 <p><a href="https://www.baidu.com/s?wd=%E6%88%91%E5%A5%BD%E5%B8%85&amp;rsv_spt=1&amp;rsv_iqid=0x8054484f0003d612&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;rqlang=&amp;tn=baiduhome_pg&amp;rsv_enter=0" target="_blank" rel="external">惊喜</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我好帅</span><br></pre></td></tr></table></figure></p>
@@ -240,52 +977,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="cirxku7gg0007g7dj32r8wsyl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/22/hello-world/" class="article-date">
-  <time datetime="2016-06-22T02:59:02.000Z" itemprop="datePublished">2016-06-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cirxku7fd0000g7djh5exmn9p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hi/" data-id="cis9krell0008bzdj5rhwpsth" class="article-share-link">Share</a>
       
       
     </footer>
@@ -298,7 +990,7 @@
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/page/4/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/4/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">__('next') &raquo;</a>
   </nav>
 </section>
         
@@ -329,23 +1021,23 @@
       <ul>
         
           <li>
-            <a href="/2016/08/16/复习/">复习</a>
+            <a href="/2016/08/24/面向对象/">面向对象</a>
           </li>
         
           <li>
-            <a href="/2016/08/16/jq循环/">jq循环</a>
+            <a href="/2016/08/24/canvas画板/">canvas画板</a>
           </li>
         
           <li>
-            <a href="/2016/08/16/jquery轮波/">jquery轮波</a>
+            <a href="/2016/08/23/仿写jq获取方法/">仿写jq获取方法</a>
           </li>
         
           <li>
-            <a href="/2016/08/16/文字限制/">文字限制</a>
+            <a href="/2016/08/21/闭包/">闭包</a>
           </li>
         
           <li>
-            <a href="/2016/08/16/input图片引入（file）/">input图片引入（file）</a>
+            <a href="/2016/08/21/事件委托-1/">事件委托</a>
           </li>
         
       </ul>

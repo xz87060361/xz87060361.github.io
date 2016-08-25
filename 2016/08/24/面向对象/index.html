@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>面向对象 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、对象二、工厂模式三、原形四、封装*五、原形继承 *六、克隆七、typeof八、call apply *一、对象12345678910111213var Dog = &amp;#123;&amp;#125;;var Dog1 = new Object();Dog = &amp;#123;	sex:&amp;quot;gongde&amp;quot;,	name:&amp;quot;zhjdskf&amp;quot;,	run:function()&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象">
+<meta property="og:url" content="http://yoursite.com/2016/08/24/面向对象/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="一、对象二、工厂模式三、原形四、封装*五、原形继承 *六、克隆七、typeof八、call apply *一、对象12345678910111213var Dog = &amp;#123;&amp;#125;;var Dog1 = new Object();Dog = &amp;#123;	sex:&amp;quot;gongde&amp;quot;,	name:&amp;quot;zhjdskf&amp;quot;,	run:function()&amp;#">
+<meta property="og:updated_time" content="2016-08-24T15:19:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面向对象">
+<meta name="twitter:description" content="一、对象二、工厂模式三、原形四、封装*五、原形继承 *六、克隆七、typeof八、call apply *一、对象12345678910111213var Dog = &amp;#123;&amp;#125;;var Dog1 = new Object();Dog = &amp;#123;	sex:&amp;quot;gongde&amp;quot;,	name:&amp;quot;zhjdskf&amp;quot;,	run:function()&amp;#">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-面向对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/24/面向对象/" class="article-date">
+  <time datetime="2016-08-24T15:10:49.000Z" itemprop="datePublished">2016-08-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面向对象
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、对象"><a href="#一、对象" class="headerlink" title="一、对象"></a>一、对象</h2><h2 id="二、工厂模式"><a href="#二、工厂模式" class="headerlink" title="二、工厂模式"></a>二、工厂模式</h2><h2 id="三、原形"><a href="#三、原形" class="headerlink" title="三、原形"></a>三、原形</h2><h2 id="四、封装"><a href="#四、封装" class="headerlink" title="四、封装*"></a>四、封装<em>*</em></h2><h2 id="五、原形继承"><a href="#五、原形继承" class="headerlink" title="五、原形继承 *"></a>五、原形继承 <em>*</em></h2><h2 id="六、克隆"><a href="#六、克隆" class="headerlink" title="六、克隆"></a>六、克隆</h2><h2 id="七、typeof"><a href="#七、typeof" class="headerlink" title="七、typeof"></a>七、typeof</h2><h2 id="八、call-apply"><a href="#八、call-apply" class="headerlink" title="八、call apply *"></a>八、call apply <em>*</em></h2><h2 id="一、对象-1"><a href="#一、对象-1" class="headerlink" title="一、对象"></a>一、对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var Dog = &#123;&#125;;</span><br><span class="line">var Dog1 = new Object();</span><br><span class="line">Dog = &#123;</span><br><span class="line">	sex:&quot;gongde&quot;,</span><br><span class="line">	name:&quot;zhjdskf&quot;,</span><br><span class="line">	run:function()&#123;</span><br><span class="line">		console.log(&quot;单身汪&quot;);</span><br><span class="line">	&#125;,</span><br><span class="line">	text:function()&#123;</span><br><span class="line">		alert(&quot;谁叫&quot;+this.name)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">Dog.text();</span><br></pre></td></tr></table></figure>
+<h2 id="二、工厂模式-1"><a href="#二、工厂模式-1" class="headerlink" title="二、工厂模式"></a>二、工厂模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//工厂模式</span><br><span class="line">function Person(name,sex,fn)&#123;</span><br><span class="line">	var obj = &#123;&#125;;</span><br><span class="line">	obj.name = name;</span><br><span class="line">	obj.sex = sex;</span><br><span class="line">	obj.showName = function()&#123;</span><br><span class="line">		console.log(obj.name);</span><br><span class="line">	&#125;</span><br><span class="line">	obj.fn = fn;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = Person(&quot;lck&quot;,&quot;man&quot;,function()&#123;</span><br><span class="line">	alert(&quot;ccc&quot;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="三、原形-1"><a href="#三、原形-1" class="headerlink" title="三、原形"></a>三、原形</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,sex)&#123;</span><br><span class="line">			this.name = name;</span><br><span class="line">			this.sex = sex;</span><br><span class="line">			this.say = function()&#123;</span><br><span class="line">				console.log(&quot;person&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		function Student(classs,age)&#123;</span><br><span class="line">			this.classs = classs;</span><br><span class="line">			this.age = age;</span><br><span class="line">		&#125;</span><br><span class="line">//		Student.prototype.move = function()&#123;</span><br><span class="line">//			console.log(&quot;我是原型的&quot;);</span><br><span class="line">//		&#125;</span><br><span class="line">		//原型链首先看对象本身是否有需要使用的属性和方法</span><br><span class="line">		//如果有这个属性或方法就是使用我们对象自身的属性和方法</span><br><span class="line">		//如果没有就会根据我们的原型链往他的原型上去查找</span><br><span class="line">		//如果有就使用，没有就继续向上查找，最终会查找到</span><br><span class="line">		//Object.prototype上面，如果还没有就是返回undefined</span><br><span class="line">		//Object.prototype不能用替换的方式进行修改</span><br><span class="line">		//如果一定要给Object.prototype添加属性或方法需要用追加的方式</span><br><span class="line">//		Object.prototype = &#123;</span><br><span class="line">//			move:function()&#123;</span><br><span class="line">//				console.log(&quot;ccc&quot;);</span><br><span class="line">//			&#125;</span><br><span class="line">//		&#125;</span><br><span class="line">		</span><br><span class="line">		var person1 = new Person(&quot;lck&quot;,&quot;man&quot;);</span><br><span class="line">		var person2 = new Person(&quot;lck&quot;,&quot;man&quot;);</span><br><span class="line">		var stu1 = new Student(&quot;0605&quot;,&quot;18&quot;);</span><br><span class="line">//		console.log(person1);</span><br><span class="line">		console.log(stu1);</span><br><span class="line">//		person1.say();</span><br><span class="line">		stu1.move();</span><br></pre></td></tr></table></figure>
+<h2 id="四、封装-1"><a href="#四、封装-1" class="headerlink" title="四、封装"></a>四、封装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">function Women(name,sex)&#123;</span><br><span class="line">			//公有属性</span><br><span class="line">			this.name=name;</span><br><span class="line">			this.sex = sex;</span><br><span class="line">			//私有属性</span><br><span class="line">			var _age = &quot;30&quot;;</span><br><span class="line">			//公有方法</span><br><span class="line">			this.eat = function()&#123;</span><br><span class="line">				alert(&quot;吃饭&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			this.getAge = function()&#123;</span><br><span class="line">				return _age;</span><br><span class="line">			&#125;</span><br><span class="line">			this.setAge = function(age)&#123;</span><br><span class="line">				if(age &lt; 100 &amp;&amp; age &gt; 0)&#123;</span><br><span class="line">					_age = age;</span><br><span class="line">					alert(&quot;修改成功&quot;);</span><br><span class="line">//					return ;</span><br><span class="line">				&#125;else&#123;</span><br><span class="line">					return &quot;年龄不合法，请重新输入&quot;;</span><br><span class="line">				&#125;	</span><br><span class="line">			&#125;</span><br><span class="line">			this.play = function()&#123;</span><br><span class="line">				fight();</span><br><span class="line">			&#125;</span><br><span class="line">			//私有方法</span><br><span class="line">			var fight = function()&#123;</span><br><span class="line">				alert(&quot;我喜欢暴力!&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		var women1 = new Women(&quot;tqq&quot;,&quot;30&quot;);</span><br><span class="line">		women1.play();</span><br><span class="line">//		console.log(women1.getAge());</span><br><span class="line">//		women1.setAge(1000);</span><br><span class="line">//		console.log(women1.setAge(10));</span><br><span class="line">//		console.log(women1.getAge());</span><br></pre></td></tr></table></figure>
+<h2 id="五、原形继承-1"><a href="#五、原形继承-1" class="headerlink" title="五、原形继承"></a>五、原形继承</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age)&#123;</span><br><span class="line">			this.name = name;</span><br><span class="line">			this.age = age;</span><br><span class="line">			this.info = function()&#123;</span><br><span class="line">				console.log(&quot;hello我叫&quot;+this.name+&quot;,我今年&quot;+this.age);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		Person.prototype.move = function()&#123;</span><br><span class="line">			console.log(&quot;我继承了没&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		function Lin()&#123;&#125;;</span><br><span class="line">		Lin.prototype=Person.prototype;</span><br><span class="line">		var pro=new Lin();</span><br><span class="line">		Student.prototype=Lin.prototype;</span><br><span class="line">		Student.prototype.constructor=Student;</span><br><span class="line">		function Student(name,age,gender)&#123;</span><br><span class="line">			Person.call(this,name,age);</span><br><span class="line">			this.gender = gender;</span><br><span class="line">		&#125;</span><br><span class="line">		var stu = new Student(&quot;lck&quot;,18,&quot;man&quot;);</span><br><span class="line">//		console.log(stu);</span><br><span class="line">		stu.move();</span><br></pre></td></tr></table></figure>
+<h2 id="六、克隆-1"><a href="#六、克隆-1" class="headerlink" title="六、克隆"></a>六、克隆</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">&#125;</span><br><span class="line">var person1 = new Person(&quot;lck&quot;,18);</span><br><span class="line"></span><br><span class="line">var stu = person1;</span><br><span class="line">var str = JSON.stringify(person1);</span><br><span class="line">console.log(str);</span><br><span class="line">var newObj = JSON.parse(str);</span><br><span class="line">console.log(newObj);</span><br><span class="line">newObj.name = &quot;tqq&quot;;</span><br><span class="line">console.log(person1.name);</span><br></pre></td></tr></table></figure>
+<h2 id="七、typeof-1"><a href="#七、typeof-1" class="headerlink" title="七、typeof"></a>七、typeof</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function type(obj)&#123;</span><br><span class="line">	var o = &#123;&#125;;</span><br><span class="line">	var str = o.toString.call(obj).slice(8,-1).toLowerCase();</span><br><span class="line">	return str;</span><br><span class="line">&#125;</span><br><span class="line">var arr = [1,2,3];</span><br><span class="line">console.log(type(arr));</span><br><span class="line">function type1(obj)&#123;</span><br><span class="line">	var p=&#123;&#125;;</span><br><span class="line">	var str=p.toString.call(obj).slice(8,-1).toLowerCase();</span><br><span class="line">	return str;</span><br><span class="line">&#125;</span><br><span class="line">var brr=&quot;string&quot;;</span><br><span class="line">console.log(type1(brr));</span><br></pre></td></tr></table></figure>
+<h2 id="八、call-apply-1"><a href="#八、call-apply-1" class="headerlink" title="八、call apply"></a>八、call apply</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">function sub(num1,num2)&#123;</span><br><span class="line">	return num1-num2;</span><br><span class="line">&#125;</span><br><span class="line">function add(num1,num2)&#123;</span><br><span class="line">	return num1+num2;</span><br><span class="line">&#125;</span><br><span class="line">var sum = add.call(sub,6,3);  //sub指挥者让add去执行</span><br><span class="line">var nums = sub.apply(add,[9,8]);</span><br><span class="line">console.log(nums);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/24/面向对象/" data-id="cis9kremx0016bzdjw7pu0yww" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/24/canvas画板/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">canvas画板</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/24/面向对象/">面向对象</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/24/canvas画板/">canvas画板</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/23/仿写jq获取方法/">仿写jq获取方法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/21/闭包/">闭包</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/21/事件委托-1/">事件委托</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
