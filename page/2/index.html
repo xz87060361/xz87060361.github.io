@@ -68,6 +68,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-jquery轮波" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/16/jquery轮波/" class="article-date">
+  <time datetime="2016-08-16T12:27:20.000Z" itemprop="datePublished">2016-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/16/jquery轮波/">jquery轮波</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;&gt;</span><br><span class="line">		&lt;script src=&quot;//cdn.bootcss.com/jquery/1.11.3/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;script src=&quot;//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		.containerwrap&#123;</span><br><span class="line">			width: 75%;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">			margin: 0 auto;</span><br><span class="line">			position: relative;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap&#123;</span><br><span class="line">			width: 600%;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">			position: relative;</span><br><span class="line">			/*有变化才有过渡</span><br><span class="line">			 原先没有的样式通过js设置，这一过程</span><br><span class="line">			 没有变化</span><br><span class="line">			 */</span><br><span class="line">			/*transition-duration: .5s;*/</span><br><span class="line">			/*</span><br><span class="line">			 position:relative;</span><br><span class="line">			 left,right,top,bottom使用％分数的时候</span><br><span class="line">			 计算的长度是按它的父级宽高来ji suan</span><br><span class="line">			 */</span><br><span class="line">			/*left: -100%;*/</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap img&#123;</span><br><span class="line">			width: 16.6666666%;</span><br><span class="line">			float: left;</span><br><span class="line">		&#125;</span><br><span class="line">		.pagination&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			width: 100%;</span><br><span class="line">			bottom: 10px;</span><br><span class="line">			text-align: center;</span><br><span class="line">		&#125;</span><br><span class="line">		.pagination li&#123;</span><br><span class="line">			display: inline-block;</span><br><span class="line">			width: 10px;</span><br><span class="line">			height: 10px;</span><br><span class="line">			background: #666;</span><br><span class="line">			margin: 0 5px;</span><br><span class="line">			border-radius: 5px;</span><br><span class="line">		&#125;</span><br><span class="line">		.pagination li.active&#123;</span><br><span class="line">			background: blue;</span><br><span class="line">		&#125;</span><br><span class="line">		.btnPrev&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			left: 0;top: 50%;</span><br><span class="line">			transform: translate(0,-50%);</span><br><span class="line">			background: #666;</span><br><span class="line">		&#125;</span><br><span class="line">		.btnNext&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			right: 0;top: 50%;</span><br><span class="line">			transform: translate(0,-50%);</span><br><span class="line">			background: #666;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;containerwrap&quot;&gt;</span><br><span class="line">			&lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">				&lt;!--&lt;img src=&quot;1_4.jpg&quot;/&gt;--&gt;</span><br><span class="line">				&lt;img src=&quot;1_1.jpg&quot;/&gt;</span><br><span class="line">				&lt;img src=&quot;1_2.jpg&quot;/&gt;</span><br><span class="line">				&lt;img src=&quot;1_3.jpg&quot;/&gt;</span><br><span class="line">				&lt;img src=&quot;1_4.jpg&quot;/&gt;</span><br><span class="line">				&lt;!--&lt;img src=&quot;1_1.jpg&quot;/&gt;--&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;ul class=&quot;pagination&quot;&gt;</span><br><span class="line">				&lt;li class=&quot;active&quot;&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">			&lt;button class=&quot;btn btn-lg btnPrev&quot;&gt;</span><br><span class="line">				&lt;span class=&quot;glyphicon glyphicon-menu-left&quot;&gt;&lt;/span&gt;</span><br><span class="line">			&lt;/button&gt;</span><br><span class="line">			&lt;button class=&quot;btn btn-lg btnNext&quot;&gt;</span><br><span class="line">				&lt;span class=&quot;glyphicon glyphicon-menu-right&quot;&gt;&lt;/span&gt;</span><br><span class="line">			&lt;/button&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script src=&quot;http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		$(&apos;.wrap img&apos;).eq(0).clone().appendTo($(&apos;.wrap&apos;));</span><br><span class="line">		$(&apos;.wrap img:nth-last-child(2)&apos;).clone().prependTo($(&apos;.wrap&apos;));</span><br><span class="line">		$(&apos;.wrap&apos;).css(&quot;left&quot;,&quot;-100%&quot;);</span><br><span class="line">		</span><br><span class="line">		$index = 0;</span><br><span class="line">		$move=false;</span><br><span class="line">		$(&apos;.pagination li&apos;).on(&quot;click&quot;,function()&#123;</span><br><span class="line">			clearInterval($timer);</span><br><span class="line">			$index = $(this).index();</span><br><span class="line">			wrapMove();</span><br><span class="line">		&#125;)</span><br><span class="line">		</span><br><span class="line">		$(&apos;.btnPrev&apos;).on(&quot;click&quot;,function()&#123;</span><br><span class="line">			if($move)&#123;return;&#125;</span><br><span class="line">			clearInterval($timer);</span><br><span class="line">			$move = true;</span><br><span class="line">			$index--;</span><br><span class="line">			wrapMove();</span><br><span class="line">		&#125;)</span><br><span class="line">		</span><br><span class="line">		$(&apos;.btnNext&apos;).on(&quot;click&quot;,function()&#123;</span><br><span class="line">			if($move)&#123;return;&#125;</span><br><span class="line">			clearInterval($timer);</span><br><span class="line">			$move = true;</span><br><span class="line">			$index++;</span><br><span class="line">			wrapMove();</span><br><span class="line">		&#125;)</span><br><span class="line">		function wrapMove()&#123;</span><br><span class="line">			$(&apos;.wrap&apos;).stop().animate(&#123;</span><br><span class="line">				left:-($index+1)*100+&quot;%&quot;</span><br><span class="line">			&#125;,500,function()&#123;</span><br><span class="line">				if($index==-1)&#123;</span><br><span class="line">					$index = $(&apos;.pagination li&apos;).length-1;</span><br><span class="line">				&#125;</span><br><span class="line">				if($index==$(&apos;.pagination li&apos;).length)&#123;</span><br><span class="line">					$index=0;</span><br><span class="line">				&#125;</span><br><span class="line">				$(&apos;.wrap&apos;).css(&apos;left&apos;,-($index+1)*100+&quot;%&quot;);</span><br><span class="line">				$(&apos;.pagination li&apos;).removeClass(&quot;active&quot;);</span><br><span class="line">				$(&apos;.pagination li&apos;).eq($index).addClass(&quot;active&quot;);</span><br><span class="line">				$move = false;</span><br><span class="line">				timerFn();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		timerFn();</span><br><span class="line">		function timerFn()&#123;</span><br><span class="line">			$timer = setInterval(function()&#123;</span><br><span class="line">				clearInterval($timer);</span><br><span class="line">				$index++;</span><br><span class="line">				wrapMove();</span><br><span class="line">			&#125;,3000)</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/16/jquery轮波/" data-id="cisfaez0n0006e0djbifloavm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-文字限制" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/08/16/文字限制/" class="article-date">
@@ -94,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/16/文字限制/" data-id="cis9kreme000qbzdjt4xeq2la" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/16/文字限制/" data-id="cisfaez1r000se0dj8rd7hbvw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,7 +167,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/16/input图片引入（file）/" data-id="cis9krelh0006bzdj8g3aprss" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/16/input图片引入（file）/" data-id="cisfaez0k0005e0djc7py94is" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/16/正则表达式-x/" data-id="cis9kremz0019bzdjwykqqtuc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/16/正则表达式-x/" data-id="cisfaez1v000we0djgix8owtg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/16/cookie事件Resources/" data-id="cis9krel60004bzdjxn4g0cop" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/16/cookie事件Resources/" data-id="cisfaez000003e0djmwfifls9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -247,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/touch事件/" data-id="cis9krelu000bbzdjg69sro1m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/14/touch事件/" data-id="cisfaez13000de0djzmkxfk29" class="article-share-link">Share</a>
       
       
     </footer>
@@ -283,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/陀螺例子（立方体）/" data-id="cis9krenb001cbzdj7ugxj7tv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/14/陀螺例子（立方体）/" data-id="cisfaez2c0019e0djptpzh6rq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -319,7 +355,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/陀螺/" data-id="cis9kremz0018bzdjiql5v0ii" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/14/陀螺/" data-id="cisfaez2a0017e0djr7con9dj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -357,7 +393,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/小鸟游戏/" data-id="cis9kremk000tbzdj80elawqb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/14/小鸟游戏/" data-id="cisfaez1n000re0djjeitr3fa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -393,43 +429,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/鼠标滚动题目例子/" data-id="cis9kren0001abzdjwyr56tcb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-吞吃蛇游戏" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/14/吞吃蛇游戏/" class="article-date">
-  <time datetime="2016-08-14T12:37:32.000Z" itemprop="datePublished">2016-08-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/14/吞吃蛇游戏/">吞吃蛇游戏</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		.box&#123;</span><br><span class="line">			width: 500px;</span><br><span class="line">			height: 300px;</span><br><span class="line">			box-shadow: 0 0 5px red;</span><br><span class="line">			margin: 50px auto;</span><br><span class="line">			position: relative;</span><br><span class="line">		&#125;</span><br><span class="line">		.conbox&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			width: 100%;height: 100%;</span><br><span class="line">			left: 0;top: 0;</span><br><span class="line">		&#125;</span><br><span class="line">		.food&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			width: 10px;height: 10px;</span><br><span class="line">			background: red;</span><br><span class="line">		&#125;</span><br><span class="line">		.snakebox li&#123;</span><br><span class="line">			list-style: none;</span><br><span class="line">			position: absolute;width: 8px;</span><br><span class="line">			border:1px deepskyblue solid;</span><br><span class="line">			height: 8px;background: rgba(192,192,192,1);</span><br><span class="line">		&#125;</span><br><span class="line">		.snakebox li:nth-last-child(2)&#123;</span><br><span class="line">			background: rgba(192,192,192,.6);</span><br><span class="line">		&#125;</span><br><span class="line">		.snakebox li:nth-last-child(1)&#123;</span><br><span class="line">			background: rgba(192,192,192,.4);</span><br><span class="line">		&#125;</span><br><span class="line">		.fen&#123;</span><br><span class="line">			position: absolute;</span><br><span class="line">			top:-20px;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;box&quot;&gt;</span><br><span class="line">			&lt;span class=&quot;fen&quot;&gt;得分:0&lt;/span&gt;</span><br><span class="line">			&lt;div class=&quot;conbox foodbox&quot;&gt;</span><br><span class="line">				&lt;!--&lt;span class=&quot;food&quot;&gt;&lt;/span&gt;--&gt;</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;ul class=&quot;conbox snakebox&quot;&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var snakebox = document.querySelector(&quot;.snakebox&quot;);</span><br><span class="line">		var snake = snakebox.getElementsByTagName(&quot;li&quot;);</span><br><span class="line">		var foodbox = document.querySelector(&quot;.foodbox&quot;);</span><br><span class="line">		var fen=document.querySelector(&quot;.fen&quot;);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		var s = &#123;</span><br><span class="line">			boxw : 500,</span><br><span class="line">			boxh : 300,</span><br><span class="line">			snakewh : 10,</span><br><span class="line">			isStart : true,//游戏是否开始</span><br><span class="line">			direc : [1,0,2],//[左右方向1正－1负0不变，上下方向，总方向]</span><br><span class="line">			speed : 100,//用循环时间控制速度</span><br><span class="line">		&#125;</span><br><span class="line">		var xy = [[0,0],[0,0],[0,0]];// snake的初始坐标</span><br><span class="line">		var food = [0,0];</span><br><span class="line">		snakeMove();</span><br><span class="line">		createFood();</span><br><span class="line">		//蛇的运动</span><br><span class="line">		function snakeMove()&#123;</span><br><span class="line">			s.move = setInterval(function()&#123;</span><br><span class="line">				eat();</span><br><span class="line">				fen.innerHTML=&quot;得分：&quot;+parseInt(xy.length-3);</span><br><span class="line">				</span><br><span class="line">				for(var i=xy.length-1;i&gt;0;i--)&#123;</span><br><span class="line">					xy[i][0] = xy[i-1][0];</span><br><span class="line">					xy[i][1] = xy[i-1][1];</span><br><span class="line">				&#125;</span><br><span class="line">				xy[0][0]+=s.direc[0]*s.snakewh;</span><br><span class="line">				xy[0][1]+=s.direc[1]*s.snakewh;</span><br><span class="line">				//碰壁</span><br><span class="line">				if(xy[0][0]&lt;0||xy[0][0]&gt;=s.boxw||xy[0][1]&lt;0||xy[0][1]&gt;=s.boxh)&#123;</span><br><span class="line">					clearInterval(s.move);</span><br><span class="line">					alert(&quot;游戏结束&quot;);</span><br><span class="line">					return;</span><br><span class="line">				&#125;</span><br><span class="line">				//自残</span><br><span class="line">				//前面4节肯定碰不到</span><br><span class="line">				for(var j=4;j&lt;xy.length;j++)&#123;</span><br><span class="line">					//蛇头和之后的每一节比较，left，top值同时相等</span><br><span class="line">					if(xy[0][0]==xy[j][0]&amp;&amp;xy[0][1]==xy[j][1])&#123;</span><br><span class="line">						clearInterval(s.move);</span><br><span class="line">						alert(&quot;游戏结束&quot;);</span><br><span class="line">						return;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				for(var i=xy.length-1;i&gt;=0;i--)&#123;</span><br><span class="line">					snake[i].style.left = xy[i][0]+&quot;px&quot;;</span><br><span class="line">					snake[i].style.top = xy[i][1]+&quot;px&quot;;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;,s.speed)</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		//控制方向</span><br><span class="line">		document.addEventListener(&quot;keydown&quot;,function(e)&#123;</span><br><span class="line">			if(!s.isStart)&#123;return&#125;;</span><br><span class="line">			var e = e||window.event;</span><br><span class="line">			var code = e.keyCode||e.which;</span><br><span class="line">			switch(code)&#123;</span><br><span class="line">				case 37://左</span><br><span class="line">					//不能向相反的方向控制</span><br><span class="line">					if(s.direc[2]==2)&#123;return&#125;</span><br><span class="line">					s.direc = [-1,0,0];</span><br><span class="line">					break;</span><br><span class="line">				case 38://上</span><br><span class="line">					if(s.direc[2]==3)&#123;return&#125;</span><br><span class="line">					s.direc = [0,-1,1];</span><br><span class="line">					break;</span><br><span class="line">				case 39://右</span><br><span class="line">					if(s.direc[2]==0)&#123;return&#125;</span><br><span class="line">					s.direc = [1,0,2];</span><br><span class="line">					break;</span><br><span class="line">				case 40://下</span><br><span class="line">					if(s.direc[2]==1)&#123;return&#125;</span><br><span class="line">					s.direc = [0,1,3];</span><br><span class="line">					break;</span><br><span class="line">			&#125;</span><br><span class="line">//			console.log(s);</span><br><span class="line">		&#125;,false)</span><br><span class="line">		</span><br><span class="line">		function createFood()&#123;</span><br><span class="line">			foodXy();</span><br><span class="line">			foodbox.innerHTML = &quot;&quot;;</span><br><span class="line">			var newFood = document.createElement(&quot;span&quot;);</span><br><span class="line">			newFood.className = &quot;food&quot;;</span><br><span class="line">			newFood.style.left = food[0]+&quot;px&quot;;</span><br><span class="line">			newFood.style.top = food[1]+&quot;px&quot;;</span><br><span class="line">			foodbox.appendChild(newFood);</span><br><span class="line">		&#125;</span><br><span class="line">		//随机食物坐标</span><br><span class="line">		function foodXy()&#123;</span><br><span class="line">			var fx = getRand(0,s.boxw/s.snakewh);</span><br><span class="line">			var fy = getRand(0,s.boxh/s.snakewh);</span><br><span class="line">			food = [fx*s.snakewh,fy*s.snakewh];</span><br><span class="line">			for(var i=0;i&lt;xy.length;i++)&#123;</span><br><span class="line">				if(food[0]==xy[i][0]&amp;&amp;food[1]==xy[i][1])&#123;</span><br><span class="line">					foodXy();</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		function eat()&#123;</span><br><span class="line">			//判断蛇头和食重合</span><br><span class="line">			if(xy[0][0]==food[0]&amp;&amp;xy[0][1]==food[1])&#123;</span><br><span class="line">				xy.push([xy[xy.length-1][0],xy[xy.length-1][1]]);</span><br><span class="line">				snakebox.innerHTML+=&quot;&lt;li&gt;&lt;/li&gt;&quot;;</span><br><span class="line">				createFood();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		function getRand(min,max)&#123;</span><br><span class="line">			return Math.floor(Math.random()*(max-min)+min);</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/14/吞吃蛇游戏/" data-id="cis9krema000nbzdjt8ov7wrf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/14/鼠标滚动题目例子/" data-id="cisfaez2h001ce0djt1p9t667" class="article-share-link">Share</a>
       
       
     </footer>
@@ -473,6 +473,10 @@
       <ul>
         
           <li>
+            <a href="/2016/08/28/canvas应用/">canvas应用</a>
+          </li>
+        
+          <li>
             <a href="/2016/08/24/面向对象/">面向对象</a>
           </li>
         
@@ -486,10 +490,6 @@
         
           <li>
             <a href="/2016/08/21/闭包/">闭包</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/21/事件委托-1/">事件委托</a>
           </li>
         
       </ul>
