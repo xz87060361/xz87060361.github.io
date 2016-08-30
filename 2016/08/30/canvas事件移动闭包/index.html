@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>canvas事件移动闭包 | 蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="canvas移动isPointInPath12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas事件移动闭包">
+<meta property="og:url" content="http://yoursite.com/2016/08/30/canvas事件移动闭包/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="canvas移动isPointInPath12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!D">
+<meta property="og:updated_time" content="2016-08-30T14:55:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="canvas事件移动闭包">
+<meta name="twitter:description" content="canvas移动isPointInPath12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!D">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-canvas事件移动闭包" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/30/canvas事件移动闭包/" class="article-date">
+  <time datetime="2016-08-30T14:54:37.000Z" itemprop="datePublished">2016-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      canvas事件移动闭包
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="canvas移动isPointInPath"><a href="#canvas移动isPointInPath" class="headerlink" title="canvas移动isPointInPath"></a>canvas移动isPointInPath</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			body,html&#123;</span><br><span class="line">				/*margin: 0;</span><br><span class="line">				padding: 0;*/</span><br><span class="line">			&#125;</span><br><span class="line">			#myCanvas&#123;</span><br><span class="line">				box-shadow: 0 0 4px skyblue;</span><br><span class="line">				/*margin: 50px;*/</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;canvas id=&quot;myCanvas&quot; width=&quot;800&quot; height=&quot;800&quot;&gt;&lt;/canvas&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var myCanvas = document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">		var context = myCanvas.getContext(&quot;2d&quot;);</span><br><span class="line">		</span><br><span class="line">		function Rect(x,y,w,h,color)&#123;</span><br><span class="line">			this.x = x;</span><br><span class="line">			this.y = y;</span><br><span class="line">			this.w = w;</span><br><span class="line">			this.h = h;</span><br><span class="line">			this.color = color;</span><br><span class="line">			this.draw = function()&#123;</span><br><span class="line">				context.beginPath();</span><br><span class="line">				context.fillStyle = this.color;</span><br><span class="line">				context.rect(this.x,this.y,this.w,this.h);</span><br><span class="line">				context.fill();</span><br><span class="line">				var flog = 0;</span><br><span class="line">				if(arguments.length == 2)&#123;</span><br><span class="line">					if(context.isPointInPath(arguments[0],arguments[1]))&#123;</span><br><span class="line">						flog = 1;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				return flog;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		var rect1 = new Rect(100,100,100,100,&quot;blue&quot;);</span><br><span class="line">		rect1.draw();</span><br><span class="line">		var rect2 = new Rect(300,300,100,100,&quot;red&quot;);</span><br><span class="line">		rect2.draw();</span><br><span class="line">		var rectArr = [rect1,rect2];</span><br><span class="line">//		context.beginPath();</span><br><span class="line">//		context.fillStyle = &quot;red&quot;;</span><br><span class="line">//		context.rect(200,200,100,100);</span><br><span class="line">//		context.fill();</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		myCanvas.onmousedown = function(e)&#123;</span><br><span class="line">			var evs = e || window.event;</span><br><span class="line">			var obj = &#123;&#125;;</span><br><span class="line">			for (var i=0;i&lt;rectArr.length;i++) &#123;</span><br><span class="line">				//rectArr[i]中是否有当前点击的坐标</span><br><span class="line">				//比较我当前数组元素中是不是包含点击的点</span><br><span class="line">				if(rectArr[i].draw(evs.clientX,evs.clientY))&#123;</span><br><span class="line">					obj = rectArr[i];</span><br><span class="line">					var width = evs.clientX - obj.x;</span><br><span class="line">					var height = evs.clientY - obj.y;</span><br><span class="line">					document.onmousemove = function(e)&#123;</span><br><span class="line">						var ev = e || window.event;</span><br><span class="line">						var x = ev.clientX - width;</span><br><span class="line">						var y = ev.clientY - height;</span><br><span class="line">						context.clearRect(0,0,myCanvas.width,myCanvas.height);</span><br><span class="line">						obj.x = x;</span><br><span class="line">						obj.y = y;</span><br><span class="line">						for (var k=0;k&lt;rectArr.length;k++) &#123;</span><br><span class="line">							rectArr[k].draw();</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">					document.onmouseup = function()&#123;</span><br><span class="line">						document.onmousemove = &quot;&quot;;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">//		context.isPointInPath()</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="canvas移动isPointInPath闭包"><a href="#canvas移动isPointInPath闭包" class="headerlink" title="canvas移动isPointInPath闭包"></a>canvas移动isPointInPath闭包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			body,html&#123;</span><br><span class="line">				margin: 0;</span><br><span class="line">				padding: 0;</span><br><span class="line">			&#125;</span><br><span class="line">			#myCanvas&#123;</span><br><span class="line">				box-shadow: 0 0 4px skyblue;</span><br><span class="line">				/*margin: 50px;*/</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;canvas id=&quot;myCanvas&quot; width=&quot;800&quot; height=&quot;600&quot;&gt;&lt;/canvas&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		var myCanvas = document.getElementById(&quot;myCanvas&quot;);</span><br><span class="line">		var context = myCanvas.getContext(&quot;2d&quot;);</span><br><span class="line">		</span><br><span class="line">		function Rect(x,y,width,height,color)&#123;</span><br><span class="line">			this.x = x;</span><br><span class="line">			this.y = y;</span><br><span class="line">			this.width = width;</span><br><span class="line">			this.height = height;</span><br><span class="line">			this.color = color;</span><br><span class="line">			this.draw = function()&#123;</span><br><span class="line">				//设置变量决定点击的点是否在图形内</span><br><span class="line">				var flag = 0;</span><br><span class="line">				context.beginPath();</span><br><span class="line">				context.fillStyle = color;</span><br><span class="line">				context.rect(this.x,this.y,this.width,this.height)</span><br><span class="line">				context.fill();</span><br><span class="line">				//当传递2个参数时表示需要进行当前点是否在图形内部</span><br><span class="line">				if(arguments.length == 2)&#123;</span><br><span class="line">					//判断点击的点是否在图形内</span><br><span class="line">					if(context.isPointInPath(arguments[0],arguments[1]))&#123;</span><br><span class="line">//						是的话设置为1</span><br><span class="line">						flag = 1;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				//返回判断的结果</span><br><span class="line">				return flag;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		var rects = new Rect(100,100,100,100,&quot;red&quot;);</span><br><span class="line">		rects.draw();</span><br><span class="line">		var rect1 = new Rect(300,300,100,100,&quot;blue&quot;);</span><br><span class="line">		rect1.draw();</span><br><span class="line">		var arr = [rects,rect1];</span><br><span class="line">		//设置画布的点击事件</span><br><span class="line">		myCanvas.onmousedown = function(e)&#123;</span><br><span class="line">			var ev = e||window.event;</span><br><span class="line">			//判断当前点击的点是否在我们最后绘制的路径上</span><br><span class="line">			//context.isPointInPath(x,y)</span><br><span class="line">			for (var i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">				//获得我们鼠标距离图形的左边界</span><br><span class="line">				var width = ev.clientX - arr[i].x;</span><br><span class="line">				//获得我们鼠标距离图形的上边界</span><br><span class="line">				var height = ev.clientY - arr[i].y;</span><br><span class="line">				//判断每一个图形和点的</span><br><span class="line">				if(arr[i].draw(ev.clientX,ev.clientY))&#123;</span><br><span class="line">					var obj = arr[i];</span><br><span class="line">					lastw = width;</span><br><span class="line">					lasth = height;</span><br><span class="line">					//闭包需要把循环的i值和鼠标距离边界的width和height</span><br><span class="line">					(function(i,w,h)&#123;</span><br><span class="line">						//设置鼠标移动方法</span><br><span class="line">						document.onmousemove = function(e)&#123;</span><br><span class="line">							var ev = e||window.event;</span><br><span class="line">							context.clearRect(0,0,myCanvas.width,myCanvas.height);</span><br><span class="line">							//改变当前选中的矩形的坐标</span><br><span class="line">//							obj.x = ev.clientX - lastw;</span><br><span class="line">//							obj.y = ev.clientY - lasth;</span><br><span class="line">							arr[i].x = ev.clientX - w;</span><br><span class="line">							arr[i].y = ev.clientY - h;</span><br><span class="line">							//for循环把图形都绘制出来</span><br><span class="line">							for (var j = 0; j &lt; arr.length; j++) &#123;</span><br><span class="line">								arr[j].draw();</span><br><span class="line">							&#125;	</span><br><span class="line">						&#125;</span><br><span class="line">						document.onmouseup = function()&#123;</span><br><span class="line">							document.onmousemove = &quot;&quot;;</span><br><span class="line">						&#125;</span><br><span class="line">					&#125;)(i,width,height);</span><br><span class="line">					</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/30/canvas事件移动闭包/" data-id="cishlpgtp0000ozdjl1op1abu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/08/30/move/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          move
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/28/canvas应用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">canvas应用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/30/canvas飞机预加载/">canvas飞机预加载</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/canvas贪吃蛇/">canvas贪吃蛇</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/检测碰撞/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/多个球的碰撞/">多个球的碰撞</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/move/">move</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

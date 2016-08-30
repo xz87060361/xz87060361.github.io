@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>蓝欧HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="— canvastitle: 检测碰撞date: 2016-08-30 22:59:00
+tags:canvas 检测两两碰撞12345678910111213141516function peng(obj1,obj2)&amp;#123;	var x1 = obj1.x;	var l1 = obj1.w + x1;	var y1 = obj1.y;	var h1 = obj1.h + y1;		var">
+<meta property="og:type" content="article">
+<meta property="og:title" content="蓝欧HTML5">
+<meta property="og:url" content="http://yoursite.com/2016/08/30/检测碰撞/index.html">
+<meta property="og:site_name" content="蓝欧HTML5">
+<meta property="og:description" content="— canvastitle: 检测碰撞date: 2016-08-30 22:59:00
+tags:canvas 检测两两碰撞12345678910111213141516function peng(obj1,obj2)&amp;#123;	var x1 = obj1.x;	var l1 = obj1.w + x1;	var y1 = obj1.y;	var h1 = obj1.h + y1;		var">
+<meta property="og:updated_time" content="2016-08-30T14:59:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="蓝欧HTML5">
+<meta name="twitter:description" content="— canvastitle: 检测碰撞date: 2016-08-30 22:59:00
+tags:canvas 检测两两碰撞12345678910111213141516function peng(obj1,obj2)&amp;#123;	var x1 = obj1.x;	var l1 = obj1.w + x1;	var y1 = obj1.y;	var h1 = obj1.h + y1;		var">
+  
+    <link rel="alternate" href="/atom.xml" title="蓝欧HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">蓝欧HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">让教育回归本质</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-检测碰撞" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/30/检测碰撞/" class="article-date">
+  <time datetime="2016-08-30T14:59:00.000Z" itemprop="datePublished">2016-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>— canvas<br>title: 检测碰撞<br>date: 2016-08-30 22:59:00</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="canvas-检测两两碰撞"><a href="#canvas-检测两两碰撞" class="headerlink" title="canvas 检测两两碰撞"></a>canvas 检测两两碰撞</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function peng(obj1,obj2)&#123;</span><br><span class="line">	var x1 = obj1.x;</span><br><span class="line">	var l1 = obj1.w + x1;</span><br><span class="line">	var y1 = obj1.y;</span><br><span class="line">	var h1 = obj1.h + y1;</span><br><span class="line">	</span><br><span class="line">	var x2 = obj2.x;</span><br><span class="line">	var l2 = obj2.w + x2;</span><br><span class="line">	var y2 = obj2.y;</span><br><span class="line">	var h2 = obj2.h + y2;</span><br><span class="line">	if(l1&gt;x2&amp;&amp;x1&lt;l2&amp;&amp;h1&gt;y2&amp;&amp;y1&lt;h2)&#123;</span><br><span class="line">		return true;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/30/检测碰撞/" data-id="cishlpgwg0010ozdj7a877dza" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/08/30/canvas贪吃蛇/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          canvas贪吃蛇
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/30/多个球的碰撞/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">多个球的碰撞</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/30/canvas飞机预加载/">canvas飞机预加载</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/canvas贪吃蛇/">canvas贪吃蛇</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/检测碰撞/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/多个球的碰撞/">多个球的碰撞</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/30/move/">move</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
