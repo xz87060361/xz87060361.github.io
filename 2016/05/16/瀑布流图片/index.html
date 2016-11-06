@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>预加载与瀑布流 | 个人HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="无限瀑布流瀑布流图片
+无限瀑布流1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="预加载与瀑布流">
+<meta property="og:url" content="http://yoursite.com/2016/05/16/瀑布流图片/index.html">
+<meta property="og:site_name" content="个人HTML5">
+<meta property="og:description" content="无限瀑布流瀑布流图片
+无限瀑布流1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;">
+<meta property="og:updated_time" content="2016-11-06T13:48:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="预加载与瀑布流">
+<meta name="twitter:description" content="无限瀑布流瀑布流图片
+无限瀑布流1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;">
+  
+    <link rel="alternate" href="/atom.xml" title="个人HTML5" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">个人HTML5</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">知识是进步的桥梁</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-瀑布流图片" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/16/瀑布流图片/" class="article-date">
+  <time datetime="2016-05-16T05:53:59.000Z" itemprop="datePublished">2016-05-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      预加载与瀑布流
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="无限瀑布流"><a href="#无限瀑布流" class="headerlink" title="无限瀑布流"></a>无限瀑布流</h2><h2 id="瀑布流图片"><a href="#瀑布流图片" class="headerlink" title="瀑布流图片"></a>瀑布流图片</h2><hr>
+<h2 id="无限瀑布流-1"><a href="#无限瀑布流-1" class="headerlink" title="无限瀑布流"></a>无限瀑布流</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		*&#123;margin: 0;padding: 0;&#125;</span><br><span class="line">		.wrap&#123;</span><br><span class="line">			width: 830px;</span><br><span class="line">			position: relative;</span><br><span class="line">			margin: 0 auto;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap li&#123;</span><br><span class="line">			list-style: none;</span><br><span class="line">			width: 200px;</span><br><span class="line">			position: absolute;</span><br><span class="line">			font-size: 50px;</span><br><span class="line">			text-align: center;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ul class=&quot;wrap&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var wrap = document.querySelector(&quot;.wrap&quot;)</span><br><span class="line">		//用数组存放每一列li的总高度</span><br><span class="line">		var arrH = [0,0,0,0];</span><br><span class="line">		var nowIndex = 0;</span><br><span class="line">		createLi();</span><br><span class="line">		window.onscroll = function()&#123;</span><br><span class="line">			var ch = document.documentElement.clientHeight;</span><br><span class="line">			var st = document.body.scrollTop?document.body.scrollTop:document.documentElement.scrollTop;</span><br><span class="line">			var sh = document.body.scrollHeight?document.body.scrollHeight:document.documentElement.scrollHeight;</span><br><span class="line">			if(sh&lt;=ch+st+100)&#123;</span><br><span class="line">				createLi();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">//		createLi();</span><br><span class="line">		function createLi()&#123;</span><br><span class="line">			for(var i=nowIndex;i&lt;nowIndex+30;i++)&#123;</span><br><span class="line">				//创建li</span><br><span class="line">				var newLi = document.createElement(&quot;li&quot;);</span><br><span class="line">				newLi.style.backgroundColor = &quot;rgb(&quot;+getRandom(0,255)+&quot;,&quot;+getRandom(0,255)+&quot;,&quot;+getRandom(0,255)+&quot;)&quot;;</span><br><span class="line">				newLi.innerHTML = i;</span><br><span class="line">				var newHeight = getRandom(100,300);</span><br><span class="line">				newLi.style.height = newHeight+&quot;px&quot;;</span><br><span class="line">				newLi.style.lineHeight = newHeight+&quot;px&quot;;</span><br><span class="line">				//找到哪一列最矮</span><br><span class="line">				//因为循环比较从第一个开始</span><br><span class="line">				//所有我们把第一个默认为最矮的</span><br><span class="line">				var minH = arrH[0];//默认一个最矮的</span><br><span class="line">				var minIndex = 0;//和最矮的对应的下标</span><br><span class="line">				for(var j=1;j&lt;arrH.length;j++)&#123;</span><br><span class="line">					//保存的最小值minH比高度数组里的某一个大</span><br><span class="line">					//那我们就把这个更小的值赋给minH;</span><br><span class="line">					//同时，把对应的下标赋给minIndex </span><br><span class="line">					if(minH&gt;arrH[j])&#123;</span><br><span class="line">						minH = arrH[j];</span><br><span class="line">						minIndex = j;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				wrap.appendChild(newLi);</span><br><span class="line">				newLi.style.left = 210*minIndex+&quot;px&quot;;</span><br><span class="line">				newLi.style.top = arrH[minIndex]+&quot;px&quot;;</span><br><span class="line">				arrH[minIndex]+=newHeight+10;</span><br><span class="line">			&#125;</span><br><span class="line">			nowIndex+=30;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">			</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		function getRandom(min,max)&#123;</span><br><span class="line">			return Math.round(Math.random()*(max-min)+min);</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="瀑布流图片-1"><a href="#瀑布流图片-1" class="headerlink" title="瀑布流图片"></a>瀑布流图片</h2><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style&gt;</span><br><span class="line">		*&#123;</span><br><span class="line">			margin: 0;padding: 0;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap&#123;</span><br><span class="line">			width: 830px;</span><br><span class="line">			position: relative;</span><br><span class="line">			margin: 0 auto;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap li&#123;</span><br><span class="line">			width: 200px;</span><br><span class="line">			list-style: none;</span><br><span class="line">			position: absolute;</span><br><span class="line">		&#125;</span><br><span class="line">		.wrap li img&#123;</span><br><span class="line">			width: 100%;</span><br><span class="line">			display: block;</span><br><span class="line">		&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ul class=&quot;wrap&quot;&gt;</span><br><span class="line">			&lt;!--&lt;li style=&quot;left: 0;top: 0;&quot;&gt;</span><br><span class="line">				&lt;img src=&quot;img/1_1.jpg&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">			&lt;/li&gt;</span><br><span class="line">			&lt;li style=&quot;left: 210px;top: 0;&quot;&gt;</span><br><span class="line">				&lt;img src=&quot;img/footer_logo.jpg&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">			&lt;/li&gt;</span><br><span class="line">			&lt;li style=&quot;left: 420px;top: 0;&quot;&gt;</span><br><span class="line">				&lt;img src=&quot;img/toutiaohaoHD.jpg&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">			&lt;/li&gt;</span><br><span class="line">			&lt;li style=&quot;left: 630px;top: 0;&quot;&gt;</span><br><span class="line">				&lt;img src=&quot;img/footer_logo.jpg&quot; alt=&quot;&quot; /&gt;</span><br><span class="line">			&lt;/li&gt;--&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var wrap = document.querySelector(&quot;.wrap&quot;);</span><br><span class="line">		var old = [&apos;1_1.jpg&apos;,&apos;1_2.jpg&apos;,&apos;1_3.jpg&apos;,&apos;1_4.jpg&apos;,&apos;1_5.jpg&apos;,&apos;1_6.jpg&apos;,&apos;1_7.jpg&apos;,&apos;1_8.jpg&apos;,&apos;1_9.jpg&apos;,&apos;1_10.jpg&apos;,&apos;1_11.jpg&apos;,&apos;1_12.jpg&apos;,&apos;1_13.jpg&apos;,&apos;1_14.jpg&apos;,&apos;1_15.jpg&apos;,&apos;1_16.jpg&apos;,&apos;1.jpg&apos;,&apos;2.jpg&apos;,&apos;3.jpg&apos;,&apos;4.jpg&apos;,&apos;5.jpg&apos;,&apos;6.jpg&apos;,&apos;7.jpg&apos;,&apos;8.jpg&apos;,&apos;9.jpg&apos;,&apos;10.jpg&apos;,&apos;11.jpg&apos;,&apos;12.jpg&apos;,&apos;13.jpg&apos;,&apos;14.jpg&apos;,&apos;banner1.jpg&apos;,&apos;CancerBigData.jpg&apos;,&apos;contact1.jpg&apos;,&apos;contact2.jpg&apos;,&apos;contact3.jpg&apos;,&apos;footer_logo.jpg&apos;,&apos;title2.png&apos;,&apos;toutiaohaoHD.jpg&apos;];</span><br><span class="line">		var arrH = [0,0,0,0];</span><br><span class="line">		var arr = [];</span><br><span class="line">		var now = 0;</span><br><span class="line">		</span><br><span class="line">//		var newImg = new Image();</span><br><span class="line">//		newImg.onload=function()&#123;</span><br><span class="line">//			var newLi = document.createElement(&quot;li&quot;);</span><br><span class="line">//			newLi.appendChild(newImg);</span><br><span class="line">//			var minH = arrH[0];</span><br><span class="line">//			var minIndex = 0;</span><br><span class="line">//			for(var k=1;k&lt;arrH.length;k++)&#123;</span><br><span class="line">//				if(minH&gt;arrH[k])&#123;</span><br><span class="line">//					minH = arrH[k];</span><br><span class="line">//					minIndex = k;</span><br><span class="line">//				&#125;</span><br><span class="line">//			&#125;</span><br><span class="line">//			newLi.style.left = 210*minIndex+&quot;px&quot;;</span><br><span class="line">//			newLi.style.top = arrH[minIndex]+&quot;px&quot;;</span><br><span class="line">//			arrH[minIndex]+=newLi.offsetHeight+10;</span><br><span class="line">//			wrap.appendChild(newLi);</span><br><span class="line">//			now++;</span><br><span class="line">//			if(now&lt;old.length)&#123;</span><br><span class="line">//				</span><br><span class="line">//			&#125;</span><br><span class="line">//		&#125;</span><br><span class="line">//		newImg.src = &quot;img/&quot;+old[now];</span><br><span class="line">		createLi(10);</span><br><span class="line">		function createLi(num)&#123;</span><br><span class="line">			var newImg = new Image();</span><br><span class="line">			newImg.onload=function()&#123;</span><br><span class="line">				var newLi = document.createElement(&quot;li&quot;);</span><br><span class="line">				newLi.appendChild(newImg);</span><br><span class="line">				wrap.appendChild(newLi);</span><br><span class="line">				var minH = arrH[0];</span><br><span class="line">				var minIndex = 0;</span><br><span class="line">				for(var k=1;k&lt;arrH.length;k++)&#123;</span><br><span class="line">					if(minH&gt;arrH[k])&#123;</span><br><span class="line">						minH = arrH[k];</span><br><span class="line">						minIndex = k;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				newLi.style.left = 210*minIndex+&quot;px&quot;;</span><br><span class="line">				newLi.style.top = arrH[minIndex]+&quot;px&quot;;</span><br><span class="line">				arrH[minIndex]+=newLi.offsetHeight+10;</span><br><span class="line">				</span><br><span class="line">				now++;</span><br><span class="line">				if(now&lt;num)&#123;</span><br><span class="line">					createLi(num);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			newImg.src = &quot;img/&quot;+old[now];</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		window.onclick = function()&#123;</span><br><span class="line">			if(now&lt;old.length)&#123;</span><br><span class="line">				createLi(old.length);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/16/瀑布流图片/" data-id="civ6p3wtq001bpedj7s8nwtqm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/28/锅打灰太狼/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          锅打灰太狼
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/05/测试页面宽高/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">测试页面宽高</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/09/13/2016-09-12自己仿写jq与留言板/">2016-09-12自己仿写jq与留言板</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/13/2016-09-12仿写jq/">2016-09-12仿写jq</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/13/2016-09-12留言板/">2016-09-12留言板</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/13/2016-09-09jqajax/">2016-09-09jqajax</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/13/xhtml/">xhtml</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 彭大帅<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
